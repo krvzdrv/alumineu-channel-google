@@ -1,0 +1,38 @@
+{\rtf1\ansi\deff0
+{\fonttbl{\f0 Arial;}}
+\f0\fs24
+\b Alumineu Google Ads API Tool — Design Document\b0\par
+\par
+\b Company:\b0 Alumineu sp. z o.o.\par
+\b Website:\b0 https://www.alumineu.pl\par
+\b MCC ID:\b0 114-540-9300\par
+\b Primary Ads account:\b0 818-393-0344\par
+\b Contact:\b0 alumineu.pl@gmail.com\par
+\par
+\b 1. Purpose\b0\par
+Internal read-only tooling to audit Google Ads campaign spend, list active/paused campaigns, and verify manager/user access after agency offboarding. Supports Merchant/Google channel operations for our e-commerce (stretch ceiling profiles, PL market).\par
+\par
+\b 2. Architecture\b0\par
+- Private repository: alumineu-channel-google\par
+- Runtime: Node.js 20+\par
+- Library: google-ads-api (official Google Ads API client)\par
+- Auth: OAuth 2.0 desktop flow; refresh token stored locally (token-ads.json); not committed to git\par
+- GCP project: oceanic-craft-452806-c0 (same as Merchant API)\par
+- Developer token: MCC 1145409300\par
+\par
+\b 3. API usage\b0\par
+- GAQL queries: customer, campaign, metrics (cost_micros, clicks, impressions), customer_user_access, customer_manager_link\par
+- No mutations in phase 1 (no campaign create/update/bid changes)\par
+- Estimated volume: under 100 API calls per day; manual/scheduled audits only\par
+\par
+\b 4. Users\b0\par
+Internal employees only (1-2 people). No external or client access.\par
+\par
+\b 5. Data handling\b0\par
+Credentials in local .env and token-ads.json. No third-party SaaS. No sale or sharing of Google Ads data.\par
+\par
+\b 6. Scripts\b0\par
+- ads:auth — OAuth token acquisition\par
+- ads:verify — list accessible customers\par
+- ads:audit — campaign spend and access audit\par
+}

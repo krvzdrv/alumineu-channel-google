@@ -1,0 +1,35 @@
+# Snapshot 2026-06 — alumineu.ro (Tilda tail after Cloudflare managed block stripped on build)
+User-Agent: *
+Disallow: /page72695897.html
+Disallow: /produse/iluminat
+Disallow: /page73812719.html
+Disallow: /page73813015.html
+Disallow: /page82755536.html
+Disallow: /produse/iluminat/sisteme-cu-in
+Disallow: /page82755546.html
+Disallow: /produse/iluminat/band-led
+Disallow: /page82755556.html
+Disallow: /produse/iluminat/spoturi/surse-de-alimentare
+Disallow: /page82755566.html
+Disallow: /produse/iluminat/spoturi
+Disallow: /page82755576.html
+Disallow: /produse/iluminat/spoturi-aplicate
+Disallow: /page82755586.html
+Disallow: /page84766036.html
+Disallow: /page88493636.html
+Disallow: /page92084986.html
+Disallow: /politica-de-confidentialitate
+Disallow: /page92084996.html
+Disallow: /expediere-si-returnare
+Disallow: /tilda/form*
+Disallow: /tilda/rec*
+Disallow: /tilda/click*
+Disallow: /tilda/scroll*
+Disallow: /tilda/popup*
+Disallow: /tilda/cart*
+Disallow: /tilda/product*
+Disallow: /tilda/event*
+Disallow:
+
+Sitemap: https://alumineu.ro/sitemap.xml
+Sitemap: https://alumineu.ro/sitemap-store.xml

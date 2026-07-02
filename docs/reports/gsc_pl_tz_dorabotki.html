@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>ТЗ — доработка сайта alumineu.pl (SEO)</title>
+  <style>
+    @page { margin: 18mm 16mm; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 11pt;
+      line-height: 1.45;
+      color: #1a1a1a;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 12px;
+    }
+    h1 { font-size: 20pt; margin-bottom: 4px; color: #111; }
+    h2 { font-size: 14pt; margin-top: 22px; border-bottom: 2px solid #2563eb; padding-bottom: 4px; color: #1e40af; }
+    h3 { font-size: 12pt; margin-top: 16px; color: #333; }
+    .meta { color: #555; font-size: 10pt; margin-bottom: 20px; }
+    .box {
+      background: #f0f7ff;
+      border-left: 4px solid #2563eb;
+      padding: 10px 14px;
+      margin: 14px 0;
+    }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 10pt; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; vertical-align: top; }
+    th { background: #e8eef7; }
+    .prio { font-weight: bold; white-space: nowrap; }
+    .p0 { color: #b45309; }
+    .p1 { color: #0369a1; }
+    code, .pl { font-family: ui-monospace, monospace; font-size: 9.5pt; background: #f4f4f5; padding: 1px 4px; border-radius: 3px; }
+    ul { margin: 8px 0; padding-left: 22px; }
+    li { margin: 4px 0; }
+    .footer { margin-top: 28px; font-size: 9pt; color: #666; border-top: 1px solid #ddd; padding-top: 10px; }
+    .checklist { list-style: none; padding-left: 0; }
+    .checklist li::before { content: "☐ "; }
+  </style>
+</head>
+<body>
+
+<h1>Техническое задание: доработка alumineu.pl</h1>
+<p class="meta">
+  <strong>Для кого:</strong> тот, кто правит сайт в Tilda (тексты, заголовки, ссылки).<br>
+  <strong>Основание:</strong> отчёт Google Search Console, 90 дней (март–июнь 2026).<br>
+  <strong>Цель:</strong> чтобы люди, ищущие профили и аксессуары для натяжных потолков, чаще кликали на наши страницы в Google.<br>
+  <strong>Дата:</strong> 5 июня 2026 · агент GGL
+</p>
+
+<div class="box">
+  <strong>Простыми словами.</strong> Google уже показывает сайт по нужным запросам, но часто ведёт на главную страницу или на одну карточку товара. Из-за этого мало кликов. Нужно: понятные заголовки страниц, правильные «посадочные» разделы каталога и ссылки с главной.
+</div>
+
+<h2>1. Что не входит в это ТЗ</h2>
+<ul>
+  <li>Страница обучения <span class="pl">/szkolenie</span> и всё, что связано с партнёрами по обучению.</li>
+  <li>Реклама в Google Ads.</li>
+  <li>Изменения в Merchant Center и фидах.</li>
+</ul>
+
+<h2>2. Три главные страницы-категории (сделать в первую очередь)</h2>
+<p>Это «витрины» разделов. Сейчас Google часто показывает вместо них главную <span class="pl">alumineu.pl</span>.</p>
+
+<table>
+  <tr>
+    <th>Страница</th>
+    <th>Заголовок в браузере (Title)</th>
+    <th>Главный заголовок на странице (H1)</th>
+  </tr>
+  <tr>
+    <td><span class="pl">/produkty/profile-harpunowe</span></td>
+    <td>Profile aluminiowe do sufitów napinanych | Alumineu</td>
+    <td>Profile aluminiowe do sufitów napinanych</td>
+  </tr>
+  <tr>
+    <td><span class="pl">/produkty/akcesoria</span></td>
+    <td>Akcesoria do sufitów napinanych | Alumineu</td>
+    <td>Akcesoria do sufitów napinanych</td>
+  </tr>
+  <tr>
+    <td><span class="pl">/produkty/aranzacje/przepierzenia</span><br><small>если отдельной страницы нет — создать раздел-каталог</small></td>
+    <td>Przepierzenia do sufitów napinanych | Alumineu</td>
+    <td>Przepierzenia</td>
+  </tr>
+</table>
+
+<p><strong>На каждой из трёх страниц добавить:</strong></p>
+<ul>
+  <li>2–4 предложения простым языком: для кого (монтажники), что внутри раздела.</li>
+  <li>Ссылки на подразделы и популярные линейки (Curtina, Invisia, Decorra и т.д.).</li>
+  <li>Кнопку «Katalog» или «Zobacz produkty».</li>
+</ul>
+
+<h2>3. Главная страница</h2>
+<p><strong>Задача:</strong> не конкурировать с каталогом, а направлять в нужные разделы.</p>
+<ul class="checklist">
+  <li>Добавить три заметных блока-ссылки: Profile · Akcesoria · Przepierzenia (с текстом из таблицы выше).</li>
+  <li>В тексте главной один раз упомянуть: <em>profile i akcesoria do sufitów napinanych</em> — со ссылкой на разделы, не просто текст.</li>
+  <li>Не менять Title главной под каталожные запросы — для этого есть разделы каталога.</li>
+</ul>
+
+<h2>4. Задачи по приоритету</h2>
+
+<h3><span class="prio p0">Приоритет 0</span> — много показов в Google, почти нет кликов</h3>
+<table>
+  <tr>
+    <th>Что ищут люди</th>
+    <th>Куда сейчас попадают</th>
+    <th>Что сделать</th>
+  </tr>
+  <tr>
+    <td><span class="pl">przepierzenia</span> (248 показов)</td>
+    <td>Только карточка Decorra</td>
+    <td>Сделать страницу-каталог «Przepierzenia» со ссылкой на Decorra и другие модели. На карточке Decorra в Title добавить слово przepierzenie.</td>
+  </tr>
+  <tr>
+    <td><span class="pl">akcesoria do sufitów napinanych</span> (147)</td>
+    <td>Главная</td>
+    <td>Усилить страницу <span class="pl">/produkty/akcesoria</span> (см. раздел 2). С главной — прямая ссылка «Akcesoria do sufitów napinanych».</td>
+  </tr>
+  <tr>
+    <td><span class="pl">akcesoria do profili aluminiowych</span> (146)</td>
+    <td><span class="pl">/produkty/akcesoria</span></td>
+    <td>Расширить текст: список типов аксессуаров, для каких профилей, 3–5 буллетов. Добавить ссылки на подкатегории.</td>
+  </tr>
+  <tr>
+    <td><span class="pl">profile aluminiowe do sufitów napinanych</span> (55)</td>
+    <td>Главная</td>
+    <td>Title и H1 на <span class="pl">/produkty/profile-harpunowe</span> — по таблице из раздела 2.</td>
+  </tr>
+  <tr>
+    <td><span class="pl">wszystko do sufitów napinanych</span> (56)</td>
+    <td>Главная</td>
+    <td>На странице <span class="pl">/produkty</span> (или главной блоком): заголовок «Wszystko do sufitów napinanych» + ссылки на все основные разделы.</td>
+  </tr>
+  <tr>
+    <td><span class="pl">profil do sufitu napinanego</span>, <span class="pl">profile do sufitów napinanych</span> (40+ показов)</td>
+    <td>Главная</td>
+    <td>Те же действия: вести на <span class="pl">/produkty/profile-harpunowe</span>, не на главную.</td>
+  </tr>
+</table>
+
+<h3><span class="prio p0">Приоритет 0</span> — хорошая позиция в Google, но не кликают</h3>
+<p>Страница уже высоко в выдаче. Нужно улучшить то, что видно в Google <em>до</em> клика: заголовок вкладки и краткое описание.</p>
+<table>
+  <tr>
+    <th>Страница</th>
+    <th>Запросы</th>
+    <th>Что написать в описании (meta description)</th>
+  </tr>
+  <tr>
+    <td><span class="pl">/produkty/profile-harpunowe/karniszowe</span></td>
+    <td>karnisze aluminiowe do sufitu napinanego (поз. 2–4)</td>
+    <td>Karnisze aluminiowe do sufitów napinanych — modele Curtina. Profile do zasłon i firan. Dla monterów. Katalog Alumineu.</td>
+  </tr>
+  <tr>
+    <td><span class="pl">/produkty/profile-harpunowe/dwupoziomowe</span></td>
+    <td>profile dwupoziomowe (поз. ~5)</td>
+    <td>Profile dwupoziomowe do sufitów napinanych — harpunowe i z oświetleniem LED. Montaż, wymiary, katalog B2B.</td>
+  </tr>
+  <tr>
+    <td><span class="pl">/produkty/profile-harpunowe/dystansowe</span></td>
+    <td>szczelina cienia (поз. 1)</td>
+    <td>Profile dystansowe — szczelina cienia w suficie napinanym. Invisia i inne modele. Alumineu — producent profili.</td>
+  </tr>
+  <tr>
+    <td>Карточка Decorra</td>
+    <td>przepierzenie (поз. 1)</td>
+    <td>Przepierzenie Decorra do sufitu napinanego — aranżacja wnętrz. Profil aluminiowy Alumineu.</td>
+  </tr>
+</table>
+
+<h3><span class="prio p1">Приоритет 1</span> — в Google показывается одна модель вместо всего раздела</h3>
+<table>
+  <tr>
+    <th>Проблема</th>
+    <th>Что сделать</th>
+  </tr>
+  <tr>
+    <td>По запросу «profile dwupoziomowe» в топе карточка Unitexa Z701, а не весь раздел</td>
+    <td>На странице категории <span class="pl">dwupoziomowe</span> — полный список моделей. На карточке Z701 в Title указать модель, в тексте — ссылка «Zobacz wszystkie profile dwupoziomowe».</td>
+  </tr>
+  <tr>
+    <td>LED dwupoziomowe размазано между harpunowe и klipsowe</td>
+    <td>Один основной раздел: <span class="pl">/produkty/profile-harpunowe/dwupoziomowe-led</span> — добавить в меню и перекрёстные ссылки.</td>
+  </tr>
+</table>
+
+<h3><span class="prio p1">Приоритет 1</span> — точечные правки карточек</h3>
+<table>
+  <tr>
+    <th>Страница</th>
+    <th>Действие</th>
+  </tr>
+  <tr>
+    <td><span class="pl">.../diffusy-y150</span></td>
+    <td>В Title: «Dyfuzory LED (diffusy) do profili — Y150 | Alumineu»</td>
+  </tr>
+  <tr>
+    <td><span class="pl">.../bandura-x801</span></td>
+    <td>В тексте: для чего Bandura, ссылка на раздел Akcesoria</td>
+  </tr>
+  <tr>
+    <td><span class="pl">.../curtina-x402</span></td>
+    <td>В H1 или подзаголовке: «Karnisz z bocznym mocowaniem»</td>
+  </tr>
+  <tr>
+    <td><span class="pl">/kontakt</span></td>
+    <td>Проверить, что телефон +48 459 569 819 виден на странице (люди ищут номер в Google)</td>
+  </tr>
+</table>
+
+<h2>5. Как проверить, что сделано правильно</h2>
+<ul class="checklist">
+  <li>У трёх категорий (раздел 2) — свои Title и H1, не дублируют главную.</li>
+  <li>С главной есть три кликабельных блока в каталог.</li>
+  <li>У страниц из раздела 4 — обновлены meta description (в Tilda: Настройки страницы → SEO).</li>
+  <li>Через 4–6 недель в Search Console выросли клики по запросам akcesoria / profile / przepierzenia (не по бренду alumineu).</li>
+</ul>
+
+<h2>6. Ожидаемый эффект (реалистично)</h2>
+<p>Сейчас по каталожным запросам — <strong>700+ показов за 3 месяца</strong> и почти ноль кликов. Если поднять CTR хотя бы до 2–3%, это <strong>+15–25 переходов в квартал</strong> без рекламы. Для B2B-ниши это нормальный первый шаг.</p>
+
+<div class="footer">
+  Источник данных: Google Search Console, свойство sc-domain:alumineu.pl, 05.03.2026–02.06.2026.<br>
+  Репозиторий: alumineu-channel-google · [GGL] · JSON: data/gsc_report_pl_90d.json
+</div>
+
+</body>
+</html>

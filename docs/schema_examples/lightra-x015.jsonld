@@ -1,0 +1,16 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Profil LIGHTRA X015",
+  "description": "Patentowany profil LIGHTRA x015® separacyjny do sufitów napinanych z harpunowym systemem mocowania płótna.",
+  "sku": "lightra_x015",
+  "brand": { "@type": "Brand", "name": "Alumineu" },
+  "image": ["https://drive.google.com/uc?id=1MQGzg9P1nq7D9KtwS2bRRAM4WHnPjajH"],
+  "offers": {
+    "@type": "Offer",
+    "url": "https://alumineu.pl/produkty/profile-harpunowe/swietlne/lightra-x015",
+    "priceCurrency": "PLN",
+    "price": "12.00",
+    "availability": "https://schema.org/InStock"
+  }
+}

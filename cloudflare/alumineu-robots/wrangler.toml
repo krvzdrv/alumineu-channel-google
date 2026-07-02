@@ -1,0 +1,42 @@
+# [GGL] Cloudflare Worker: только URL /robots.txt → кастомный файл (остальное — Tilda).
+# Деплой: npm run cf:robots:deploy
+# Требуется: зона в Cloudflare Active + wrangler login.
+
+name = "alumineu-robots-txt"
+main = "src/index.js"
+compatibility_date = "2024-12-01"
+
+# Маршруты: apex + www для каждого рынка.
+# Если deploy ругается — добавьте Routes в Dashboard (Workers → Triggers).
+
+[[routes]]
+pattern = "alumineu.pl/robots.txt"
+zone_name = "alumineu.pl"
+
+[[routes]]
+pattern = "www.alumineu.pl/robots.txt"
+zone_name = "alumineu.pl"
+
+[[routes]]
+pattern = "alumineu.de/robots.txt"
+zone_name = "alumineu.de"
+
+[[routes]]
+pattern = "www.alumineu.de/robots.txt"
+zone_name = "alumineu.de"
+
+[[routes]]
+pattern = "alumineu.ro/robots.txt"
+zone_name = "alumineu.ro"
+
+[[routes]]
+pattern = "www.alumineu.ro/robots.txt"
+zone_name = "alumineu.ro"
+
+[[routes]]
+pattern = "alumineu.com/robots.txt"
+zone_name = "alumineu.com"
+
+[[routes]]
+pattern = "www.alumineu.com/robots.txt"
+zone_name = "alumineu.com"

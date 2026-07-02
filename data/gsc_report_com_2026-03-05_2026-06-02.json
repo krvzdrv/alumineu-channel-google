@@ -1,0 +1,475 @@
+{
+  "fetchedAt": "2026-06-05T12:33:16.788Z",
+  "siteUrl": "sc-domain:alumineu.com",
+  "permission": "siteOwner",
+  "startDate": "2026-03-05",
+  "endDate": "2026-06-02",
+  "days": 90,
+  "totals": {
+    "clicks": 14,
+    "impressions": 257,
+    "ctr": 0.054474708171206226,
+    "position": 4.182879377431906
+  },
+  "queries": [
+    {
+      "query": "alumineu",
+      "clicks": 4,
+      "impressions": 128,
+      "ctr": 0.03125,
+      "position": 5.0234375
+    },
+    {
+      "query": "alminiu",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "query": "aluminu",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    }
+  ],
+  "pages": [
+    {
+      "page": "https://alumineu.com/",
+      "clicks": 9,
+      "impressions": 212,
+      "ctr": 0.04245283018867924,
+      "position": 4.09433962264151
+    },
+    {
+      "page": "https://alumineu.com/products/harpoon-profiles/cornice/curtina-x406",
+      "clicks": 2,
+      "impressions": 2,
+      "ctr": 1,
+      "position": 1
+    },
+    {
+      "page": "https://alumineu.com/products/harpoon-profiles/seamless/classix-x130",
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 1,
+      "position": 1
+    },
+    {
+      "page": "https://alumineu.com/products/harpoon-profiles/shadow",
+      "clicks": 1,
+      "impressions": 7,
+      "ctr": 0.14285714285714285,
+      "position": 2.571428571428571
+    },
+    {
+      "page": "https://alumineu.com/products/harpoon-profiles/shadow/invisia-x209",
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 1,
+      "position": 1
+    },
+    {
+      "page": "http://alumineu.com/products/accessories/hooks/hookara-y701",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "page": "https://alumineu.com/about-us",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "page": "https://alumineu.com/catalog",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "page": "https://alumineu.com/contacts",
+      "clicks": 0,
+      "impressions": 46,
+      "ctr": 0,
+      "position": 5.891304347826087
+    },
+    {
+      "page": "https://alumineu.com/products/accessories/end-caps",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 4.333333333333334
+    },
+    {
+      "page": "https://alumineu.com/products/accessories/end-caps/endcapp-y206",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "page": "https://alumineu.com/products/accessories/hooks/hookend-y704",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "page": "https://alumineu.com/products/accessories/hooks/slidene-y702",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 3.5
+    },
+    {
+      "page": "https://alumineu.com/products/accessories/tools/praseka-y805",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "page": "https://alumineu.com/products/accessories/tools/spatula-y802",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "page": "https://alumineu.com/products/accessories/tools/spatula-y804",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 5.333333333333333
+    },
+    {
+      "page": "https://alumineu.com/products/clip-in-profiles/cornice",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "page": "https://alumineu.com/products/clip-in-profiles/track",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "page": "https://alumineu.com/products/harpoon-profiles",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "page": "https://alumineu.com/products/harpoon-profiles/cornice/curtina-x405-m",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 2.666666666666667
+    },
+    {
+      "page": "https://alumineu.com/products/harpoon-profiles/floating",
+      "clicks": 0,
+      "impressions": 22,
+      "ctr": 0,
+      "position": 4.363636363636363
+    },
+    {
+      "page": "https://alumineu.com/products/harpoon-profiles/floating/floatia-x304",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 2.666666666666667
+    },
+    {
+      "page": "https://alumineu.com/products/harpoon-profiles/light/lamplix-x950",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 4.75
+    },
+    {
+      "page": "https://alumineu.com/products/harpoon-profiles/light/lightra-x015",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 9.5
+    },
+    {
+      "page": "https://alumineu.com/products/harpoon-profiles/light/lightra-x030",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "page": "https://alumineu.com/products/harpoon-profiles/seamless/classix-x101",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 4.4
+    },
+    {
+      "page": "https://alumineu.com/products/harpoon-profiles/shadow/invisia-x206",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "page": "https://alumineu.com/products/ventilation/slot-diffusers/aerooom",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    }
+  ],
+  "countries": [
+    {
+      "country": "blr",
+      "clicks": 5,
+      "impressions": 32,
+      "ctr": 0.15625,
+      "position": 2.71875
+    },
+    {
+      "country": "gbr",
+      "clicks": 3,
+      "impressions": 10,
+      "ctr": 0.3,
+      "position": 1.9
+    },
+    {
+      "country": "fra",
+      "clicks": 2,
+      "impressions": 3,
+      "ctr": 0.6666666666666666,
+      "position": 1
+    },
+    {
+      "country": "usa",
+      "clicks": 2,
+      "impressions": 40,
+      "ctr": 0.05,
+      "position": 2.625
+    },
+    {
+      "country": "rou",
+      "clicks": 1,
+      "impressions": 10,
+      "ctr": 0.1,
+      "position": 5.3
+    },
+    {
+      "country": "sgp",
+      "clicks": 1,
+      "impressions": 17,
+      "ctr": 0.058823529411764705,
+      "position": 2
+    },
+    {
+      "country": "aut",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "country": "bgd",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "country": "bgr",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "country": "bra",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "country": "can",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "country": "cze",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "country": "deu",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 7.25
+    },
+    {
+      "country": "egy",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "country": "esp",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "country": "est",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "country": "ind",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "country": "irq",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "country": "isr",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 1.5
+    },
+    {
+      "country": "lao",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "country": "ltu",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 2.333333333333333
+    },
+    {
+      "country": "mex",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "country": "mwi",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "country": "nld",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "country": "nor",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "country": "phl",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "country": "pol",
+      "clicks": 0,
+      "impressions": 94,
+      "ctr": 0,
+      "position": 5.840425531914893
+    },
+    {
+      "country": "srb",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "country": "svk",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2.5
+    },
+    {
+      "country": "swe",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    }
+  ],
+  "devices": [
+    {
+      "device": "DESKTOP",
+      "clicks": 10,
+      "impressions": 151,
+      "ctr": 0.06622516556291391,
+      "position": 3.1125827814569536
+    },
+    {
+      "device": "MOBILE",
+      "clicks": 4,
+      "impressions": 104,
+      "ctr": 0.038461538461538464,
+      "position": 5.740384615384615
+    },
+    {
+      "device": "TABLET",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 4
+    }
+  ],
+  "meta": {
+    "queryRowCount": 3,
+    "pageRowCount": 28,
+    "queryClicksSum": 4
+  }
+}

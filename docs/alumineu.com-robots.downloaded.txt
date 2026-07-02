@@ -1,0 +1,16 @@
+# Placeholder — обновите: npm run robots:download (когда alumineu.com резолвится)
+User-Agent: *
+Disallow: /tilda/form*
+Disallow: /tilda/rec*
+Disallow: /tilda/click*
+Disallow: /tilda/scroll*
+Disallow: /tilda/popup*
+Disallow: /tilda/cart*
+Disallow: /tilda/product*
+Disallow: /tilda/event*
+Disallow: /members/login*
+Disallow: /members/signup*
+Disallow:
+
+Sitemap: https://alumineu.com/sitemap.xml
+Sitemap: https://alumineu.com/sitemap-store.xml

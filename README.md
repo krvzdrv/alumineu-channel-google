@@ -1,5 +1,8 @@
 # Alumineu — Google channel
 
+> **Агенты:** старт с [`AGENTS.md`](AGENTS.md) · hub [`AGENT_OPERATING_SYSTEM`](https://github.com/krvzdrv/alumineu-os/blob/main/docs/AGENT_OPERATING_SYSTEM.md)
+
+
 Репозиторий для интеграций и артефактов канала **Google** (Merchant Center, Ads, Measurement) в контуре Alumineu.
 
 - Агент **GGL · Merchant** — старт: [`AGENTS.md`](AGENTS.md), задачи **chat-first**

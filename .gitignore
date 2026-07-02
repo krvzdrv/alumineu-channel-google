@@ -1,5 +1,21 @@
 .DS_Store
 .env
 .env.*
+token.json
+token-ads.json
+token-gsc.json
+token-gbp.json
+token-merchant.json
+token-merchant-pl.json
+token-manufacturer.json
+token-ads.json.bak.*
+token-*.json.bak.*
+# [GGL] JSON-ключи сервисного аккаунта Merchant API — только локально / CI Secrets
+google-merchant-sa-key.json
+google-merchant*-sa*.json
+oceanic-craft-452806-c0*.json
 *.log
 node_modules/
+
+# Локальный экспорт Meta для npm run merchant:* (не коммитить при желании держать только у себя)
+feeds/catalog-meta-pl.csv
