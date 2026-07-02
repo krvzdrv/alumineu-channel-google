@@ -1,38 +1,24 @@
 ---
-description: Alumineu — старт сессии, GitHub Project, префикс комментариев
+description: Alumineu — GGL · Merchant, chat-first
 alwaysApply: true
 ---
 
-# Старт сессии (Alumineu)
+# Старт сессии
 
-Роль: **GGL · Merchant**. Репозиторий: **`alumineu-channel-google`**. Префикс комментариев: **`[GGL]`**.
+Роль: **GGL · Merchant**. Repo: **`alumineu-channel-google`**. Префикс: **`[GGL]`**.
 
-## Очередь
+## Первым делом прочитай
 
-1. GitHub Project **Alumineu OS**: https://github.com/users/krvzdrv/projects/2
-2. Фильтр: **`Stage = Now`** и **`repo_agent:channel-google`**
-3. Сортировка: **P0 → P1**
-4. Открой привязанный **issue**, прочитай последний **`[GOV]`** по задаче
+1. **`AGENTS.md`** в корне этого repo
+2. При cross-repo: `alumineu-os/docs/HANDOFF_PROMPTS.md`
 
-## Старт исполнения
+## Работа
 
-Если карточка **Ready** (см. Ready-минимум ниже): не жди отдельного промпта владельца.
+- Задачу даёт **владелец в чате** — не GitHub Project
+- Только **своя зона**; чужое → handoff-промпт для владельца
+- **Commit + push** в конце сессии
+- Разовый вопрос → ответ в чате, без issues/Project
 
-- Комментарий **`[GGL] Kickoff:`** — scope, план, DoD, риски, ссылки
-- В Project: **`Status = In Progress`** (если было Todo)
-- Работа до PR / evidence, затем **`[GGL] Review request:`** и **`Review = Requested`**
+## Hub canon
 
-## Ready-минимум и handoff
-
-- Ready/Done/Handoff: [https://github.com/krvzdrv/alumineu-os/blob/main/docs/READY_DONE_HANDOFF_CANON.md](https://github.com/krvzdrv/alumineu-os/blob/main/docs/READY_DONE_HANDOFF_CANON.md)
-- Идентичность: [https://github.com/krvzdrv/alumineu-os/blob/main/docs/AGENT_IDENTITY_CANON.md](https://github.com/krvzdrv/alumineu-os/blob/main/docs/AGENT_IDENTITY_CANON.md)
-- Routing: [https://github.com/krvzdrv/alumineu-os/blob/main/docs/AGENT_ROUTING_MAP.md](https://github.com/krvzdrv/alumineu-os/blob/main/docs/AGENT_ROUTING_MAP.md)
-- Sync: [https://github.com/krvzdrv/alumineu-os/blob/main/docs/PROGRESS_SYNC_CONTRACT.md](https://github.com/krvzdrv/alumineu-os/blob/main/docs/PROGRESS_SYNC_CONTRACT.md)
-
-## Single-writer
-
-Один активный writing-агент на этот репозиторий; при передаче — **handoff** в issue по канону выше.
-
-## Шаблоны комментариев
-
-[https://github.com/krvzdrv/alumineu-os/blob/main/docs/PROJECT_COMMENT_TEMPLATES.md](https://github.com/krvzdrv/alumineu-os/blob/main/docs/PROJECT_COMMENT_TEMPLATES.md)
+`alumineu-os/docs/AGENT_OPERATING_SYSTEM.md`
