@@ -1,5 +1,5 @@
 ---
-description: Alumineu — GGL · Merchant, chat-first
+description: Alumineu — GGL · Merchant, chat-first + repo backlog
 alwaysApply: true
 ---
 
@@ -10,15 +10,18 @@ alwaysApply: true
 ## Первым делом прочитай
 
 1. **`AGENTS.md`** в корне этого repo
-2. При cross-repo: `alumineu-os/docs/HANDOFF_PROMPTS.md`
+2. **`docs/BACKLOG.md`** — свой бэклог (если есть задачи в работе)
+3. При cross-repo: `alumineu-os/docs/HANDOFF_PROMPTS.md`
 
 ## Работа
 
-- Задачу даёт **владелец в чате** — не GitHub Project
+- Задачу даёт **владелец в чате** — **не** GitHub Project (#2 закрыт)
+- Свой бэклог: **`docs/BACKLOG.md`** — обновляй Now/Done после сессии
 - Только **своя зона**; чужое → handoff-промпт для владельца
 - **Commit + push** в конце сессии
 - Разовый вопрос → ответ в чате, без issues/Project
 
 ## Hub canon
 
-`alumineu-os/docs/AGENT_OPERATING_SYSTEM.md`
+`alumineu-os/docs/AGENT_OPERATING_SYSTEM.md` · `alumineu-os/docs/REPO_BACKLOG_CANON.md`
+

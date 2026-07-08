@@ -1,0 +1,601 @@
+{
+  "fetchedAt": "2026-07-08T11:23:53.126Z",
+  "siteUrl": "sc-domain:alumineu.ro",
+  "permission": "siteOwner",
+  "startDate": "2026-06-08",
+  "endDate": "2026-07-05",
+  "days": 28,
+  "totals": {
+    "clicks": 23,
+    "impressions": 363,
+    "ctr": 0.06336088154269973,
+    "position": 11.639118457300276
+  },
+  "queries": [
+    {
+      "query": "alumineu",
+      "clicks": 5,
+      "impressions": 5,
+      "ctr": 1,
+      "position": 1
+    },
+    {
+      "query": "profil tavan extensibil",
+      "clicks": 1,
+      "impressions": 22,
+      "ctr": 0.045454545454545456,
+      "position": 4.590909090909091
+    },
+    {
+      "query": "accesorii aluminiu",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 40
+    },
+    {
+      "query": "accesorii profil",
+      "clicks": 0,
+      "impressions": 32,
+      "ctr": 0,
+      "position": 43.90625
+    },
+    {
+      "query": "da link",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "query": "funie pentru tavane extensibile",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "query": "membrana tavan extensibil",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 44
+    },
+    {
+      "query": "profil ascuns tavan",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 75.5
+    },
+    {
+      "query": "profil dublu cu talpa",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 20.25
+    },
+    {
+      "query": "profil umbrit tavan extensibil",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 17.5
+    },
+    {
+      "query": "profile aluminiu mobila",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 54
+    },
+    {
+      "query": "profile din aluminiu și accesorii",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 35.5
+    },
+    {
+      "query": "profiline",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 34
+    },
+    {
+      "query": "sistem compartimentare aluminiu",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 46
+    },
+    {
+      "query": "sistem profile pentru instalatii",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 62
+    }
+  ],
+  "pages": [
+    {
+      "page": "https://alumineu.ro/",
+      "clicks": 18,
+      "impressions": 217,
+      "ctr": 0.08294930875576037,
+      "position": 8.516129032258064
+    },
+    {
+      "page": "https://alumineu.ro/produse",
+      "clicks": 2,
+      "impressions": 6,
+      "ctr": 0.3333333333333333,
+      "position": 1.5
+    },
+    {
+      "page": "https://alumineu.ro/produse/profile-cu-harpon",
+      "clicks": 2,
+      "impressions": 24,
+      "ctr": 0.08333333333333333,
+      "position": 13.208333333333334
+    },
+    {
+      "page": "https://alumineu.ro/produse/accesorii/unelte",
+      "clicks": 1,
+      "impressions": 5,
+      "ctr": 0.2,
+      "position": 8
+    },
+    {
+      "page": "https://alumineu.ro/catalog",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "page": "https://alumineu.ro/contacte",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 9.333333333333334
+    },
+    {
+      "page": "https://alumineu.ro/despre-noi",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 6.125
+    },
+    {
+      "page": "https://alumineu.ro/produse/accesorii",
+      "clicks": 0,
+      "impressions": 34,
+      "ctr": 0,
+      "position": 30.529411764705884
+    },
+    {
+      "page": "https://alumineu.ro/produse/accesorii/capace-de-capat/endcapp-y203",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "page": "https://alumineu.ro/produse/accesorii/carlige",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10.5
+    },
+    {
+      "page": "https://alumineu.ro/produse/accesorii/carlige/hookara-y701",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "page": "https://alumineu.ro/produse/accesorii/carlige/slidene-y702",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "page": "https://alumineu.ro/produse/accesorii/conectori/jointek-y603",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "page": "https://alumineu.ro/produse/accesorii/conectori/jointek-y605",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 13
+    },
+    {
+      "page": "https://alumineu.ro/produse/accesorii/conectori/jointek-y606",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "page": "https://alumineu.ro/produse/accesorii/elemente-de-fixare",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "page": "https://alumineu.ro/produse/accesorii/profile",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 27.666666666666668
+    },
+    {
+      "page": "https://alumineu.ro/produse/accesorii/unelte/spatula-y804",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "page": "https://alumineu.ro/produse/accesorii/unelte/spatula-y805",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 13
+    },
+    {
+      "page": "https://alumineu.ro/produse/amenajari",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 31.11111111111111
+    },
+    {
+      "page": "https://alumineu.ro/produse/profile-cu-clema",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 12.6875
+    },
+    {
+      "page": "https://alumineu.ro/produse/profile-cu-clema/cornise",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "page": "https://alumineu.ro/produse/profile-cu-clema/cornise/tissure-z405",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "page": "https://alumineu.ro/produse/profile-cu-clema/dublu-nivel/unitexa-z701",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 4.8
+    },
+    {
+      "page": "https://alumineu.ro/produse/profile-cu-clema/luminosi",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "page": "https://alumineu.ro/produse/profile-cu-clema/luminosi/lumnova-z008",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "page": "https://alumineu.ro/produse/profile-cu-clema/sina",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "page": "https://alumineu.ro/produse/profile-cu-harpon/cornise",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 12.142857142857142
+    },
+    {
+      "page": "https://alumineu.ro/produse/profile-cu-harpon/cornise/curtina-x404",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "page": "https://alumineu.ro/produse/profile-cu-harpon/dublu-nivel",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 20.25
+    },
+    {
+      "page": "https://alumineu.ro/produse/profile-cu-harpon/dublu-nivel/stratos-x702",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "page": "https://alumineu.ro/produse/profile-cu-harpon/luminosi",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "page": "https://alumineu.ro/produse/profile-cu-harpon/luminosi/lamplix-x930",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "page": "https://alumineu.ro/produse/profile-cu-harpon/umbra",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "page": "https://alumineu.ro/produse/profile-cu-harpon/umbra-led",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 9.666666666666666
+    },
+    {
+      "page": "https://alumineu.ro/produse/profile-cu-harpon/umbra-led/floatia-x301",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 6.333333333333333
+    },
+    {
+      "page": "https://alumineu.ro/produse/profile-cu-harpon/umbra-led/floatia-x303",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "page": "https://alumineu.ro/produse/profile-cu-harpon/umbra/invisia-x208",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "page": "https://alumineu.ro/produse/ventilatie",
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 9.19047619047619
+    },
+    {
+      "page": "https://alumineu.ro/produse/ventilatie/difuzoare-cu-fante/aerooom",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "page": "https://alumineu.ro/tproduct/135491542972-difuzoare-diffusy-y114",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8
+    }
+  ],
+  "countries": [
+    {
+      "country": "rou",
+      "clicks": 23,
+      "impressions": 284,
+      "ctr": 0.08098591549295775,
+      "position": 12.859154929577464
+    },
+    {
+      "country": "arg",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "country": "aut",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "country": "bel",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 7.75
+    },
+    {
+      "country": "blr",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "country": "bra",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "country": "cze",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "country": "deu",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 5.2
+    },
+    {
+      "country": "dnk",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "country": "esp",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "country": "fra",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "country": "gbr",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 7.2
+    },
+    {
+      "country": "irl",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "country": "ita",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "country": "mar",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "country": "mda",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 11.333333333333334
+    },
+    {
+      "country": "nld",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 4.666666666666666
+    },
+    {
+      "country": "pol",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "country": "prt",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "country": "rus",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7.5
+    },
+    {
+      "country": "sgp",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "country": "srb",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "country": "usa",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 10.214285714285714
+    }
+  ],
+  "devices": [
+    {
+      "device": "MOBILE",
+      "clicks": 19,
+      "impressions": 221,
+      "ctr": 0.08597285067873303,
+      "position": 6.502262443438914
+    },
+    {
+      "device": "DESKTOP",
+      "clicks": 4,
+      "impressions": 140,
+      "ctr": 0.02857142857142857,
+      "position": 19.84285714285714
+    },
+    {
+      "device": "TABLET",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5
+    }
+  ],
+  "meta": {
+    "queryRowCount": 15,
+    "pageRowCount": 41,
+    "queryClicksSum": 6
+  }
+}
