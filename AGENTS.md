@@ -1,10 +1,10 @@
 # AGENTS.md — alumineu-channel-google
 
-**Агент:** GGL · Merchant  
+**Агент:** GGL · Merchant
 **Префикс (GitHub):** `[GGL]`
 
-> **Старт:** прочитай этот файл. **GitHub Project не используется** как очередь.  
-> Hub: [AGENT_BOUNDARY_CANON](https://github.com/krvzdrv/alumineu-os/blob/main/docs/AGENT_BOUNDARY_CANON.md) · [HANDOFF_PROMPTS](https://github.com/krvzdrv/alumineu-os/blob/main/docs/HANDOFF_PROMPTS.md) · [AGENTS_MD_CANON](https://github.com/krvzdrv/alumineu-os/blob/main/docs/AGENTS_MD_CANON.md)
+> **Старт:** прочитай этот файл целиком. Управление — chat-first.
+> Hub: [AGENT_BOUNDARY_CANON](https://github.com/krvzdrv/alumineu-os/blob/main/docs/AGENT_BOUNDARY_CANON.md) · [HANDOFF_PROMPTS](https://github.com/krvzdrv/alumineu-os/blob/main/docs/HANDOFF_PROMPTS.md) · [AGENTS_MD_CANON](https://github.com/krvzdrv/alumineu-os/blob/main/docs/AGENTS_MD_CANON.md) · [REPO_DATA_CONTRACT_CANON](https://github.com/krvzdrv/alumineu-os/blob/main/docs/REPO_DATA_CONTRACT_CANON.md)
 
 ---
 
@@ -12,20 +12,20 @@
 
 - Google channel: Merchant Center feeds, Ads, GSC, GBP, Manufacturer Center
 - Cloudflare robots for alumineu domains
+
 ---
 
-## Откуда беру данные (upstream)
+## Data & API
 
-| Источник | Repo / система | Что именно |
-|----------|----------------|------------|
-| CAT · Forge | alumineu-product-catalog | product feed source |
-| Tilda | exports | legacy CSV paths |
----
+Полный контракт подключений: **`docs/REPO_DATA_CONTRACT.md`** (SSOT; обновлять в той же сессии при изменении подключений).
 
-## Кому отдаю (downstream)
+- **Inbound:** CAT (product feed source), Tilda legacy CSV paths
+- **Outbound:** Google Merchant/Ads/GSC, handoff specs → WEB, GOV
+- **Internal SSOT:** `feeds/`, `cloudflare/alumineu-robots/`, runbooks in `docs/`
+- **Граница данных:** GGL хранит feeds/robots tooling, не product master
 
-- Google Merchant / Ads / GSC
-- Handoff specs → WEB, GOV
+Подключение и обновление токенов — в `docs/REPO_DATA_CONTRACT.md` → § Connection cheat-sheet.
+
 ---
 
 ## Умею делать (capabilities)
@@ -33,6 +33,7 @@
 - npm scripts: `merchant:sheet:apply`, `merchant:api:verify`, `ads:*`, `gsc:fetch`, `gbp:insights`
 - `feeds/`, `cloudflare/alumineu-robots/`
 - Runbooks in `docs/`
+
 ---
 
 ## Доступы (имена env / API — без значений)
@@ -43,7 +44,7 @@
 | Service Account | ✓ Merchant API | ✓ | `google-merchant-sa-key.json` (local only) |
 | Cloudflare | ✓ | ✓ workers | CF dashboard |
 
-Секреты: GitHub Secrets / локальный `.env` (не коммитить). OAuth Google часто через `alumineu-finance-ops` (`GOOGLE_AUTH_ROOT`).
+Секреты: только GitHub Secrets / локальный `.env` (не коммитить). Способ подключения и обновления токенов — в `docs/REPO_DATA_CONTRACT.md`.
 
 ---
 
@@ -52,6 +53,7 @@
 - `README.md`, `docs/GOOGLE_CHANNEL_INVENTORY.md`
 - `docs/MERCHANT_MULTI_COUNTRY_RUNBOOK.md`
 - `docs/GOOGLE_GBP_ACCESS.md`, `.env.example`
+
 ---
 
 ## Состояние repo
@@ -60,18 +62,20 @@
 
 ---
 
-## Никогда не делаю в этом repo
+## Граница (не делаю в этом repo)
 
 - Meta pixel (MTA)
 - Product master edits (CAT)
 - Next.js site code (WEB)
+
 ---
 
 ## Нужен другой агент?
 
-Сформируй **Handoff** для владельца (не правь чужой repo):  
+Сформируй **Handoff** для Owner (не правь чужой repo):
 → `alumineu-os/docs/HANDOFF_PROMPTS.md` — секция «GGL → CAT»
 
+---
 
 ## Бэклог (только этот repo)
 
@@ -79,7 +83,7 @@
 |------|------------|
 | `docs/BACKLOG.md` | Агент ведёт **свои** задачи; обновлять после сессии |
 
-**Не открывать** GitHub Project #2. Канон: hub `docs/REPO_BACKLOG_CANON.md`.
+Канон бэклога: `alumineu-os/docs/REPO_BACKLOG_CANON.md`.
 
 ---
 
@@ -87,7 +91,7 @@
 
 - [ ] Бизнес-результат, не рефакторинг структуры
 - [ ] `git commit` + `git push`
-- [ ] Обнови § Changelog и § Умею делать / Доступы / Состояние при изменениях
+- [ ] Обнови § Changelog, § Data & API / `docs/REPO_DATA_CONTRACT.md`, § Состояние при изменениях
 
 ---
 
@@ -95,7 +99,7 @@
 
 - [ ] Push веток с работой
 - [ ] Удалить ephemeral notes старше 30 дней
-- [ ] Актуализировать upstream/downstream и § Состояние repo
+- [ ] Актуализировать `docs/REPO_DATA_CONTRACT.md` и § Состояние repo
 
 ---
 
@@ -103,5 +107,6 @@
 
 | Дата | Изменение |
 |------|-----------|
+| 2026-07-08 | AGENTS.md + docs/REPO_DATA_CONTRACT.md (chat-first, role-based, no people/Project) |
 | 2026-05-29 | Initial AGENTS.md (docs-only operating system) |
 | 2026-05-19 | Полный профиль: capabilities, доступы, docs index, состояние repo |
