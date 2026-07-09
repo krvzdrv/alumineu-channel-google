@@ -19,3 +19,8 @@ node_modules/
 
 # Локальный экспорт Meta для npm run merchant:* (не коммитить при желании держать только у себя)
 feeds/catalog-meta-pl.csv
+
+# Ephemeral one-off work (EPHEMERAL_WORK_CANON)
+scratch/*
+!scratch/README.md
+.tmp/

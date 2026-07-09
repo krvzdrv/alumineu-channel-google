@@ -109,7 +109,7 @@
 ## Гигиена (раз в 2–4 недели)
 
 - [ ] Push веток с работой
-- [ ] Удалить ephemeral notes старше 30 дней
+- [ ] `./scripts/adhoc_cleanup.sh` + очистить `scratch/`
 - [ ] Актуализировать `docs/REPO_DATA_CONTRACT.md` и § Состояние repo
 
 ---
@@ -118,6 +118,7 @@
 
 | Дата | Изменение |
 |------|-----------|
+| 2026-07-09 | Ephemeral: scratch/ + docs/adhoc/ + EPHEMERAL_WORK_CANON |
 | 2026-07-09 | Язык: hub COMMUNICATION_LANGUAGE_CANON + DOC_INDEX |
 | 2026-07-08 | AGENTS.md + docs/REPO_DATA_CONTRACT.md (chat-first, role-based, no people/Project) |
 | 2026-05-29 | Initial AGENTS.md (docs-only operating system) |

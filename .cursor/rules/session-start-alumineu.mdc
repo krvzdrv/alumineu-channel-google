@@ -25,6 +25,7 @@ alwaysApply: true
 - **Commit + push** в конце сессии
 - Разовый вопрос → ответ в чате, без issues
 - Язык чата и docs — по `COMMUNICATION_LANGUAGE_CANON.md` (русский, без сленга)
+- Разовые срезы/CSV/скрипты: по умолчанию **только чат**; локально — `scratch/` (не в git); в git — только `docs/adhoc/` если Owner сказал сохранить (`EPHEMERAL_WORK_CANON`)
 
 ## Data & API (жёстко)
 
@@ -34,4 +35,4 @@ alwaysApply: true
 
 ## Hub canon
 
-`https://github.com/krvzdrv/alumineu-os/blob/main/docs/AGENT_OPERATING_SYSTEM.md` · `https://github.com/krvzdrv/alumineu-os/blob/main/docs/COMMUNICATION_LANGUAGE_CANON.md` · `https://github.com/krvzdrv/alumineu-os/blob/main/docs/DOC_HYGIENE_CANON.md` · `https://github.com/krvzdrv/alumineu-os/blob/main/docs/REPO_BACKLOG_CANON.md` · `https://github.com/krvzdrv/alumineu-os/blob/main/docs/REPO_DATA_CONTRACT_CANON.md`
+`https://github.com/krvzdrv/alumineu-os/blob/main/docs/AGENT_OPERATING_SYSTEM.md` · `https://github.com/krvzdrv/alumineu-os/blob/main/docs/COMMUNICATION_LANGUAGE_CANON.md` · `https://github.com/krvzdrv/alumineu-os/blob/main/docs/DOC_HYGIENE_CANON.md` · `https://github.com/krvzdrv/alumineu-os/blob/main/docs/REPO_BACKLOG_CANON.md` · `https://github.com/krvzdrv/alumineu-os/blob/main/docs/REPO_DATA_CONTRACT_CANON.md` · `https://github.com/krvzdrv/alumineu-os/blob/main/docs/EPHEMERAL_WORK_CANON.md`
