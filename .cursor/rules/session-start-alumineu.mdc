@@ -10,18 +10,28 @@ alwaysApply: true
 ## Первым делом прочитай
 
 1. **`AGENTS.md`** в корне этого repo
-2. **`docs/BACKLOG.md`** — свой бэклог (если есть задачи в работе)
-3. При cross-repo: `alumineu-os/docs/HANDOFF_PROMPTS.md`
+2. **`alumineu-os/docs/COMMUNICATION_LANGUAGE_CANON.md`** — как писать в чате и docs (L1)
+3. **`docs/BACKLOG.md`** — свой бэклог (если есть задачи в работе)
+4. **`docs/REPO_DATA_CONTRACT.md`** — подключения этого repo
+5. **`docs/DOC_INDEX.md`** — карта живых документов
+
+6. При cross-repo: `alumineu-os/docs/HANDOFF_PROMPTS.md`
 
 ## Работа
 
-- Задачу даёт **владелец в чате** — **не** GitHub Project (#2 закрыт)
+- Задачу даёт **Owner в чате** — chat-first, без внешних очередей
 - Свой бэклог: **`docs/BACKLOG.md`** — обновляй Now/Done после сессии
-- Только **своя зона**; чужое → handoff-промпт для владельца
+- Только **своя зона**; чужое → handoff-промпт для Owner
 - **Commit + push** в конце сессии
-- Разовый вопрос → ответ в чате, без issues/Project
+- Разовый вопрос → ответ в чате, без issues
+- Язык чата и docs — по `COMMUNICATION_LANGUAGE_CANON.md` (русский, без сленга)
+
+## Data & API (жёстко)
+
+- Подключил / изменил API, токен, view, потребителя → в **той же сессии** обнови
+  `docs/REPO_DATA_CONTRACT.md` + § Data & API в `AGENTS.md`
+- Без этого задача **не Done** (канон: `alumineu-os/docs/REPO_DATA_CONTRACT_CANON.md` §0)
 
 ## Hub canon
 
-`alumineu-os/docs/AGENT_OPERATING_SYSTEM.md` · `alumineu-os/docs/REPO_BACKLOG_CANON.md`
-
+`https://github.com/krvzdrv/alumineu-os/blob/main/docs/AGENT_OPERATING_SYSTEM.md` · `https://github.com/krvzdrv/alumineu-os/blob/main/docs/COMMUNICATION_LANGUAGE_CANON.md` · `https://github.com/krvzdrv/alumineu-os/blob/main/docs/DOC_HYGIENE_CANON.md` · `https://github.com/krvzdrv/alumineu-os/blob/main/docs/REPO_BACKLOG_CANON.md` · `https://github.com/krvzdrv/alumineu-os/blob/main/docs/REPO_DATA_CONTRACT_CANON.md`

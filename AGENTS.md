@@ -4,7 +4,7 @@
 **Префикс (GitHub):** `[GGL]`
 
 > **Старт:** прочитай этот файл целиком. Управление — chat-first.
-> Hub: [AGENT_BOUNDARY_CANON](https://github.com/krvzdrv/alumineu-os/blob/main/docs/AGENT_BOUNDARY_CANON.md) · [HANDOFF_PROMPTS](https://github.com/krvzdrv/alumineu-os/blob/main/docs/HANDOFF_PROMPTS.md) · [AGENTS_MD_CANON](https://github.com/krvzdrv/alumineu-os/blob/main/docs/AGENTS_MD_CANON.md) · [REPO_DATA_CONTRACT_CANON](https://github.com/krvzdrv/alumineu-os/blob/main/docs/REPO_DATA_CONTRACT_CANON.md)
+> Hub: [COMMUNICATION_LANGUAGE_CANON](https://github.com/krvzdrv/alumineu-os/blob/main/docs/COMMUNICATION_LANGUAGE_CANON.md) · [AGENT_BOUNDARY_CANON](https://github.com/krvzdrv/alumineu-os/blob/main/docs/AGENT_BOUNDARY_CANON.md) · [HANDOFF_PROMPTS](https://github.com/krvzdrv/alumineu-os/blob/main/docs/HANDOFF_PROMPTS.md) · [AGENTS_MD_CANON](https://github.com/krvzdrv/alumineu-os/blob/main/docs/AGENTS_MD_CANON.md) · [REPO_DATA_CONTRACT_CANON](https://github.com/krvzdrv/alumineu-os/blob/main/docs/REPO_DATA_CONTRACT_CANON.md)
 
 ---
 
@@ -12,6 +12,15 @@
 
 - Google channel: Merchant Center feeds, Ads, GSC, GBP, Manufacturer Center
 - Cloudflare robots for alumineu domains
+
+---
+
+## Язык и коммуникация
+
+Канон (все агенты): [`COMMUNICATION_LANGUAGE_CANON`](https://github.com/krvzdrv/alumineu-os/blob/main/docs/COMMUNICATION_LANGUAGE_CANON.md).
+
+- Чат, docs, бэклог, handoff — по канону (русский, без сленга и лишних англицизмов).
+- Код, SQL, API — как в системе.
 
 ---
 
@@ -49,6 +58,8 @@
 ---
 
 ## Ключевая документация
+
+- **`docs/DOC_INDEX.md`** — карта живых SSOT vs archive
 
 - `README.md`, `docs/GOOGLE_CHANNEL_INVENTORY.md`
 - `docs/MERCHANT_MULTI_COUNTRY_RUNBOOK.md`
@@ -107,6 +118,7 @@
 
 | Дата | Изменение |
 |------|-----------|
+| 2026-07-09 | Язык: hub COMMUNICATION_LANGUAGE_CANON + DOC_INDEX |
 | 2026-07-08 | AGENTS.md + docs/REPO_DATA_CONTRACT.md (chat-first, role-based, no people/Project) |
 | 2026-05-29 | Initial AGENTS.md (docs-only operating system) |
 | 2026-05-19 | Полный профиль: capabilities, доступы, docs index, состояние repo |
