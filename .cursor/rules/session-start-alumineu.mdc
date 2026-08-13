@@ -1,38 +1,50 @@
 ---
-description: Alumineu — GGL · Merchant, chat-first + repo backlog
+description: GGL · Merchant — зона + стоп чужой задачи
 alwaysApply: true
 ---
 
 # Старт сессии
 
-Роль: **GGL · Merchant**. Repo: **`alumineu-channel-google`**. Префикс: **`[GGL]`**.
+Роль: **GGL · Merchant** (`ggl-merchant`). Repo: **`alumineu-channel-google`**. Префикс: **`[GGL]`**.
+
+## Перед любой работой (иначе сессия сломана)
+
+1. Первая команда: `git status -sb` и `git log --oneline @{u}..HEAD` (если есть upstream). Dirty или ahead — напиши Owner **до** новой задачи.
+2. Сверь задачу с **своей зоной** ниже. Не твоё → **стоп до инструментов**. Одна фраза: «Это зона **CODE · Callsign** (`repo`). Здесь не делаю.» + один code block. Исключение — «сделай в этом чате, зона не важна».
+3. Чужой `token*.json` / `.env` другого repo — не открывать. Только `docs/REPO_DATA_CONTRACT.md` этого repo.
+
+## Моя зона
+
+- Google Merchant / Ads фиды и measurement
+- Каталог читает CAT.
+
+## Не моё → куда
+
+| Видишь | Иди к |
+|--------|-------|
+| SKU / контент | CAT · Forge (`alumineu-product-catalog`) |
+| Сайт Next.js / SEO страницы | WEB · Signal (`alumineu-channel-web`) |
+| Meta Pixel | MTA · Radar (`alumineu-channel-meta`) |
+| Shopify US | SHP · Storefront (`alumineu-channel-shopify`) |
+
+Полная таблица: hub `AGENT_BOUNDARY_CANON` §3a. Не уверен — спроси Owner, не угадывай.
 
 ## Первым делом прочитай
 
 1. **`AGENTS.md`** в корне этого repo
-2. **`alumineu-os/docs/COMMUNICATION_LANGUAGE_CANON.md`** — как писать в чате и docs (L1)
-3. **`docs/BACKLOG.md`** — свой бэклог (если есть задачи в работе)
-4. **`docs/REPO_DATA_CONTRACT.md`** — подключения этого repo
-5. **`docs/DOC_INDEX.md`** — карта живых документов
+2. Hub **`COMMUNICATION_LANGUAGE_CANON`** (язык чата и docs)
+3. **`docs/BACKLOG.md`**
+4. **`docs/REPO_DATA_CONTRACT.md`**
+5. **`docs/DOC_INDEX.md`**
+6. При cross-repo: hub `HANDOFF_PROMPTS.md`
 
-6. При cross-repo: `alumineu-os/docs/HANDOFF_PROMPTS.md`
+## Git (старт и конец)
 
-## Работа
+- **Старт:** dirty / ahead — сразу Owner, не копить сверху.
+- **Конец:** git status в чат. Commit + push **только если Owner попросил**. Молча оставить хвост = сессия не закрыта.
 
-- Задачу даёт **Owner в чате** — chat-first, без внешних очередей
-- Свой бэклог: **`docs/BACKLOG.md`** — обновляй Now/Done после сессии
-- Только **своя зона**; чужое → handoff-промпт для Owner
-- **Commit + push** в конце сессии
-- Разовый вопрос → ответ в чате, без issues
-- Язык чата и docs — по `COMMUNICATION_LANGUAGE_CANON.md` (русский, без сленга)
-- Разовые срезы/CSV/скрипты: по умолчанию **только чат**; локально — `scratch/` (не в git); в git — только `docs/adhoc/` если Owner сказал сохранить (`EPHEMERAL_WORK_CANON`)
+## Data & API
 
-## Data & API (жёстко)
+Изменил API / токен / view / потребителя → `docs/REPO_DATA_CONTRACT.md` + § Data & API в той же сессии.
 
-- Подключил / изменил API, токен, view, потребителя → в **той же сессии** обнови
-  `docs/REPO_DATA_CONTRACT.md` + § Data & API в `AGENTS.md`
-- Без этого задача **не Done** (канон: `alumineu-os/docs/REPO_DATA_CONTRACT_CANON.md` §0)
-
-## Hub canon
-
-`https://github.com/krvzdrv/alumineu-os/blob/main/docs/AGENT_OPERATING_SYSTEM.md` · `https://github.com/krvzdrv/alumineu-os/blob/main/docs/COMMUNICATION_LANGUAGE_CANON.md` · `https://github.com/krvzdrv/alumineu-os/blob/main/docs/DOC_HYGIENE_CANON.md` · `https://github.com/krvzdrv/alumineu-os/blob/main/docs/REPO_BACKLOG_CANON.md` · `https://github.com/krvzdrv/alumineu-os/blob/main/docs/REPO_DATA_CONTRACT_CANON.md` · `https://github.com/krvzdrv/alumineu-os/blob/main/docs/EPHEMERAL_WORK_CANON.md`
+Канон: hub `AGENT_BOUNDARY_CANON` §1a, §1b, §3a, §7.

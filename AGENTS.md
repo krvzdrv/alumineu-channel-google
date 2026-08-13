@@ -81,10 +81,31 @@
 
 ---
 
+<!-- zone-route:v1 -->
+
+### Если задача не моя
+
+Стоп **до инструментов**. Одна фраза Owner + один code block (hub `HANDOFF_PROMPTS`). Исключение — «сделай в этом чате, зона не важна».
+Полная таблица: hub [`AGENT_BOUNDARY_CANON` §3a](https://github.com/krvzdrv/alumineu-os/blob/main/docs/AGENT_BOUNDARY_CANON.md).
+
+| Видишь | Иди к |
+|--------|-------|
+| SKU / контент | CAT · Forge (`alumineu-product-catalog`) |
+| Сайт Next.js / SEO страницы | WEB · Signal (`alumineu-channel-web`) |
+| Meta Pixel | MTA · Radar (`alumineu-channel-meta`) |
+| Shopify US | SHP · Storefront (`alumineu-channel-shopify`) |
+
 ## Нужен другой агент?
 
-Сформируй **Handoff** для Owner (не правь чужой repo):
-→ `alumineu-os/docs/HANDOFF_PROMPTS.md` — секция «GGL → CAT»
+Мы — **команда** (chat-first). Чужой repo **не править**.
+
+Если нужна помощь другого агента:
+1. Напиши Owner **готовый промпт** в **одном fenced code block** в этом чате (кнопка Copy) — в т.ч. удобно для терминальных агентов, без открытия файлов.
+2. Owner вставляет блок в **новый чат** target repo.
+3. Шаблоны: hub [`HANDOFF_PROMPTS`](https://github.com/krvzdrv/alumineu-os/blob/main/docs/HANDOFF_PROMPTS.md) — секция «GGL → CAT».
+
+**Запрещено** для передачи задачи: создавать `docs/*HANDOFF*`, `docs/handoffs/*` и прочие «письма агенту» в git. Это мусор. Контекст — только в промпте в чате. Живые SSOT (контракты, API) — отдельно, не как handoff.
+
 
 ---
 
@@ -101,7 +122,7 @@
 ## Конец сессии
 
 - [ ] Бизнес-результат, не рефакторинг структуры
-- [ ] `git commit` + `git push`
+- [ ] В чат Owner: `git status` (чисто / dirty / ahead). Commit + push **если Owner попросил**; иначе спросить. Молчаливый dirty = не Done
 - [ ] Обнови § Changelog, § Data & API / `docs/REPO_DATA_CONTRACT.md`, § Состояние при изменениях
 
 ---
@@ -118,6 +139,7 @@
 
 | Дата | Изменение |
 |------|-----------|
+| 2026-08-13 | Граница на входе: session-start зона + «не моё → кто»; git status Owner (GOV-018) |
 | 2026-07-09 | Ephemeral: scratch/ + docs/adhoc/ + EPHEMERAL_WORK_CANON |
 | 2026-07-09 | Язык: hub COMMUNICATION_LANGUAGE_CANON + DOC_INDEX |
 | 2026-07-08 | AGENTS.md + docs/REPO_DATA_CONTRACT.md (chat-first, role-based, no people/Project) |
