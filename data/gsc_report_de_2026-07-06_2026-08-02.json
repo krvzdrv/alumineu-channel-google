@@ -1,0 +1,685 @@
+{
+  "fetchedAt": "2026-08-05T14:55:58.939Z",
+  "siteUrl": "sc-domain:alumineu.de",
+  "permission": "siteOwner",
+  "startDate": "2026-07-06",
+  "endDate": "2026-08-02",
+  "days": 28,
+  "totals": {
+    "clicks": 10,
+    "impressions": 409,
+    "ctr": 0.02444987775061125,
+    "position": 22.073349633251834
+  },
+  "queries": [
+    {
+      "query": "alumineu",
+      "clicks": 1,
+      "impressions": 70,
+      "ctr": 0.014285714285714285,
+      "position": 4.885714285714286
+    },
+    {
+      "query": "accesorii aluminiu",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 72
+    },
+    {
+      "query": "accesorii profil",
+      "clicks": 0,
+      "impressions": 38,
+      "ctr": 0,
+      "position": 77.44736842105263
+    },
+    {
+      "query": "accesorii tamplarie aluminiu",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 66
+    },
+    {
+      "query": "aluminiu",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 58
+    },
+    {
+      "query": "aluminium für lichtsysteme",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 83
+    },
+    {
+      "query": "aluminium-einrichtungspaneele",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 99
+    },
+    {
+      "query": "aluminiumprofile für vorhänge",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 11.833333333333334
+    },
+    {
+      "query": "aluminiumschienen",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 47
+    },
+    {
+      "query": "aluschiene gardine",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 25
+    },
+    {
+      "query": "curtina",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 11.6
+    },
+    {
+      "query": "diffusy",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "query": "floatia",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "query": "gardinen u schiene",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 41
+    },
+    {
+      "query": "lichtlinie",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "query": "lightra",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 1.5
+    },
+    {
+      "query": "oz za euro žlijeb profile",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 35
+    },
+    {
+      "query": "profildirekt",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 71.125
+    },
+    {
+      "query": "profilgehänge",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 80
+    },
+    {
+      "query": "schattenfugen beleuchtung",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 47
+    },
+    {
+      "query": "spanndecke lichtlinie",
+      "clicks": 0,
+      "impressions": 32,
+      "ctr": 0,
+      "position": 39.40625
+    },
+    {
+      "query": "strangpressprofile für leuchten",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 51.333333333333336
+    },
+    {
+      "query": "tissure",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "trend in form lichtlinie",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 45
+    },
+    {
+      "query": "u profil befestigung",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 69
+    },
+    {
+      "query": "u schiene gardine",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 41
+    },
+    {
+      "query": "wandbespannung profil",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "query": "x403",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "query": "x411",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "query": "zasuni za euro žlijeb profile",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 37
+    }
+  ],
+  "pages": [
+    {
+      "page": "https://alumineu.de/",
+      "clicks": 4,
+      "impressions": 94,
+      "ctr": 0.0425531914893617,
+      "position": 11.170212765957446
+    },
+    {
+      "page": "https://alumineu.de/produkte/harpunenprofile",
+      "clicks": 3,
+      "impressions": 22,
+      "ctr": 0.13636363636363635,
+      "position": 10.954545454545455
+    },
+    {
+      "page": "https://alumineu.de/produkte/harpunenprofile/vorhangschiene",
+      "clicks": 2,
+      "impressions": 139,
+      "ctr": 0.014388489208633094,
+      "position": 11.661870503597122
+    },
+    {
+      "page": "https://alumineu.de/produkte/textilprofile/vorhangschiene/tissure-405",
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 1,
+      "position": 1
+    },
+    {
+      "page": "https://alumineu.de/katalog",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 4.6
+    },
+    {
+      "page": "https://alumineu.de/produkte/beleuchtung",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 41.666666666666664
+    },
+    {
+      "page": "https://alumineu.de/produkte/gestaltung",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 21.166666666666668
+    },
+    {
+      "page": "https://alumineu.de/produkte/harpunenprofile/konturlicht",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 49.5
+    },
+    {
+      "page": "https://alumineu.de/produkte/harpunenprofile/led-schattenfugen",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 47
+    },
+    {
+      "page": "https://alumineu.de/produkte/harpunenprofile/led-schattenfugen/floatia-x303",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "page": "https://alumineu.de/produkte/harpunenprofile/lichtlinie",
+      "clicks": 0,
+      "impressions": 46,
+      "ctr": 0,
+      "position": 38.76086956521739
+    },
+    {
+      "page": "https://alumineu.de/produkte/harpunenprofile/lichtlinie/lightra-x050",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 2.166666666666667
+    },
+    {
+      "page": "https://alumineu.de/produkte/harpunenprofile/schattenfugen",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 7.666666666666667
+    },
+    {
+      "page": "https://alumineu.de/produkte/harpunenprofile/schattenfugen/invisia-x204",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 2.25
+    },
+    {
+      "page": "https://alumineu.de/produkte/harpunenprofile/vorhangschiene/curtina-x403",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 11.272727272727273
+    },
+    {
+      "page": "https://alumineu.de/produkte/harpunenprofile/vorhangschiene/curtina-x408",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "page": "https://alumineu.de/produkte/harpunenprofile/vorhangschiene/curtina-x411",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "page": "https://alumineu.de/produkte/harpunenprofile/wandabschluss",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "page": "https://alumineu.de/produkte/harpunenprofile/wandabschluss/classix-x140",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 3.5
+    },
+    {
+      "page": "https://alumineu.de/produkte/harpunenprofile/zweistufige/stratos-x701",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "page": "https://alumineu.de/produkte/harpunenprofile/zweistufige/stratos-x702",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 3.6666666666666665
+    },
+    {
+      "page": "https://alumineu.de/produkte/luftung",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 13.625
+    },
+    {
+      "page": "https://alumineu.de/produkte/textilprofile",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 4.625
+    },
+    {
+      "page": "https://alumineu.de/produkte/textilprofile/schienen",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "page": "https://alumineu.de/produkte/textilprofile/vorhangschiene/tissure-401",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 13
+    },
+    {
+      "page": "https://alumineu.de/produkte/textilprofile/zweistufige",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "page": "https://alumineu.de/produkte/zubehor",
+      "clicks": 0,
+      "impressions": 57,
+      "ctr": 0,
+      "position": 59.35087719298246
+    },
+    {
+      "page": "https://alumineu.de/produkte/zubehor/abdeckungen/diffusy-y130",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "page": "https://alumineu.de/produkte/zubehor/sonstigenprofile",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 67.5
+    },
+    {
+      "page": "https://alumineu.de/produkte/zubehor/ventilationsreduzierstuck/aerooom-y911",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "page": "https://alumineu.de/uber-uns",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 13.272727272727273
+    }
+  ],
+  "countries": [
+    {
+      "country": "deu",
+      "clicks": 6,
+      "impressions": 224,
+      "ctr": 0.026785714285714284,
+      "position": 18.705357142857142
+    },
+    {
+      "country": "pol",
+      "clicks": 2,
+      "impressions": 2,
+      "ctr": 1,
+      "position": 1
+    },
+    {
+      "country": "che",
+      "clicks": 1,
+      "impressions": 7,
+      "ctr": 0.14285714285714285,
+      "position": 5.428571428571429
+    },
+    {
+      "country": "usa",
+      "clicks": 1,
+      "impressions": 26,
+      "ctr": 0.038461538461538464,
+      "position": 6.884615384615385
+    },
+    {
+      "country": "are",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 2.8
+    },
+    {
+      "country": "aut",
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 21.526315789473685
+    },
+    {
+      "country": "bgd",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "country": "bgr",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "country": "bih",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6.5
+    },
+    {
+      "country": "blr",
+      "clicks": 0,
+      "impressions": 33,
+      "ctr": 0,
+      "position": 4.9393939393939394
+    },
+    {
+      "country": "bra",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 38
+    },
+    {
+      "country": "dnk",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "country": "ecu",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "country": "est",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5.5
+    },
+    {
+      "country": "fra",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 99
+    },
+    {
+      "country": "gbr",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 6.125
+    },
+    {
+      "country": "hrv",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 36
+    },
+    {
+      "country": "idn",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 2.2
+    },
+    {
+      "country": "ind",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 55.666666666666664
+    },
+    {
+      "country": "isr",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "country": "ita",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "country": "ltu",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 5.5
+    },
+    {
+      "country": "lux",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "country": "mar",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 32
+    },
+    {
+      "country": "nld",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "country": "phl",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 34.5
+    },
+    {
+      "country": "rou",
+      "clicks": 0,
+      "impressions": 41,
+      "ctr": 0,
+      "position": 76.8048780487805
+    },
+    {
+      "country": "rus",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 25
+    },
+    {
+      "country": "sgp",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5.5
+    },
+    {
+      "country": "swe",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 14
+    }
+  ],
+  "devices": [
+    {
+      "device": "DESKTOP",
+      "clicks": 10,
+      "impressions": 256,
+      "ctr": 0.0390625,
+      "position": 24.125
+    },
+    {
+      "device": "MOBILE",
+      "clicks": 0,
+      "impressions": 139,
+      "ctr": 0,
+      "position": 16.805755395683455
+    },
+    {
+      "device": "TABLET",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 36.857142857142854
+    }
+  ],
+  "meta": {
+    "queryRowCount": 30,
+    "pageRowCount": 31,
+    "queryClicksSum": 1
+  }
+}

@@ -1,0 +1,1644 @@
+{
+  "fetchedAt": "2026-08-05T14:55:56.889Z",
+  "siteUrl": "sc-domain:alumineu.pl",
+  "permission": "siteOwner",
+  "startDate": "2026-07-06",
+  "endDate": "2026-08-02",
+  "days": 28,
+  "totals": {
+    "clicks": 133,
+    "impressions": 1488,
+    "ctr": 0.08938172043010753,
+    "position": 13.358198924731182
+  },
+  "queries": [
+    {
+      "query": "alumineu",
+      "clicks": 69,
+      "impressions": 110,
+      "ctr": 0.6272727272727273,
+      "position": 1.1727272727272728
+    },
+    {
+      "query": "alumineo",
+      "clicks": 23,
+      "impressions": 26,
+      "ctr": 0.8846153846153846,
+      "position": 1.5769230769230769
+    },
+    {
+      "query": "profile do sufitów napinanych",
+      "clicks": 2,
+      "impressions": 3,
+      "ctr": 0.6666666666666666,
+      "position": 15
+    },
+    {
+      "query": "profile do sufitu napinanego",
+      "clicks": 1,
+      "impressions": 10,
+      "ctr": 0.1,
+      "position": 15.7
+    },
+    {
+      "query": "przepierzenia",
+      "clicks": 1,
+      "impressions": 57,
+      "ctr": 0.017543859649122806,
+      "position": 16.421052631578945
+    },
+    {
+      "query": "up club",
+      "clicks": 1,
+      "impressions": 9,
+      "ctr": 0.1111111111111111,
+      "position": 3.111111111111111
+    },
+    {
+      "query": "akcesoria do profili aluminiowych",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 32
+    },
+    {
+      "query": "akcesoria do profili montażowych",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 62.25
+    },
+    {
+      "query": "akcesoria do sufitów napinanych",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 17.75
+    },
+    {
+      "query": "akcesoria do systemu profili montażowych",
+      "clicks": 0,
+      "impressions": 20,
+      "ctr": 0,
+      "position": 39.7
+    },
+    {
+      "query": "alium",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "aluminex",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "query": "aluminiumpaletten",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 32.33333333333333
+    },
+    {
+      "query": "alumino",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 39
+    },
+    {
+      "query": "aluminum",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "query": "bandura",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 73.33333333333333
+    },
+    {
+      "query": "curtina",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 2.25
+    },
+    {
+      "query": "diffusy",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 7.5
+    },
+    {
+      "query": "do sufitu",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 19.5
+    },
+    {
+      "query": "dosufitu",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 15
+    },
+    {
+      "query": "dyfuzor wentylacja",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 47
+    },
+    {
+      "query": "gotowe przepierzenia",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 9.333333333333334
+    },
+    {
+      "query": "hurtownie piastów",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 54.333333333333336
+    },
+    {
+      "query": "ile kosztuje?",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "query": "invisia",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6.5
+    },
+    {
+      "query": "jointek",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "query": "karnisz elektryczny sufitowy",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 59
+    },
+    {
+      "query": "karnisz napinany",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 56.5
+    },
+    {
+      "query": "kurs sufity napinane",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 13.75
+    },
+    {
+      "query": "lightra",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "lumnova",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "query": "materiał na przepierzenie",
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 6.761904761904762
+    },
+    {
+      "query": "napinane sufity kluby",
+      "clicks": 0,
+      "impressions": 26,
+      "ctr": 0,
+      "position": 16.384615384615387
+    },
+    {
+      "query": "nawiewniki nierdzewne",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 59.5
+    },
+    {
+      "query": "nawiewniki ze stali nierdzewnej",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 43.5
+    },
+    {
+      "query": "praseka",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "query": "producent sufitów napinanych gdynia",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 37
+    },
+    {
+      "query": "produkcja wyrobów metalowych brzeziny",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 21
+    },
+    {
+      "query": "profil aluminiowy elipsa",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 67
+    },
+    {
+      "query": "profil do kasetonów producent",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 85
+    },
+    {
+      "query": "profil do sufitu napinanego",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 31.666666666666668
+    },
+    {
+      "query": "profil dystansowy",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 31
+    },
+    {
+      "query": "profil eliptyczny",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 39
+    },
+    {
+      "query": "profil szczelinowy",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 29
+    },
+    {
+      "query": "profile aluminiowe do klimatyzacji",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 48
+    },
+    {
+      "query": "profile do cyrkulacji powietrza",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 50
+    },
+    {
+      "query": "profile do montażu wentylacji",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 44
+    },
+    {
+      "query": "profile dystansowe",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "query": "profile elastyczne wzmocnione",
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 43.526315789473685
+    },
+    {
+      "query": "profile fotoluminesencyjne",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 16.25
+    },
+    {
+      "query": "profile podwójne n-sd-mfh2,5 41x103",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 24.363636363636363
+    },
+    {
+      "query": "profile przyścienne do sufitów podwieszanych",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 48
+    },
+    {
+      "query": "profile sufitowe napinane",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 46
+    },
+    {
+      "query": "profile sufity napinane",
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 26.444444444444443
+    },
+    {
+      "query": "przepierzenia balkonowe",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 33
+    },
+    {
+      "query": "przepierzenie balkonowe",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 34.733333333333334
+    },
+    {
+      "query": "przepierzenie metalowe",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 20
+    },
+    {
+      "query": "przeszklona cienkoprofilowa ścianka z aluminium",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 22
+    },
+    {
+      "query": "stabile",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 20
+    },
+    {
+      "query": "sufit napinany kluby",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 50
+    },
+    {
+      "query": "sufit napinany profile",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 59
+    },
+    {
+      "query": "sufit napinany szkolenie",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 18
+    },
+    {
+      "query": "sufity napinane częstochowa",
+      "clicks": 0,
+      "impressions": 26,
+      "ctr": 0,
+      "position": 23.576923076923077
+    },
+    {
+      "query": "sufity napinane kluby",
+      "clicks": 0,
+      "impressions": 26,
+      "ctr": 0,
+      "position": 14.115384615384615
+    },
+    {
+      "query": "sufity napinane szkolenia",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 20.11111111111111
+    },
+    {
+      "query": "sufity napinane szkolenia cena",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 17
+    },
+    {
+      "query": "sufity napinane szkolenie",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 12.4
+    },
+    {
+      "query": "sufity tekstylne clipso",
+      "clicks": 0,
+      "impressions": 29,
+      "ctr": 0,
+      "position": 89.03448275862068
+    },
+    {
+      "query": "sufity wentylacyjne",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 41.285714285714285
+    },
+    {
+      "query": "sufity ze spienionego aluminium",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 43
+    },
+    {
+      "query": "systemy napinające",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 46.625
+    },
+    {
+      "query": "szczelina cienia",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 2.8
+    },
+    {
+      "query": "szczelina cieniowa",
+      "clicks": 0,
+      "impressions": 34,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "query": "szkolenia sufity napinane",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 21
+    },
+    {
+      "query": "szkolenie sufity napinane",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 14.7
+    },
+    {
+      "query": "szynoprzewody do sufitów napinanych",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 10.0625
+    },
+    {
+      "query": "szynoprzewód do sufitów napinanych",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 11.461538461538462
+    },
+    {
+      "query": "tissure",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 1.5
+    },
+    {
+      "query": "tkaniny na nawiewniki",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 32
+    },
+    {
+      "query": "upclub",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 2.333333333333333
+    },
+    {
+      "query": "volvita",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "query": "wentylacja w suficie",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 24
+    },
+    {
+      "query": "wsuwka sw601",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 20
+    },
+    {
+      "query": "x030",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "query": "x140",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6.5
+    },
+    {
+      "query": "x209",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 3.5
+    },
+    {
+      "query": "x405",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 38.5
+    },
+    {
+      "query": "x702",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 64
+    },
+    {
+      "query": "y203",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "query": "y401",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "query": "y604",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "y701",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "query": "y703",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 66.5
+    },
+    {
+      "query": "y801",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "query": "y904",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 7.4
+    },
+    {
+      "query": "y906",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 3.6666666666666665
+    },
+    {
+      "query": "z405",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 6.25
+    },
+    {
+      "query": "z701",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 64
+    }
+  ],
+  "pages": [
+    {
+      "page": "https://alumineu.pl/",
+      "clicks": 104,
+      "impressions": 332,
+      "ctr": 0.3132530120481928,
+      "position": 7.867469879518072
+    },
+    {
+      "page": "https://alumineu.pl/szkolenie",
+      "clicks": 5,
+      "impressions": 251,
+      "ctr": 0.0199203187250996,
+      "position": 11.47808764940239
+    },
+    {
+      "page": "https://alumineu.pl/katalog",
+      "clicks": 3,
+      "impressions": 47,
+      "ctr": 0.06382978723404255,
+      "position": 1.7872340425531914
+    },
+    {
+      "page": "https://alumineu.pl/produkty",
+      "clicks": 2,
+      "impressions": 45,
+      "ctr": 0.044444444444444446,
+      "position": 3.088888888888889
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/narzedzia/spatula-y804",
+      "clicks": 2,
+      "impressions": 13,
+      "ctr": 0.15384615384615385,
+      "position": 5.615384615384615
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/dystansowe",
+      "clicks": 2,
+      "impressions": 123,
+      "ctr": 0.016260162601626018,
+      "position": 7.869918699186992
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/karniszowe",
+      "clicks": 2,
+      "impressions": 75,
+      "ctr": 0.02666666666666667,
+      "position": 9.44
+    },
+    {
+      "page": "https://alumineu.pl/o-nas",
+      "clicks": 1,
+      "impressions": 69,
+      "ctr": 0.014492753623188406,
+      "position": 4.855072463768115
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/lopatki-montazowe/spatula-y804",
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 1,
+      "position": 4
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/narzedzia/spatula-y801",
+      "clicks": 1,
+      "impressions": 8,
+      "ctr": 0.125,
+      "position": 7.5
+    },
+    {
+      "page": "https://alumineu.pl/produkty/aranzacje/przepierzenia/decorra",
+      "clicks": 1,
+      "impressions": 152,
+      "ctr": 0.006578947368421052,
+      "position": 13.467105263157896
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/bezszczelinowe/classix-x130?editionuid=567404048592",
+      "clicks": 1,
+      "impressions": 3,
+      "ctr": 0.3333333333333333,
+      "position": 2
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/dwupoziomowe",
+      "clicks": 1,
+      "impressions": 6,
+      "ctr": 0.16666666666666666,
+      "position": 5.5
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/dwupoziomowe/stratos-x704",
+      "clicks": 1,
+      "impressions": 2,
+      "ctr": 0.5,
+      "position": 1.5
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/dystansowe/invisia-x207",
+      "clicks": 1,
+      "impressions": 18,
+      "ctr": 0.05555555555555555,
+      "position": 8.166666666666668
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/dystansowe/invisia-x208",
+      "clicks": 1,
+      "impressions": 7,
+      "ctr": 0.14285714285714285,
+      "position": 7.428571428571429
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/karniszowe/curtina-x407",
+      "clicks": 1,
+      "impressions": 12,
+      "ctr": 0.08333333333333333,
+      "position": 4.916666666666666
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/konturowe/contura-x601",
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 1,
+      "position": 1
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-klipsowe/dwupoziomowe/unitexa-z701",
+      "clicks": 1,
+      "impressions": 11,
+      "ctr": 0.09090909090909091,
+      "position": 12.181818181818182
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-klipsowe/karniszowe/tissure-z405",
+      "clicks": 1,
+      "impressions": 16,
+      "ctr": 0.0625,
+      "position": 6.875
+    },
+    {
+      "page": "https://alumineu.pl/produkty/wentylacja/nawiewniki-szczelinowe/aerroll",
+      "clicks": 1,
+      "impressions": 15,
+      "ctr": 0.06666666666666667,
+      "position": 13.133333333333333
+    },
+    {
+      "page": "https://alumineu.pl/produkty/wentylacja/nawiewniki-szczelinowe/aerroll-z?editionuid=949232860922",
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 1,
+      "position": 5
+    },
+    {
+      "page": "https://alumineu.pl/kontakt",
+      "clicks": 0,
+      "impressions": 37,
+      "ctr": 0,
+      "position": 3.6216216216216215
+    },
+    {
+      "page": "https://alumineu.pl/page70293939.html",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria",
+      "clicks": 0,
+      "impressions": 76,
+      "ctr": 0,
+      "position": 16.565789473684212
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/haczyki/hookara-y701",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/haczyki/hookend-y704",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/haczyki/slidene-y703",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 66.5
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/klosze",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 21.25
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/klosze/diffusy-y114",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 4.5
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/klosze/diffusy-y130",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5.5
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/klosze/diffusy-y150",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 7.833333333333333
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/laczniki/jointek-y604",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/laczniki/jointek-y605",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/oslony",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/oslony/inserta-y008",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 3.5
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/oslony/inserta-y015",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 3.5
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/oslony/inserta-y030",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 10.333333333333334
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/profile/bandura-x801",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 73.33333333333333
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/przyrzady/stuslon-y901",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/przyrzady/stuslon-y902",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/redukcje-wentylacyjne",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/redukcje-wentylacyjne/aerooom-y911",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 3.5
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/uchwyty/anglova-y401",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/zaslepki",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 7.75
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/zaslepki/endcapp-y203",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/zaslepki/endcapp-y204",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/zaslepki/endcapp-y205",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/zaslepki/endcapp-y206",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "page": "https://alumineu.pl/produkty/akcesoria/zaslepki/endcapp-y210",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "page": "https://alumineu.pl/produkty/aranzacje",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 4.75
+    },
+    {
+      "page": "https://alumineu.pl/produkty/aranzacje/przepierzenia",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "page": "https://alumineu.pl/produkty/gotowe-narozniki",
+      "clicks": 0,
+      "impressions": 25,
+      "ctr": 0,
+      "position": 6.88
+    },
+    {
+      "page": "https://alumineu.pl/produkty/oswietlenie",
+      "clicks": 0,
+      "impressions": 31,
+      "ctr": 0,
+      "position": 3.5161290322580645
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-do-sufitow-napinanych",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 8.90909090909091
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe",
+      "clicks": 0,
+      "impressions": 56,
+      "ctr": 0,
+      "position": 21.446428571428573
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/bezszczelinowe",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/bezszczelinowe/classix-x101",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/bezszczelinowe/classix-x130",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/bezszczelinowe/classix-x140",
+      "clicks": 0,
+      "impressions": 20,
+      "ctr": 0,
+      "position": 5.2
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/dwupoziomowe/stratos-x701",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/dwupoziomowe/stratos-x702",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 12.571428571428571
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/dwupoziomowe/stratos-x703",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/dystansowe-led",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 8.875
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/dystansowe-led/floatia-x301",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/dystansowe-led/floatia-x302",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 5.5
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/dystansowe-led/floatia-x303",
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 4.391304347826087
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/dystansowe/invisia-x201",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 8.25
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/dystansowe/invisia-x202",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 5.416666666666667
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/dystansowe/invisia-x204",
+      "clicks": 0,
+      "impressions": 34,
+      "ctr": 0,
+      "position": 8.205882352941178
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/dystansowe/invisia-x206",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 5.428571428571429
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/dystansowe/invisia-x209",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 3.375
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/karniszowe/curtina-x402",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 6.125
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/karniszowe/curtina-x403",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 9.625
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/karniszowe/curtina-x404",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 3.75
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/karniszowe/curtina-x404?editionuid=814666177362",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/karniszowe/curtina-x405",
+      "clicks": 0,
+      "impressions": 27,
+      "ctr": 0,
+      "position": 7.62962962962963
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/karniszowe/curtina-x405-m",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 6.4
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/karniszowe/curtina-x406",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/karniszowe/curtina-x408",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 7.642857142857143
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/swietlne",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 6.333333333333333
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/swietlne/lamplix-x950",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 4.75
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/swietlne/lightra-x015",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/swietlne/lightra-x030",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 1.75
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/swietlne/lightra-x030-s",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 5.714285714285714
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/swietlne/lightra-x050",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 5.142857142857143
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowe/szynowe",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 10.777777777777779
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-harpunowy/dwupoziomowe/stratos-x706",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-klipsowe",
+      "clicks": 0,
+      "impressions": 54,
+      "ctr": 0,
+      "position": 34.092592592592595
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-klipsowe/karniszowe",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-klipsowe/karniszowe/tissure-z401",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 3.3333333333333335
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-klipsowe/swietlne/lumnova-z008",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-klipsowe/szynowe",
+      "clicks": 0,
+      "impressions": 114,
+      "ctr": 0,
+      "position": 22.49122807017544
+    },
+    {
+      "page": "https://alumineu.pl/produkty/profile-klipsowe/szynowe/voltiva-z501",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "page": "https://alumineu.pl/produkty/wentylacja",
+      "clicks": 0,
+      "impressions": 28,
+      "ctr": 0,
+      "position": 36.142857142857146
+    },
+    {
+      "page": "https://alumineu.pl/produkty/wentylacja/nawiewniki-szczelinowe",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "page": "https://alumineu.pl/produkty/wentylacja/nawiewniki-szczelinowe/aerooom",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 27.2
+    },
+    {
+      "page": "https://alumineu.pl/tproduct/260642600522-przyrzd-stabile-y905",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 20
+    },
+    {
+      "page": "https://alumineu.pl/tproduct/557962513222-przyrzd-stabile-y904",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 7.4
+    },
+    {
+      "page": "https://alumineu.pl/tproduct/738713176582-przyrzd-stabile-y906",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 3.6666666666666665
+    }
+  ],
+  "countries": [
+    {
+      "country": "pol",
+      "clicks": 81,
+      "impressions": 1229,
+      "ctr": 0.06590724165988608,
+      "position": 14.795768917819366
+    },
+    {
+      "country": "blr",
+      "clicks": 25,
+      "impressions": 37,
+      "ctr": 0.6756756756756757,
+      "position": 1.3513513513513513
+    },
+    {
+      "country": "usa",
+      "clicks": 9,
+      "impressions": 61,
+      "ctr": 0.14754098360655737,
+      "position": 3.0327868852459017
+    },
+    {
+      "country": "gbr",
+      "clicks": 6,
+      "impressions": 28,
+      "ctr": 0.21428571428571427,
+      "position": 11.071428571428571
+    },
+    {
+      "country": "ltu",
+      "clicks": 3,
+      "impressions": 6,
+      "ctr": 0.5,
+      "position": 1.3333333333333333
+    },
+    {
+      "country": "are",
+      "clicks": 1,
+      "impressions": 6,
+      "ctr": 0.16666666666666666,
+      "position": 1.1666666666666667
+    },
+    {
+      "country": "deu",
+      "clicks": 1,
+      "impressions": 29,
+      "ctr": 0.034482758620689655,
+      "position": 8.03448275862069
+    },
+    {
+      "country": "est",
+      "clicks": 1,
+      "impressions": 3,
+      "ctr": 0.3333333333333333,
+      "position": 2.333333333333333
+    },
+    {
+      "country": "idn",
+      "clicks": 1,
+      "impressions": 4,
+      "ctr": 0.25,
+      "position": 1.5
+    },
+    {
+      "country": "isl",
+      "clicks": 1,
+      "impressions": 5,
+      "ctr": 0.2,
+      "position": 4.8
+    },
+    {
+      "country": "isr",
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 1,
+      "position": 1
+    },
+    {
+      "country": "rus",
+      "clicks": 1,
+      "impressions": 2,
+      "ctr": 0.5,
+      "position": 14
+    },
+    {
+      "country": "sgp",
+      "clicks": 1,
+      "impressions": 2,
+      "ctr": 0.5,
+      "position": 1
+    },
+    {
+      "country": "svk",
+      "clicks": 1,
+      "impressions": 2,
+      "ctr": 0.5,
+      "position": 1
+    },
+    {
+      "country": "aus",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 64
+    },
+    {
+      "country": "aut",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "country": "bel",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "country": "bgd",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 22
+    },
+    {
+      "country": "che",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 47.333333333333336
+    },
+    {
+      "country": "chn",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "country": "col",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "country": "cze",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 4.666666666666666
+    },
+    {
+      "country": "dnk",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "country": "dza",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 14
+    },
+    {
+      "country": "egy",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 31
+    },
+    {
+      "country": "esp",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 6.25
+    },
+    {
+      "country": "fra",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 31.75
+    },
+    {
+      "country": "hkg",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "country": "hrv",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7.5
+    },
+    {
+      "country": "ind",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 6.5
+    }
+  ],
+  "devices": [
+    {
+      "device": "MOBILE",
+      "clicks": 75,
+      "impressions": 678,
+      "ctr": 0.11061946902654868,
+      "position": 7.380530973451328
+    },
+    {
+      "device": "DESKTOP",
+      "clicks": 58,
+      "impressions": 805,
+      "ctr": 0.07204968944099378,
+      "position": 18.42111801242236
+    },
+    {
+      "device": "TABLET",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 8.8
+    }
+  ],
+  "meta": {
+    "queryRowCount": 98,
+    "pageRowCount": 100,
+    "queryClicksSum": 97
+  }
+}

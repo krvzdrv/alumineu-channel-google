@@ -671,7 +671,11 @@ function normalizeVariantFieldsInMatrix(valuesMatrix, headers, tildaStoreIndex) 
   return { links, colors, sizes, materials, details };
 }
 
-/** Numeric GPC: Hardware > Building Materials > Molding (7112). Legacy text path is not in Google taxonomy. */
+/**
+ * Canonical GPC for Alumineu aluminum profiles / moldings:
+ * Hardware > Building Materials > Molding (7112).
+ * Avoid Home & Garden > Home Improvement — Store quality peers DIY, not B2B trade.
+ */
 const DEFAULT_GOOGLE_PRODUCT_CATEGORY = '7112';
 /** Meta FPC: building moldings & trims (1457). Legacy Ceiling Materials path is invalid in Meta taxonomy. */
 const DEFAULT_FB_PRODUCT_CATEGORY = '1457';
@@ -682,19 +686,35 @@ const LEGACY_FB_TEXT =
 
 const GPC_IN_PRODUCT_DETAIL_RE = /^google[_ ]product[_ ]category\s*:\s*/i;
 
+/** True when value is a known wrong / DIY shelf path we replace with Molding. */
+function isLegacyGoogleProductCategory(val) {
+  const v = text(val);
+  if (!v) return false;
+  if (v === LEGACY_GPC_TEXT || v === LEGACY_FB_TEXT) return true;
+  if (/^7112$/.test(v)) return false;
+  return (
+    /home\s*&\s*garden/i.test(v) ||
+    /home\s*improvement/i.test(v) ||
+    /ceiling\s*materials/i.test(v) ||
+    /ceiling\s*profiles/i.test(v)
+  );
+}
+
 function normalizeGoogleProductCategory(val) {
   const v = text(val);
-  if (!v) return DEFAULT_GOOGLE_PRODUCT_CATEGORY;
-  if (v === LEGACY_GPC_TEXT || /ceiling materials > ceiling profiles/i.test(v)) {
-    return DEFAULT_GOOGLE_PRODUCT_CATEGORY;
-  }
+  if (!v || isLegacyGoogleProductCategory(v)) return DEFAULT_GOOGLE_PRODUCT_CATEGORY;
   return v;
 }
 
 function normalizeFbProductCategory(val) {
   const v = text(val);
   if (!v) return DEFAULT_FB_PRODUCT_CATEGORY;
-  if (v === LEGACY_FB_TEXT || /ceiling materials/i.test(v)) {
+  if (
+    v === LEGACY_FB_TEXT ||
+    /ceiling materials/i.test(v) ||
+    /home\s*improvement/i.test(v) ||
+    /home\s*&\s*garden/i.test(v)
+  ) {
     return DEFAULT_FB_PRODUCT_CATEGORY;
   }
   return v;
@@ -1344,16 +1364,11 @@ function sanitizeMerchantProductColumns(valuesMatrix, headers) {
       }
     }
     if (gpcIx >= 0) {
-      gpcVal = normalizeGoogleProductCategory(gpcVal);
       const current = text(row[gpcIx]);
-      if (!current) {
-        row[gpcIx] = gpcVal;
+      const next = normalizeGoogleProductCategory(gpcVal || current);
+      if (current !== next) {
+        row[gpcIx] = next;
         filled += 1;
-      } else if (normalizeGoogleProductCategory(current) !== current) {
-        row[gpcIx] = normalizeGoogleProductCategory(current);
-        filled += 1;
-      } else if (moved && current !== gpcVal) {
-        row[gpcIx] = gpcVal;
       }
     }
   }
