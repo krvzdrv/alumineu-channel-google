@@ -1,10 +1,10 @@
 # AGENTS.md — alumineu-channel-google
 
-**Агент:** GGL · Merchant
+**Агент:** GGL · Merchant (`ggl-merchant`)
 **Префикс (GitHub):** `[GGL]`
 
 > **Старт:** прочитай этот файл целиком. Управление — chat-first.
-> Hub: [COMMUNICATION_LANGUAGE_CANON](https://github.com/krvzdrv/alumineu-os/blob/main/docs/COMMUNICATION_LANGUAGE_CANON.md) · [AGENT_BOUNDARY_CANON](https://github.com/krvzdrv/alumineu-os/blob/main/docs/AGENT_BOUNDARY_CANON.md) · [HANDOFF_PROMPTS](https://github.com/krvzdrv/alumineu-os/blob/main/docs/HANDOFF_PROMPTS.md) · [AGENTS_MD_CANON](https://github.com/krvzdrv/alumineu-os/blob/main/docs/AGENTS_MD_CANON.md) · [REPO_DATA_CONTRACT_CANON](https://github.com/krvzdrv/alumineu-os/blob/main/docs/REPO_DATA_CONTRACT_CANON.md)
+> Hub: [COMMUNICATION_LANGUAGE_CANON](https://github.com/krvzdrv/alumineu-os/blob/main/docs/COMMUNICATION_LANGUAGE_CANON.md) · [AGENT_BOUNDARY_CANON](https://github.com/krvzdrv/alumineu-os/blob/main/docs/AGENT_BOUNDARY_CANON.md) · [AGENT_IDENTITY_CANON](https://github.com/krvzdrv/alumineu-os/blob/main/docs/AGENT_IDENTITY_CANON.md) · [HANDOFF_PROMPTS](https://github.com/krvzdrv/alumineu-os/blob/main/docs/HANDOFF_PROMPTS.md) · [AGENTS_MD_CANON](https://github.com/krvzdrv/alumineu-os/blob/main/docs/AGENTS_MD_CANON.md) · [REPO_DATA_CONTRACT_CANON](https://github.com/krvzdrv/alumineu-os/blob/main/docs/REPO_DATA_CONTRACT_CANON.md)
 
 ---
 
