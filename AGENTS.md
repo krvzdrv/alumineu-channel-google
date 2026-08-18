@@ -122,7 +122,7 @@
 ## Конец сессии
 
 - [ ] Бизнес-результат, не рефакторинг структуры
-- [ ] В чат Owner: `git status` (чисто / dirty / ahead). Commit + push **если Owner попросил**; иначе спросить. Молчаливый dirty = не Done
+- [ ] Свои правки — commit + push **сам**, без вопроса Owner. В чат: что сделал, `git status`, hash, ветка / remote. Секреты и чужой хвост не коммитить. Молчаливый dirty = сессия не закрыта. Канон: hub `AGENT_BOUNDARY_CANON` §7
 - [ ] Обнови § Changelog, § Data & API / `docs/REPO_DATA_CONTRACT.md`, § Состояние при изменениях
 
 ---
@@ -139,6 +139,7 @@
 
 | Дата | Изменение |
 |------|-----------|
+| 2026-08-18 | Конец сессии: commit + push сам (hub AGENT_BOUNDARY_CANON §7), не спрашивать Owner |
 | 2026-08-13 | Граница на входе: session-start зона + «не моё → кто»; git status Owner (GOV-018) |
 | 2026-07-09 | Ephemeral: scratch/ + docs/adhoc/ + EPHEMERAL_WORK_CANON |
 | 2026-07-09 | Язык: hub COMMUNICATION_LANGUAGE_CANON + DOC_INDEX |
