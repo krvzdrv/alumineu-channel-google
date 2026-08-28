@@ -139,6 +139,7 @@
 
 | Дата | Изменение |
 |------|-----------|
+| 2026-08-28 | GSC `https://alumineu.nl/` (HTML) + sitemap; GA4 NL property `551815498`; `token-ga4.json` в gitignore |
 | 2026-08-18 | Конец сессии: commit + push сам (hub AGENT_BOUNDARY_CANON §7), не спрашивать Owner |
 | 2026-08-13 | Граница на входе: session-start зона + «не моё → кто»; git status Owner (GOV-018) |
 | 2026-07-09 | Ephemeral: scratch/ + docs/adhoc/ + EPHEMERAL_WORK_CANON |

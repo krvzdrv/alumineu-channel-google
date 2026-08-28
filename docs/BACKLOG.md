@@ -29,4 +29,5 @@ Dispatch — **чат** + `AGENTS.md`. Память работ — здесь.
 
 | ID | Title | Closed |
 |----|-------|--------|
+| GGL-016 | GSC `alumineu.nl` URL-prefix + sitemap (HTML verify) | 2026-08-28 |
 | GGL-DATA-01 | REPO_DATA_CONTRACT.md + Data & API в AGENTS.md | 2026-07-09 |
