@@ -10,7 +10,9 @@ Dispatch — **чат** + `AGENTS.md`. Память работ — здесь.
 
 | ID | Title | Status |
 |----|-------|--------|
-| — | — | — |
+| GGL-017 | Merchant feed NL (первая волна): сборка XML из CAT-контракта, 126 SKU, хостинг на WEB /feeds/google-merchant.xml | in_progress |
+| GGL-018 | VAT: сверить excl. VAT со спекой Merchant Center для consumer EU | pending |
+| GGL-019 | 9 SKU без main image — запросить у CAT или ручное назначение | pending |
 
 ## Next
 
@@ -24,6 +26,7 @@ Dispatch — **чат** + `AGENTS.md`. Память работ — здесь.
 | GGL-013 | Картинки фида ≥ 500×500 к 31 января 2027; сейчас у PL есть «слишком маленькое фото» — Product Studio upscale |
 | GGL-014 | GBP под Ask Maps: полнота карточки (категория, фото, Q&A), не посты ради постов; Insights просмотров = 0 |
 | GGL-015 | Free Listings → Gemini: после GGL-010 зафиксировать, попадает ли одобренный PL-фид в ответы ИИ (не только вкладка Shopping) |
+| GGL-020 | Merchant feed FR/ES — после появления `site_price_rules` в CAT (сигнал Owner) |
 
 ## Done (последние 2–4 недели)
 

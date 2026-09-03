@@ -69,6 +69,8 @@
 
 ## Состояние repo
 
+**Active WIP** — Контракт CAT · Forge под auto-feed Merchant NL/FR/ES подтверждён (2026-09-03). Первая волна — только NL (цены + VAT-вопрос). FR/ES блокированы отсутствием `site_price_rules`.
+
 **Active WIP** — Full tooling landing in repo; tokens never committed.
 
 ---
@@ -139,6 +141,7 @@
 
 | Дата | Изменение |
 |------|-----------|
+| 2026-09-03 | CAT · Forge контракт: auto-feed Merchant NL/FR/ES — маппинг полей, дыры (цены только NL, VAT, 9 SKU без main image). Первая волна — NL |
 | 2026-08-28 | GSC `https://alumineu.nl/` (HTML) + sitemap; GA4 NL property `551815498`; `token-ga4.json` в gitignore |
 | 2026-08-18 | Конец сессии: commit + push сам (hub AGENT_BOUNDARY_CANON §7), не спрашивать Owner |
 | 2026-08-13 | Граница на входе: session-start зона + «не моё → кто»; git status Owner (GOV-018) |

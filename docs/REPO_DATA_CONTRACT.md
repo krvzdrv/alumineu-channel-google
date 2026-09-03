@@ -2,7 +2,7 @@
 repo: alumineu-channel-google
 agent: GGL-Merchant
 purpose: Google channel — Merchant Center feeds, Ads, GSC, GBP, Manufacturer Center + Cloudflare robots
-updated_at: 2026-07-08
+updated_at: 2026-09-03
 inbound:
   - source: alumineu-product-catalog (CAT · Forge)
     what: product feed source
@@ -12,6 +12,8 @@ inbound:
     token_file: null
     access: read
     status: active
+    contract_date: 2026-09-03
+    contract_note: Auto-feed Merchant NL/FR/ES — маппинг полей согласован, первая волна только NL
   - source: Tilda
     what: legacy CSV paths (exports)
     interface: CSV
@@ -51,7 +53,7 @@ Google channel: Merchant Center feeds, Ads, GSC, GBP, Manufacturer Center; Cloud
 
 | Source | What | Interface | Auth/env | Access | Notes |
 |--------|------|-----------|----------|--------|-------|
-| CAT · Forge (alumineu-product-catalog) | product feed source | Postgres view / CSV / repo read | уточнить при первом подключении | read | SSOT товаров — в CAT |
+| CAT · Forge (alumineu-product-catalog) | product feed source | Postgres view / CSV / repo read | уточнить при первом подключении | read | SSOT товаров — в CAT. Контракт 2026-09-03: auto-feed Merchant NL/FR/ES |
 | Tilda | legacy CSV paths (exports) | CSV | file download | read | legacy, для миграции |
 
 ## Outbound — кому отдаём
@@ -96,6 +98,36 @@ Google Merchant/Ads/GSC/GBP   WEB (handoff)   GOV (handoff)
 - Meta pixel (MTA)
 - Product master edits (CAT)
 - Next.js site code (WEB)
+
+## CAT · Forge — Merchant auto-feed contract (2026-09-03)
+
+### Маппинг полей (источник — контрактные view CAT)
+
+| Поле фида | Источник CAT | Примечание |
+|-----------|--------------|------------|
+| `g:id` | `product_variants.sku` + `'-'` + `variant_key` | sku НЕ уникален на варианте — 188 вариантов / 122 sku |
+| `g:item_group_id` | `products.sku` | |
+| `g:title` | `product_localizations.title` | locale сайта, 126/126 заполнено |
+| `g:description` | `product_seo_pages.meta_description` | активной PDP сайта, 126/126 (nl/fr/es) |
+| `g:link` | `sites.base_url` + `product_seo_pages.url_path` | |
+| `g:image_link` | `contract_product_media.owned_url` where `role='main'` | дыра: 9 SKU без main — DECORRA L005/W005/W010/W015, ENDCAPP Y213/Y214, INSERTA Y001/Y002, LIGHTRA NX030 S |
+| `g:additional_image_link` | `owned_url` where `role` in (`close_up`, `interior`, `dimensions`), sort `link_sort` | |
+| `g:price` | `contract_site_product_prices.amount_display` + `currency_display` | только NL (EUR, indicative). FR/ES `site_price_rules` нет — стартовать нельзя |
+| `g:brand` | `products.brand` | |
+| `g:condition` | `new` | константа |
+| `g:gtin` | отсутствует | `identifier_exists=false` |
+| `g:availability` | DAT `inventory_position_wms_adjusted` по `identity_external_code` (`kod_eu`) | variant grain — вне CAT, как на PDP |
+
+### Дыры и блокеры
+
+1. **Цены — только NL.** `site_price_rules` есть только для `alumineu_nl` (EUR, indicative, PLN×1.10/4.24, excl. VAT). FR/ES `site_price_rules` отсутствуют — фид FR/ES стартовать нельзя до решения Owner.
+2. **Цена indicative** — та же цифра на PDP, консистентно; твёрдый EUR — вопрос Owner/PRC, не блокер при parity с PDP.
+3. **VAT:** цена excl. VAT — сверить со спекой Merchant для consumer EU (сторона GGL/Owner).
+4. **Изображения:** 9 SKU без `main` — нужно решение от CAT или ручное назначение.
+
+### Рекомендация
+
+Первая волна фида — **только NL**. FR/ES подключатся, когда CAT запишет `site_price_rules` (сигнал от Owner).
 
 ## Connection cheat-sheet
 
