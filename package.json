@@ -3,6 +3,8 @@
   "private": true,
   "description": "Google channel artifacts — Merchant feeds & tooling",
   "scripts": {
+    "merchant:feed:nl:generate": "node scripts/generate-merchant-feed-nl.js --input=feeds/cat-export-nl.csv --output=feeds/google-merchant-nl.xml",
+    "merchant:feed:nl:dry": "node scripts/generate-merchant-feed-nl.js --input=feeds/cat-export-nl.csv --dry-run",
     "merchant:sheet": "node scripts/sync-merchant-sheet-from-meta.js --dry-run",
     "merchant:sheet:apply": "node scripts/sync-merchant-sheet-from-meta.js --apply",
     "merchant:sheet:pl": "node scripts/sync-merchant-sheet-from-meta.js --dry-run --market=PL",

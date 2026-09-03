@@ -60,7 +60,7 @@ Google channel: Merchant Center feeds, Ads, GSC, GBP, Manufacturer Center; Cloud
 
 | Consumer | What | Interface | Contract_ref | Access | Notes |
 |----------|------|-----------|--------------|--------|-------|
-| Google Merchant / Ads / GSC / GBP | feeds, ads, GSC data, GBP insights | Google APIs | `docs/MERCHANT_MULTI_COUNTRY_RUNBOOK.md` | read+write | `merchant:sheet:apply`, `merchant:api:verify`, `ads:*`, `gsc:fetch`, `gbp:insights` |
+| Google Merchant / Ads / GSC / GBP | feeds, ads, GSC data, GBP insights | Google APIs | `docs/MERCHANT_MULTI_COUNTRY_RUNBOOK.md` | read+write | `merchant:feed:nl:generate`, `merchant:sheet:apply`, `merchant:api:verify`, `ads:*`, `gsc:fetch`, `gbp:insights` |
 | WEB · Signal | handoff specs (GSC/SEO intel) | docs handoff | — | read-only | WEB читает GGL docs |
 | GOV · Atlas | handoff specs | docs handoff | — | read-only | operating canon sync |
 
@@ -73,6 +73,31 @@ Google channel: Merchant Center feeds, Ads, GSC, GBP, Manufacturer Center; Cloud
 - `.env` + `.env.example` (vars, не коммитить значения)
 
 ## Data flow
+
+```
+CAT (product feed)  Tilda (legacy CSV)
+   │                     │
+   └──────────┬──────────┘
+              ▼
+   [alumineu-channel-google]
+      feeds/google-merchant-nl.xml  ·  cloudflare/alumineu-robots/  ·  npm scripts
+              │
+              ▼
+        WEB · Signal (host /feeds/*.xml)
+              │
+              ▼
+   Google Merchant Center (scheduled fetch)
+```
+
+**Схема фида (новая, 2026-09-03):**
+1. CAT экспортирует CSV (product_variants + localizations + media + prices)
+2. GGL генерирует XML: `npm run merchant:feed:nl:generate`
+3. WEB хостит `/feeds/google-merchant.xml` (статический файл или API route)
+4. Merchant Center забирает фид по URL (scheduled fetch, ежедневно)
+
+**Схема фида (старая, legacy):**
+- CSV → Google Sheets → Merchant Center (вручную, через `merchant:sheet:apply`)
+- Используется для PL/DE/RO пока нет CAT-контракта
 
 ```
 CAT (product feed)  Tilda (legacy CSV)
