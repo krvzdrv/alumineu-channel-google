@@ -60,7 +60,7 @@ Google channel: Merchant Center feeds, Ads, GSC, GBP, Manufacturer Center; Cloud
 
 | Consumer | What | Interface | Contract_ref | Access | Notes |
 |----------|------|-----------|--------------|--------|-------|
-| Google Merchant / Ads / GSC / GBP | feeds, ads, GSC data, GBP insights | Google APIs | `docs/MERCHANT_MULTI_COUNTRY_RUNBOOK.md` | read+write | `merchant:feed:nl:generate`, `merchant:sheet:apply`, `merchant:api:verify`, `ads:*`, `gsc:fetch`, `gbp:insights` |
+| Google Merchant / Ads / GSC / GBP | feeds, ads, GSC data, GBP insights | Google APIs | `docs/MERCHANT_MULTI_COUNTRY_RUNBOOK.md` | read+write | `merchant:feed:{nl,fr,es}:generate`, `merchant:sheet:apply`, `merchant:api:verify`, `ads:*`, `gsc:fetch`, `gbp:insights` |
 | WEB · Signal | handoff specs (GSC/SEO intel) | docs handoff | — | read-only | WEB читает GGL docs |
 | GOV · Atlas | handoff specs | docs handoff | — | read-only | operating canon sync |
 
@@ -90,6 +90,11 @@ CAT (product feed)  Tilda (legacy CSV)
 ```
 
 **Схема фида (новая, 2026-09-03):**
+1. CAT экспортирует CSV per market (product_variants + localizations + media + prices)
+2. GGL генерирует XML: `npm run merchant:feed:{nl,fr,es}:generate`
+3. Валидация: если >50% продуктов без цены — abort (FR/ES блокируются до появления site_price_rules)
+4. WEB хостит `/feeds/google-merchant-{nl,fr,es}.xml` (статический файл или API route)
+5. Merchant Center забирает фид по URL (scheduled fetch, ежедневно)
 1. CAT экспортирует CSV (product_variants + localizations + media + prices)
 2. GGL генерирует XML: `npm run merchant:feed:nl:generate`
 3. WEB хостит `/feeds/google-merchant.xml` (статический файл или API route)

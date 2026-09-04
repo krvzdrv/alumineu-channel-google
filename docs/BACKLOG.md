@@ -10,7 +10,7 @@ Dispatch — **чат** + `AGENTS.md`. Память работ — здесь.
 
 | ID | Title | Status |
 |----|-------|--------|
-| GGL-017 | Merchant feed NL (первая волна): сборка XML из CAT-контракта, 126 SKU, хостинг на WEB /feeds/google-merchant.xml | in_progress |
+| GGL-017 | Merchant feed NL/FR/ES: унифицированный скрипт generate-merchant-feed.js --market=nl\|fr\|es, валидация цен, FR/ES блокируются при отсутствии site_price_rules | in_progress |
 | GGL-018 | VAT: сверить excl. VAT со спекой Merchant Center для consumer EU | pending |
 | GGL-019 | 9 SKU без main image — запросить у CAT или ручное назначение | pending |
 
