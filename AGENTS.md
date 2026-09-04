@@ -69,6 +69,10 @@
 
 ## Состояние repo
 
+**Active WIP** — Фиды NL/FR/ES live на WEB (API-route из CAT, 117 позиций each). Блокер FR/ES снят (цены EUR preview есть). Следующий шаг: завести фиды в Merchant Center, настроить shipping/налоги, диагностика.
+
+**Active WIP** — Контракт CAT · Forge под auto-feed Merchant NL/FR/ES подтверждён (2026-09-03).
+
 **Active WIP** — Унифицированный скрипт `generate-merchant-feed.js` готов для NL/FR/ES. NL можно запускать (цены есть). FR/ES блокируются валидацией при отсутствии `site_price_rules` (strict mode). Ждём CSV от CAT и хостинг на WEB.
 
 **Active WIP** — Контракт CAT · Forge под auto-feed Merchant NL/FR/ES подтверждён (2026-09-03).
@@ -145,6 +149,7 @@
 
 | Дата | Изменение |
 |------|-----------|
+| 2026-09-04 | WEB · Signal поднял live фиды NL/FR/ES (API-route из CAT, 117 позиций each). Блокер FR/ES снят. GGL-017 closed, GGL-021/022/023 открыты |
 | 2026-09-04 | Унифицированный скрипт `generate-merchant-feed.js` — NL/FR/ES, валидация цен, strict mode блокирует FR/ES до site_price_rules. npm scripts + docs updated |
 | 2026-09-03 | CAT · Forge контракт: auto-feed Merchant NL/FR/ES — маппинг полей, дыры (цены только NL, VAT, 9 SKU без main image). Первая волна — NL |
 | 2026-08-28 | GSC `https://alumineu.nl/` (HTML) + sitemap; GA4 NL property `551815498`; `token-ga4.json` в gitignore |

@@ -10,7 +10,8 @@ Dispatch — **чат** + `AGENTS.md`. Память работ — здесь.
 
 | ID | Title | Status |
 |----|-------|--------|
-| GGL-017 | Merchant feed NL/FR/ES: унифицированный скрипт generate-merchant-feed.js --market=nl\|fr\|es, валидация цен, FR/ES блокируются при отсутствии site_price_rules | in_progress |
+| GGL-021 | Merchant Center: завести 3 фида (NL/FR/ES) по URL от WEB, daily fetch | in_progress |
+| GGL-022 | Merchant Center: настроить shipping и налоги на уровне аккаунта | pending |
 | GGL-018 | VAT: сверить excl. VAT со спекой Merchant Center для consumer EU | pending |
 | GGL-019 | 9 SKU без main image — запросить у CAT или ручное назначение | pending |
 
@@ -18,6 +19,8 @@ Dispatch — **чат** + `AGENTS.md`. Память работ — здесь.
 
 | ID | Title |
 |----|-------|
+| GGL-023 | Диагностика фидов NL/FR/ES: проверить атрибуты, отправить WEB список замечаний |
+| GGL-024 | Availability v2: подключить DAT per-variant (по запросу, сейчас in_stock дефолт) |
 | GGL-001 | PL-first Merchant/GBP/GSC контур стабилен; feed из CAT |
 | GGL-002 | Shopping test — только по явной команде Owner после GA4.pl |
 | GGL-010 | GSC Generative AI на alumineu.pl: проверить показы страниц профилей в AI Overviews / AI Mode (отчёт с 3 июня 2026) |
@@ -26,11 +29,11 @@ Dispatch — **чат** + `AGENTS.md`. Память работ — здесь.
 | GGL-013 | Картинки фида ≥ 500×500 к 31 января 2027; сейчас у PL есть «слишком маленькое фото» — Product Studio upscale |
 | GGL-014 | GBP под Ask Maps: полнота карточки (категория, фото, Q&A), не посты ради постов; Insights просмотров = 0 |
 | GGL-015 | Free Listings → Gemini: после GGL-010 зафиксировать, попадает ли одобренный PL-фид в ответы ИИ (не только вкладка Shopping) |
-| GGL-020 | Merchant feed FR/ES — после появления `site_price_rules` в CAT (сигнал Owner) |
 
 ## Done (последние 2–4 недели)
 
 | ID | Title | Closed |
 |----|-------|--------|
+| GGL-017 | Merchant feed NL/FR/ES: фиды live на WEB (API-route из CAT, 117 позиций each) | 2026-09-04 |
 | GGL-016 | GSC `alumineu.nl` URL-prefix + sitemap (HTML verify) | 2026-08-28 |
 | GGL-DATA-01 | REPO_DATA_CONTRACT.md + Data & API в AGENTS.md | 2026-07-09 |

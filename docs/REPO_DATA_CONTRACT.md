@@ -2,7 +2,7 @@
 repo: alumineu-channel-google
 agent: GGL-Merchant
 purpose: Google channel — Merchant Center feeds, Ads, GSC, GBP, Manufacturer Center + Cloudflare robots
-updated_at: 2026-09-03
+updated_at: 2026-09-04
 inbound:
   - source: alumineu-product-catalog (CAT · Forge)
     what: product feed source
@@ -13,7 +13,7 @@ inbound:
     access: read
     status: active
     contract_date: 2026-09-03
-    contract_note: Auto-feed Merchant NL/FR/ES — маппинг полей согласован, первая волна только NL
+    contract_note: Auto-feed Merchant NL/FR/ES — маппинг полей согласован
   - source: Tilda
     what: legacy CSV paths (exports)
     interface: CSV
@@ -80,42 +80,31 @@ CAT (product feed)  Tilda (legacy CSV)
    └──────────┬──────────┘
               ▼
    [alumineu-channel-google]
-      feeds/google-merchant-nl.xml  ·  cloudflare/alumineu-robots/  ·  npm scripts
+      cloudflare/alumineu-robots/  ·  npm scripts
               │
               ▼
-        WEB · Signal (host /feeds/*.xml)
+        WEB · Signal (API-route /feeds/*.xml from CAT)
               │
               ▼
    Google Merchant Center (scheduled fetch)
 ```
 
-**Схема фида (новая, 2026-09-03):**
-1. CAT экспортирует CSV per market (product_variants + localizations + media + prices)
-2. GGL генерирует XML: `npm run merchant:feed:{nl,fr,es}:generate`
-3. Валидация: если >50% продуктов без цены — abort (FR/ES блокируются до появления site_price_rules)
-4. WEB хостит `/feeds/google-merchant-{nl,fr,es}.xml` (статический файл или API route)
-5. Merchant Center забирает фид по URL (scheduled fetch, ежедневно)
-1. CAT экспортирует CSV (product_variants + localizations + media + prices)
-2. GGL генерирует XML: `npm run merchant:feed:nl:generate`
-3. WEB хостит `/feeds/google-merchant.xml` (статический файл или API route)
+**Схема фида (live, 2026-09-04):**
+1. WEB · Signal хостит живые фиды напрямую из CAT (API-route, не статика)
+2. Фиды всегда актуальны: цены/URL/фото/тексты читаются из CAT при запросе
+3. CDN-кеш 24 ч + ревалидация по CAT-вебхуку
 4. Merchant Center забирает фид по URL (scheduled fetch, ежедневно)
 
-**Схема фида (старая, legacy):**
+**Live URLs (WEB-hosted):**
+| Market | URL | Статус | Позиций |
+|--------|-----|--------|---------|
+| NL | `https://alumineu.nl/feeds/google-merchant-nl.xml` | ✅ Live | 117 |
+| FR | `https://alumineu.fr/feeds/google-merchant-fr.xml` | ✅ Live | 117 |
+| ES | `https://alumineu.es/feeds/google-merchant-es.xml` | ✅ Live | 117 |
+
+**Схема фида (legacy):**
 - CSV → Google Sheets → Merchant Center (вручную, через `merchant:sheet:apply`)
 - Используется для PL/DE/RO пока нет CAT-контракта
-
-```
-CAT (product feed)  Tilda (legacy CSV)
-   │                     │
-   └──────────┬──────────┘
-              ▼
-   [alumineu-channel-google]
-      feeds/  ·  cloudflare/alumineu-robots/  ·  npm scripts
-              │
-   ┌──────────┼──────────┐
-   ▼          ▼          ▼
-Google Merchant/Ads/GSC/GBP   WEB (handoff)   GOV (handoff)
-```
 
 ## Boundaries
 
@@ -142,22 +131,22 @@ Google Merchant/Ads/GSC/GBP   WEB (handoff)   GOV (handoff)
 | `g:link` | `sites.base_url` + `product_seo_pages.url_path` | |
 | `g:image_link` | `contract_product_media.owned_url` where `role='main'` | дыра: 9 SKU без main — DECORRA L005/W005/W010/W015, ENDCAPP Y213/Y214, INSERTA Y001/Y002, LIGHTRA NX030 S |
 | `g:additional_image_link` | `owned_url` where `role` in (`close_up`, `interior`, `dimensions`), sort `link_sort` | |
-| `g:price` | `contract_site_product_prices.amount_display` + `currency_display` | только NL (EUR, indicative). FR/ES `site_price_rules` нет — стартовать нельзя |
+| `g:price` | `contract_site_product_prices.amount_display` + `currency_display` | EUR preview (indicative, PLN→EUR), excl. VAT. Все 3 рынка, parity с PDP |
 | `g:brand` | `products.brand` | |
 | `g:condition` | `new` | константа |
 | `g:gtin` | отсутствует | `identifier_exists=false` |
-| `g:availability` | DAT `inventory_position_wms_adjusted` по `identity_external_code` (`kod_eu`) | variant grain — вне CAT, как на PDP |
+| `g:availability` | `in_stock` (витринный дефолт) | DAT per-variant в резерве (v2) |
 
-### Дыры и блокеры
+### Дыры и блокеры (актуальные)
 
-1. **Цены — только NL.** `site_price_rules` есть только для `alumineu_nl` (EUR, indicative, PLN×1.10/4.24, excl. VAT). FR/ES `site_price_rules` отсутствуют — фид FR/ES стартовать нельзя до решения Owner.
-2. **Цена indicative** — та же цифра на PDP, консистентно; твёрдый EUR — вопрос Owner/PRC, не блокер при parity с PDP.
-3. **VAT:** цена excl. VAT — сверить со спекой Merchant для consumer EU (сторона GGL/Owner).
-4. **Изображения:** 9 SKU без `main` — нужно решение от CAT или ручное назначение.
+1. **VAT:** цена excl. VAT — сверить со спекой Merchant для consumer EU (сторона GGL/Owner).
+2. **Изображения:** 9 SKU без `main` — нужно решение от CAT или ручное назначение.
+3. **Availability:** сейчас `in_stock` для всех. Точный сток per-variant из DAT — в резерве (v2), по запросу.
 
-### Рекомендация
+### Снятые блокеры (2026-09-04)
 
-Первая волна фида — **только NL**. FR/ES подключатся, когда CAT запишет `site_price_rules` (сигнал от Owner).
+- ~~Цены только NL~~ → Цены есть на всех рынках (EUR preview, indicative, parity с PDP)
+- ~~FR/ES site_price_rules отсутствуют~~ → WEB поднял фиды для всех 3 рынков
 
 ## Connection cheat-sheet
 
