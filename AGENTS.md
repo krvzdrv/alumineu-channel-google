@@ -39,7 +39,7 @@
 
 ## Умею делать (capabilities)
 
-- npm scripts: `merchant:sheet:apply`, `merchant:api:verify`, `ads:*`, `gsc:fetch`, `gbp:insights`
+- npm scripts: `merchant:feed:{nl,fr,es}:generate`, `merchant:api:create-feed-sources`, `merchant:api:add-shipping-nl-fr-es`, `merchant:sheet:apply`, `merchant:api:verify`, `ads:*`, `gsc:fetch`, `gbp:insights`
 - `feeds/`, `cloudflare/alumineu-robots/`
 - Runbooks in `docs/`
 
@@ -68,6 +68,10 @@
 ---
 
 ## Состояние repo
+
+**Active WIP** — Фиды NL/FR/ES заведены в Merchant Center (dataSources + shipping services). Ждём первого scheduled fetch для диагностики. Налоги (VAT) — не настроены, требуют ручной конфигурации в MC UI или отдельной задачи.
+
+**Active WIP** — Контракт CAT · Forge под auto-feed Merchant NL/FR/ES подтверждён (2026-09-03).
 
 **Active WIP** — Фиды NL/FR/ES live на WEB (API-route из CAT, 117 позиций each). Блокер FR/ES снят (цены EUR preview есть). Следующий шаг: завести фиды в Merchant Center, настроить shipping/налоги, диагностика.
 
@@ -149,6 +153,7 @@
 
 | Дата | Изменение |
 |------|-----------|
+| 2026-09-04 | Merchant Center: заведены 3 фида NL/FR/ES (dataSources 10721134772/78/81, daily fetch) + shipping services (NL 9.99€, FR/ES 14.99€). Скрипты: create-merchant-feed-sources.js, add-merchant-shipping-nl-fr-es.js |
 | 2026-09-04 | WEB · Signal поднял live фиды NL/FR/ES (API-route из CAT, 117 позиций each). Блокер FR/ES снят. GGL-017 closed, GGL-021/022/023 открыты |
 | 2026-09-04 | Унифицированный скрипт `generate-merchant-feed.js` — NL/FR/ES, валидация цен, strict mode блокирует FR/ES до site_price_rules. npm scripts + docs updated |
 | 2026-09-03 | CAT · Forge контракт: auto-feed Merchant NL/FR/ES — маппинг полей, дыры (цены только NL, VAT, 9 SKU без main image). Первая волна — NL |

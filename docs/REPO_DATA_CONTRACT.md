@@ -148,6 +148,42 @@ CAT (product feed)  Tilda (legacy CSV)
 - ~~Цены только NL~~ → Цены есть на всех рынках (EUR preview, indicative, parity с PDP)
 - ~~FR/ES site_price_rules отсутствуют~~ → WEB поднял фиды для всех 3 рынков
 
+## Merchant Center — текущая конфигурация (2026-09-04)
+
+### Data Sources (фиды)
+
+| ID | Название | Тип | Страна | Язык | URL фида | Статус |
+|----|----------|-----|--------|------|----------|--------|
+| 10667412482 | PRODUCTS SOURCE 1 | Google Sheets | PL | pl | drive://… | ✅ Active (legacy) |
+| 10674634377 | alumineu.pl | Primary | ? | ? | — | ⚠️ Incomplete |
+| **10721134772** | **alumineu-nl** | **FETCH** | **NL** | **nl** | **https://alumineu.nl/feeds/google-merchant-nl.xml** | **✅ Created** |
+| **10721134778** | **alumineu-fr** | **FETCH** | **FR** | **fr** | **https://alumineu.fr/feeds/google-merchant-fr.xml** | **✅ Created** |
+| **10721134781** | **alumineu-es** | **FETCH** | **ES** | **es** | **https://alumineu.es/feeds/google-merchant-es.xml** | **✅ Created** |
+
+Fetch schedule: **daily** (FREQUENCY_DAILY), timeZone per market.
+
+### Shipping Services
+
+| Название | Страна | Валюта | Flat Rate | Transit | Статус |
+|----------|--------|--------|-----------|---------|--------|
+| Dostawa PL | PL | PLN | 50.00 | 1-3 дня | ✅ Active |
+| Versand DE | DE | EUR | 9.99 | 2-5 дней | ✅ Active |
+| **Verzending NL** | **NL** | **EUR** | **9.99** | **2-5 дней** | **✅ Created** |
+| **Livraison FR** | **FR** | **EUR** | **14.99** | **3-7 дней** | **✅ Created** |
+| **Envío ES** | **ES** | **EUR** | **14.99** | **3-7 дней** | **✅ Created** |
+
+### Налоги (Tax Settings)
+
+⚠️ **Не настроены.** Требуется конфигурация VAT для NL/FR/ES в Merchant Center UI. См. GGL-018.
+
+### Что ожидает первого fetch
+
+- Продукты из фидов NL/FR/ES появятся в Merchant Center после первого scheduled fetch (ежедневно, время зависит от timeZone).
+- Диагностика атрибутов станет доступна после обработки.
+
+- ~~Цены только NL~~ → Цены есть на всех рынках (EUR preview, indicative, parity с PDP)
+- ~~FR/ES site_price_rules отсутствуют~~ → WEB поднял фиды для всех 3 рынков
+
 ## Connection cheat-sheet
 
 ### Google Merchant/Ads/GSC/GBP APIs (OAuth)

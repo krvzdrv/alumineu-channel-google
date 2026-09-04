@@ -10,16 +10,14 @@ Dispatch — **чат** + `AGENTS.md`. Память работ — здесь.
 
 | ID | Title | Status |
 |----|-------|--------|
-| GGL-021 | Merchant Center: завести 3 фида (NL/FR/ES) по URL от WEB, daily fetch | in_progress |
-| GGL-022 | Merchant Center: настроить shipping и налоги на уровне аккаунта | pending |
 | GGL-018 | VAT: сверить excl. VAT со спекой Merchant Center для consumer EU | pending |
 | GGL-019 | 9 SKU без main image — запросить у CAT или ручное назначение | pending |
+| GGL-023 | Диагностика фидов NL/FR/ES после первого fetch (ожидание) | pending |
 
 ## Next
 
 | ID | Title |
 |----|-------|
-| GGL-023 | Диагностика фидов NL/FR/ES: проверить атрибуты, отправить WEB список замечаний |
 | GGL-024 | Availability v2: подключить DAT per-variant (по запросу, сейчас in_stock дефолт) |
 | GGL-001 | PL-first Merchant/GBP/GSC контур стабилен; feed из CAT |
 | GGL-002 | Shopping test — только по явной команде Owner после GA4.pl |
@@ -34,6 +32,8 @@ Dispatch — **чат** + `AGENTS.md`. Память работ — здесь.
 
 | ID | Title | Closed |
 |----|-------|--------|
+| GGL-021 | Merchant Center: заведены 3 фида NL/FR/ES (dataSources, daily fetch) | 2026-09-04 |
+| GGL-022 | Merchant Center: настроены shipping services NL/FR/ES | 2026-09-04 |
 | GGL-017 | Merchant feed NL/FR/ES: фиды live на WEB (API-route из CAT, 117 позиций each) | 2026-09-04 |
 | GGL-016 | GSC `alumineu.nl` URL-prefix + sitemap (HTML verify) | 2026-08-28 |
 | GGL-DATA-01 | REPO_DATA_CONTRACT.md + Data & API в AGENTS.md | 2026-07-09 |
