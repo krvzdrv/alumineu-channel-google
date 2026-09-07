@@ -32,6 +32,7 @@ Dispatch — **чат** + `AGENTS.md`. Память работ — здесь.
 
 | ID | Title | Closed |
 |----|-------|--------|
+| GGL-025 | FIX: фиды и shipping NL/FR/ES перенесены из PL-аккаунта в отдельные sub-accounts | 2026-09-07 |
 | GGL-021 | Merchant Center: заведены 3 фида NL/FR/ES (dataSources, daily fetch) | 2026-09-04 |
 | GGL-022 | Merchant Center: настроены shipping services NL/FR/ES | 2026-09-04 |
 | GGL-017 | Merchant feed NL/FR/ES: фиды live на WEB (API-route из CAT, 117 позиций each) | 2026-09-04 |

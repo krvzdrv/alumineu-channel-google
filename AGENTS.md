@@ -69,6 +69,10 @@
 
 ## Состояние repo
 
+**Active WIP** — Фиды NL/FR/ES заведены в отдельные sub-accounts Merchant Center (dataSources + shipping services). Ждём первого scheduled fetch для диагностики. Налоги (VAT) — не настроены, требуют ручной конфигурации в MC UI или отдельной задачи.
+
+**Active WIP** — Full tooling landing in repo; tokens never committed.
+
 **Active WIP** — Фиды NL/FR/ES заведены в Merchant Center (dataSources + shipping services). Ждём первого scheduled fetch для диагностики. Налоги (VAT) — не настроены, требуют ручной конфигурации в MC UI или отдельной задачи.
 
 **Active WIP** — Контракт CAT · Forge под auto-feed Merchant NL/FR/ES подтверждён (2026-09-03).

@@ -2,7 +2,7 @@
 repo: alumineu-channel-google
 agent: GGL-Merchant
 purpose: Google channel — Merchant Center feeds, Ads, GSC, GBP, Manufacturer Center + Cloudflare robots
-updated_at: 2026-09-04
+updated_at: 2026-09-07
 inbound:
   - source: alumineu-product-catalog (CAT · Forge)
     what: product feed source
@@ -150,27 +150,37 @@ CAT (product feed)  Tilda (legacy CSV)
 
 ## Merchant Center — текущая конфигурация (2026-09-04)
 
-### Data Sources (фиды)
+### MCA структура (Multi-Client Account)
 
-| ID | Название | Тип | Страна | Язык | URL фида | Статус |
-|----|----------|-----|--------|------|----------|--------|
-| 10667412482 | PRODUCTS SOURCE 1 | Google Sheets | PL | pl | drive://… | ✅ Active (legacy) |
-| 10674634377 | alumineu.pl | Primary | ? | ? | — | ⚠️ Incomplete |
-| **10721134772** | **alumineu-nl** | **FETCH** | **NL** | **nl** | **https://alumineu.nl/feeds/google-merchant-nl.xml** | **✅ Created** |
-| **10721134778** | **alumineu-fr** | **FETCH** | **FR** | **fr** | **https://alumineu.fr/feeds/google-merchant-fr.xml** | **✅ Created** |
-| **10721134781** | **alumineu-es** | **FETCH** | **ES** | **es** | **https://alumineu.es/feeds/google-merchant-es.xml** | **✅ Created** |
+**MCA ID:** `5797974210`
 
-Fetch schedule: **daily** (FREQUENCY_DAILY), timeZone per market.
+| Sub-account | Название | Тип фида | Страна | Язык | Статус |
+|-------------|----------|----------|--------|------|--------|
+| 5785188396 | Alumineu PL | Google Sheets | PL | pl | ✅ Active |
+| 5798257792 | Alumineu DE | — | DE | de | ✅ Active |
+| 5798002953 | Alumineu RO | — | RO | ro | ✅ Active |
+| 5798434120 | Alumineu EU | — | EU-27 | en | ✅ Active |
+| **5849784515** | **Alumineu NL** | **FETCH** | **NL** | **nl** | **✅ Created** |
+| **5849001558** | **Alumineu FR** | **FETCH** | **FR** | **fr** | **✅ Created** |
+| **5849001567** | **Alumineu ES** | **FETCH** | **ES** | **es** | **✅ Created** |
+
+### Data Sources (фиды) — новые sub-accounts
+
+| Sub-account | Data Source ID | Название | URL фида | Fetch |
+|-------------|----------------|----------|----------|-------|
+| 5849784515 (NL) | 10722508632 | alumineu-nl | `https://alumineu.nl/feeds/google-merchant-nl.xml` | Daily |
+| 5849001558 (FR) | 10722508674 | alumineu-fr | `https://alumineu.fr/feeds/google-merchant-fr.xml` | Daily |
+| 5849001567 (ES) | 10723519534 | alumineu-es | `https://alumineu.es/feeds/google-merchant-es.xml` | Daily |
 
 ### Shipping Services
 
-| Название | Страна | Валюта | Flat Rate | Transit | Статус |
-|----------|--------|--------|-----------|---------|--------|
-| Dostawa PL | PL | PLN | 50.00 | 1-3 дня | ✅ Active |
-| Versand DE | DE | EUR | 9.99 | 2-5 дней | ✅ Active |
-| **Verzending NL** | **NL** | **EUR** | **9.99** | **2-5 дней** | **✅ Created** |
-| **Livraison FR** | **FR** | **EUR** | **14.99** | **3-7 дней** | **✅ Created** |
-| **Envío ES** | **ES** | **EUR** | **14.99** | **3-7 дней** | **✅ Created** |
+| Sub-account | Сервис | Страна | Flat Rate | Transit |
+|-------------|--------|--------|-----------|---------|
+| 5785188396 (PL) | Dostawa PL | PL | 50 PLN | 1-3 дня |
+| 5785188396 (PL) | Versand DE | DE | 9.99 EUR | 2-5 дней |
+| **5849784515 (NL)** | **Verzending NL** | **NL** | **9.99 EUR** | **2-5 дней** |
+| **5849001558 (FR)** | **Livraison FR** | **FR** | **14.99 EUR** | **3-7 дней** |
+| **5849001567 (ES)** | **Envío ES** | **ES** | **14.99 EUR** | **3-7 дней** |
 
 ### Налоги (Tax Settings)
 
@@ -178,11 +188,9 @@ Fetch schedule: **daily** (FREQUENCY_DAILY), timeZone per market.
 
 ### Что ожидает первого fetch
 
-- Продукты из фидов NL/FR/ES появятся в Merchant Center после первого scheduled fetch (ежедневно, время зависит от timeZone).
+- Продукты из фидов NL/FR/ES появятся в своих sub-accounts после первого scheduled fetch (ежедневно).
 - Диагностика атрибутов станет доступна после обработки.
-
-- ~~Цены только NL~~ → Цены есть на всех рынках (EUR preview, indicative, parity с PDP)
-- ~~FR/ES site_price_rules отсутствуют~~ → WEB поднял фиды для всех 3 рынков
+- **Исправлено:** ранее фиды и shipping были ошибочно созданы в PL-аккаунте (5785188396) — удалены оттуда.
 
 ## Connection cheat-sheet
 
