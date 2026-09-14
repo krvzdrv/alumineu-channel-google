@@ -157,6 +157,7 @@
 
 | Дата | Изменение |
 |------|-----------|
+| 2026-09-14 | GSC `https://alumineu.eu/` (FILE) + sitemap; срез NL/FR/ES/EU в `docs/reports/` |
 | 2026-09-04 | Merchant Center: заведены 3 фида NL/FR/ES (dataSources 10721134772/78/81, daily fetch) + shipping services (NL 9.99€, FR/ES 14.99€). Скрипты: create-merchant-feed-sources.js, add-merchant-shipping-nl-fr-es.js |
 | 2026-09-04 | WEB · Signal поднял live фиды NL/FR/ES (API-route из CAT, 117 позиций each). Блокер FR/ES снят. GGL-017 closed, GGL-021/022/023 открыты |
 | 2026-09-04 | Унифицированный скрипт `generate-merchant-feed.js` — NL/FR/ES, валидация цен, strict mode блокирует FR/ES до site_price_rules. npm scripts + docs updated |
