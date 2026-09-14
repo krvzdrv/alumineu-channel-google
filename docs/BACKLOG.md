@@ -36,5 +36,6 @@ Dispatch — **чат** + `AGENTS.md`. Память работ — здесь.
 | GGL-021 | Merchant Center: заведены 3 фида NL/FR/ES (dataSources, daily fetch) | 2026-09-04 |
 | GGL-022 | Merchant Center: настроены shipping services NL/FR/ES | 2026-09-04 |
 | GGL-017 | Merchant feed NL/FR/ES: фиды live на WEB (API-route из CAT, 117 позиций each) | 2026-09-04 |
+| GGL-026 | GSC `alumineu.eu` URL-prefix (FILE) + sitemap | 2026-09-14 |
 | GGL-016 | GSC `alumineu.nl` URL-prefix + sitemap (HTML verify) | 2026-08-28 |
 | GGL-DATA-01 | REPO_DATA_CONTRACT.md + Data & API в AGENTS.md | 2026-07-09 |
