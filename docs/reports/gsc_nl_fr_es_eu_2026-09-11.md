@@ -13,7 +13,7 @@ Coverage (indexed / not indexed / error) bulk API в Search Console нет — �
 | `https://alumineu.nl/` | siteOwner | `…/sitemap.xml` | 2026-09-12 | 0 / 0 |
 | `https://alumineu.fr/` | siteOwner | `…/sitemap.xml` | 2026-09-14 | 0 / 0 |
 | `https://alumineu.es/` | siteOwner | `…/sitemap.xml` | 2026-09-13 | 0 / 0 |
-| `https://alumineu.eu/` | **siteUnverifiedUser** | не сдан | — | свойство добавлено 14.09, verify HTML pending |
+| `https://alumineu.eu/` | **siteOwner** (FILE `google5c6bd815fb268f07.html`, 2026-09-14) | `…/sitemap.xml` сдан | pending first fetch | 0 / 0 |
 | `sc-domain:alumineu.nl` / `.fr` / `.es` / `.eu` | нет | — | — | DNS domain-property не заводили |
 
 ## Performance (28d)
@@ -23,7 +23,7 @@ Coverage (indexed / not indexed / error) bulk API в Search Console нет — �
 | NL | 1 | 42 | 2.38% | 26.9 |
 | FR | 2 | 17 | 11.76% | 68.2 |
 | ES | 0 | 11 | 0% | 70.4 |
-| EU | — | — | — | нет доступа (unverified) |
+| EU | 0 | 0 | — | новый property; данные появятся после индексации |
 
 ### NL top pages
 
@@ -43,11 +43,9 @@ Coverage (indexed / not indexed / error) bulk API в Search Console нет — �
 2. `/productos/perfiles-de-clip` — 0 / 2  
 3. `/` — 0 / 1  
 
-## EU verification (блокер)
+## EU — как закрыли (2026-09-14)
 
-На проде у **всех** apex (nl/fr/es/eu) один и тот же meta content (`lAuE4wkm…` — токен NL).  
-Для `https://alumineu.eu/` API Site Verification ждёт **другой** токен:
-
-`GOOGLE_SITE_VERIFICATION` = `vtbmJANyZj7sm6Z881ycpfW5O1QKizGFMlcBtunvaDk`
-
-После деплоя на Vercel Production проекта `.eu` — GGL подтвердит свойство и сдаст `https://alumineu.eu/sitemap.xml`.
+Meta на всех apex один (токен NL) — для нового property не подошёл.  
+Подтвердили **HTML-файлом** уже на проде: `https://alumineu.eu/google5c6bd815fb268f07.html` (тот же файл, что для FR/ES).  
+После verify: remove+re-add property → `siteOwner` → sitemap `https://alumineu.eu/sitemap.xml`.  
+Domain-property `sc-domain:alumineu.eu` нет (TXT на hoster.by не клали).

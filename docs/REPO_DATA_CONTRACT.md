@@ -200,7 +200,7 @@ CAT (product feed)  Tilda (legacy CSV)
 - **Refresh when expired:** OAuth refresh token flow → regenerate `token-*.json`. См. `docs/MERCHANT_MULTI_COUNTRY_RUNBOOK.md` и `docs/GOOGLE_GBP_ACCESS.md`.
 - **GCP APIs (проект `oceanic-craft-452806-c0` / `820829065208`):** Site Verification + Analytics Admin включены 2026-08-28. GA4 NL: property `551815498` (account `355263165`). Measurement ID и токен site-verification — не в git (Vercel / Owner).
 - **GSC NL (2026-08-28):** URL-prefix `https://alumineu.nl/` подтверждён HTML-тегом (`siteOwner`). Sitemap `https://alumineu.nl/sitemap.xml` сдан. Domain-property `sc-domain:alumineu.nl` нет (DNS TXT на hoster.by не клали).
-- **GSC NL/FR/ES/EU (2026-09-14):** срез `docs/reports/gsc_nl_fr_es_eu_2026-09-11.md`. FR/ES URL-prefix `siteOwner`, sitemaps 0 ошибок. EU — `siteUnverifiedUser`; нужен отдельный meta-токен (не копировать NL).
+- **GSC NL/FR/ES/EU (2026-09-14):** срез `docs/reports/gsc_nl_fr_es_eu_2026-09-11.md`. URL-prefix `siteOwner` у `.nl`/`.fr`/`.es`/`.eu`. EU подтверждён FILE (`google5c6bd815fb268f07.html`), sitemap сдан. Domain-property нет.
 
 ### Service Account (Merchant API)
 - **Where token lives:** `google-merchant-sa-key.json` (local only, **не коммитить**).
