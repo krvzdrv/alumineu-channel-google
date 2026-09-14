@@ -1,0 +1,267 @@
+{
+  "fetched_at": "2026-09-14T09:48:47.483Z",
+  "range": {
+    "start": "2026-08-15",
+    "end": "2026-09-11"
+  },
+  "properties": {
+    "https://alumineu.nl/": {
+      "present": true,
+      "permissionLevel": "siteOwner",
+      "sitemaps": [],
+      "performance": {
+        "clicks": 1,
+        "impressions": 42,
+        "ctr": 0.023809523809523808,
+        "position": 26.928571428571427
+      },
+      "topPages": [
+        {
+          "page": "https://alumineu.nl/",
+          "clicks": 1,
+          "impressions": 3,
+          "ctr": 0.3333333333333333,
+          "position": 1.3333333333333333
+        },
+        {
+          "page": "https://alumineu.nl/over-ons",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 5.333333333333333
+        },
+        {
+          "page": "https://alumineu.nl/privacyverklaring",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 6
+        },
+        {
+          "page": "https://alumineu.nl/producten/accessoires",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 46.666666666666664
+        },
+        {
+          "page": "https://alumineu.nl/contact",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 5
+        },
+        {
+          "page": "https://alumineu.nl/kennis/aluminium-en-aw-6063-t5",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 6.5
+        },
+        {
+          "page": "https://alumineu.nl/kennis",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 5
+        },
+        {
+          "page": "https://alumineu.nl/levering",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
+        },
+        {
+          "page": "https://alumineu.nl/producten/accessoires/gereedschap",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 8
+        },
+        {
+          "page": "https://alumineu.nl/producten/accessoires/gereedschap/praseka-y805",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
+        }
+      ],
+      "errors": [
+        "sitemaps: Cannot read properties of undefined (reading 'sitemaps')"
+      ]
+    },
+    "https://alumineu.fr/": {
+      "present": true,
+      "permissionLevel": "siteOwner",
+      "sitemaps": [],
+      "performance": {
+        "clicks": 2,
+        "impressions": 17,
+        "ctr": 0.11764705882352941,
+        "position": 68.17647058823529
+      },
+      "topPages": [
+        {
+          "page": "https://alumineu.fr/",
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "position": 1
+        },
+        {
+          "page": "https://alumineu.fr/produits/profiles-a-harpon/niches-a-rideaux/curtina-x412",
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "position": 1
+        },
+        {
+          "page": "https://alumineu.fr/produits/ventilation/diffuseurs-lineaires-a-fentes/aerooom",
+          "clicks": 0,
+          "impressions": 9,
+          "ctr": 0,
+          "position": 69.77777777777777
+        },
+        {
+          "page": "https://alumineu.fr/produits/profiles-a-harpon/joint-creux-led",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 99.5
+        },
+        {
+          "page": "https://alumineu.fr/produits/ventilation",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 52
+        },
+        {
+          "page": "https://alumineu.fr/contact",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10
+        },
+        {
+          "page": "https://alumineu.fr/kennis",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 97
+        },
+        {
+          "page": "https://alumineu.fr/produits",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 8
+        },
+        {
+          "page": "https://alumineu.fr/produits/accessoires",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
+        },
+        {
+          "page": "https://alumineu.fr/produits/profiles-a-harpon/niches-a-rideaux/curtina-x405",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
+        }
+      ],
+      "errors": [
+        "sitemaps: Cannot read properties of undefined (reading 'sitemaps')"
+      ]
+    },
+    "https://alumineu.es/": {
+      "present": true,
+      "permissionLevel": "siteOwner",
+      "sitemaps": [],
+      "performance": {
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": 0,
+        "position": 70.36363636363636
+      },
+      "topPages": [
+        {
+          "page": "https://alumineu.es/productos/soluciones-de-interior",
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 77.875
+        },
+        {
+          "page": "https://alumineu.es/productos/perfiles-de-clip",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 38.5
+        },
+        {
+          "page": "https://alumineu.es/",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 74
+        }
+      ],
+      "errors": [
+        "sitemaps: Cannot read properties of undefined (reading 'sitemaps')"
+      ]
+    },
+    "https://alumineu.eu/": {
+      "present": false
+    },
+    "sc-domain:alumineu.nl": {
+      "present": false
+    },
+    "sc-domain:alumineu.fr": {
+      "present": false
+    },
+    "sc-domain:alumineu.es": {
+      "present": false
+    },
+    "sc-domain:alumineu.eu": {
+      "present": false
+    }
+  },
+  "allSites": [
+    {
+      "siteUrl": "sc-domain:alumineu.ro",
+      "permissionLevel": "siteOwner"
+    },
+    {
+      "siteUrl": "sc-domain:alumineu.com",
+      "permissionLevel": "siteOwner"
+    },
+    {
+      "siteUrl": "https://alumineu.fr/",
+      "permissionLevel": "siteOwner"
+    },
+    {
+      "siteUrl": "https://alumineu.pl/",
+      "permissionLevel": "siteOwner"
+    },
+    {
+      "siteUrl": "https://alumineu.es/",
+      "permissionLevel": "siteOwner"
+    },
+    {
+      "siteUrl": "sc-domain:alumineu.pl",
+      "permissionLevel": "siteOwner"
+    },
+    {
+      "siteUrl": "sc-domain:alumineu.de",
+      "permissionLevel": "siteUnverifiedUser"
+    },
+    {
+      "siteUrl": "https://alumineu.nl/",
+      "permissionLevel": "siteOwner"
+    }
+  ]
+}
