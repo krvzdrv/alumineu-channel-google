@@ -1,0 +1,204 @@
+{
+  "fetched_at": "2026-09-17T07:23:49.664Z",
+  "r28": {
+    "start": "2026-08-18",
+    "end": "2026-09-14"
+  },
+  "r7": {
+    "start": "2026-09-08",
+    "end": "2026-09-14"
+  },
+  "sites": {
+    "https://alumineu.nl/": {
+      "permission": "siteOwner",
+      "sitemaps": [
+        {
+          "path": "https://alumineu.nl/sitemap.xml",
+          "pending": false,
+          "submitted": "2026-08-28T12:55:47.725Z",
+          "downloaded": "2026-09-15T14:59:29.023Z",
+          "errors": "0",
+          "warnings": "0"
+        }
+      ],
+      "perf28": {
+        "clicks": 1,
+        "impressions": 56,
+        "ctr": 0.017857142857142856,
+        "position": 25.535714285714285
+      },
+      "perf7": {
+        "clicks": 0,
+        "impressions": 34,
+        "ctr": 0,
+        "position": 23.852941176470587
+      },
+      "topPages28": [
+        {
+          "page": "https://alumineu.nl/",
+          "clicks": 1,
+          "impressions": 4,
+          "position": 1.25
+        },
+        {
+          "page": "https://alumineu.nl/contact",
+          "clicks": 0,
+          "impressions": 3,
+          "position": 6.333333333333333
+        },
+        {
+          "page": "https://alumineu.nl/kennis/aluminium-en-aw-6063-t5",
+          "clicks": 0,
+          "impressions": 2,
+          "position": 6.5
+        },
+        {
+          "page": "https://alumineu.nl/kennis",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 5
+        },
+        {
+          "page": "https://alumineu.nl/levering",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 2
+        }
+      ]
+    },
+    "https://alumineu.fr/": {
+      "permission": "siteOwner",
+      "sitemaps": [
+        {
+          "path": "https://alumineu.fr/sitemap.xml",
+          "pending": false,
+          "submitted": "2026-09-02T12:07:12.933Z",
+          "downloaded": "2026-09-14T05:40:39.155Z",
+          "errors": "0",
+          "warnings": "0"
+        }
+      ],
+      "perf28": {
+        "clicks": 2,
+        "impressions": 21,
+        "ctr": 0.09523809523809523,
+        "position": 63.904761904761905
+      },
+      "perf7": {
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0,
+        "position": 67.42857142857143
+      },
+      "topPages28": [
+        {
+          "page": "https://alumineu.fr/",
+          "clicks": 1,
+          "impressions": 2,
+          "position": 1
+        },
+        {
+          "page": "https://alumineu.fr/contact",
+          "clicks": 0,
+          "impressions": 2,
+          "position": 8.5
+        },
+        {
+          "page": "https://alumineu.fr/kennis",
+          "clicks": 0,
+          "impressions": 2,
+          "position": 49.5
+        },
+        {
+          "page": "https://alumineu.fr/produits/profiles-a-harpon/niches-a-rideaux/curtina-x412",
+          "clicks": 1,
+          "impressions": 1,
+          "position": 1
+        },
+        {
+          "page": "https://alumineu.fr/privacyverklaring",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 3
+        }
+      ]
+    },
+    "https://alumineu.es/": {
+      "permission": "siteOwner",
+      "sitemaps": [
+        {
+          "path": "https://alumineu.es/sitemap.xml",
+          "pending": false,
+          "submitted": "2026-09-02T12:10:45.123Z",
+          "downloaded": "2026-09-13T19:41:57.872Z",
+          "errors": "0",
+          "warnings": "0"
+        }
+      ],
+      "perf28": {
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0,
+        "position": 71.57142857142857
+      },
+      "perf7": {
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 77.125
+      },
+      "topPages28": [
+        {
+          "page": "https://alumineu.es/productos/soluciones-de-interior",
+          "clicks": 0,
+          "impressions": 10,
+          "position": 78.1
+        },
+        {
+          "page": "https://alumineu.es/productos/perfiles-de-clip",
+          "clicks": 0,
+          "impressions": 3,
+          "position": 49
+        },
+        {
+          "page": "https://alumineu.es/",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 74
+        }
+      ]
+    },
+    "https://alumineu.eu/": {
+      "permission": "siteOwner",
+      "sitemaps": [
+        {
+          "path": "https://alumineu.eu/sitemap.xml",
+          "pending": true,
+          "submitted": "2026-09-14T10:13:06.525Z",
+          "errors": "0",
+          "warnings": "0"
+        }
+      ],
+      "perf28": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 5
+      },
+      "perf7": {
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 5
+      },
+      "topPages28": [
+        {
+          "page": "https://alumineu.eu/products/accessories/hooks/slidene-y702",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 5
+        }
+      ]
+    }
+  }
+}
