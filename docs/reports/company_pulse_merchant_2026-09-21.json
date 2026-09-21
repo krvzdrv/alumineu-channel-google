@@ -1,0 +1,422 @@
+{
+  "fetched_at": "2026-09-21T07:02:55.831Z",
+  "markets": [
+    {
+      "code": "PL",
+      "merchantAccountId": "5785188396",
+      "siteOrigin": "https://alumineu.pl",
+      "feedLabel": "PL",
+      "currency": "PLN",
+      "homepage": {
+        "name": "accounts/5785188396/homepage",
+        "uri": "https://alumineu.pl/",
+        "claimed": true
+      },
+      "sources": [
+        {
+          "id": "10667412482",
+          "displayName": "PRODUCTS SOURCE 1",
+          "feedLabel": "PL",
+          "lang": "pl",
+          "countries": [
+            "PL"
+          ],
+          "fileType": "GOOGLE_SHEETS",
+          "fetchUri": "drive://1M0VnJVUuOSgrka1EoQwkDK7W2usp3qM1V951DPjO1rw",
+          "enabled": true,
+          "frequency": "FREQUENCY_DAILY"
+        },
+        {
+          "id": "10674634377",
+          "displayName": "alumineu.pl"
+        }
+      ],
+      "productCount": 137,
+      "approvedDestRows": 685,
+      "disapprovedDestRows": 137,
+      "topIssues": [
+        {
+          "issue": "local_stores_lack_inventory|DISAPPROVED",
+          "count": 137
+        },
+        {
+          "issue": "image_too_small_for_high_resolution|NOT_IMPACTED",
+          "count": 20
+        }
+      ],
+      "shipping": [
+        {
+          "name": "Dostawa PL",
+          "countries": [
+            "PL"
+          ],
+          "currency": "PLN",
+          "flatMicros": "50000000"
+        },
+        {
+          "name": "Versand DE",
+          "countries": [
+            "DE"
+          ],
+          "currency": "EUR",
+          "flatMicros": "9990000"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "code": "DE",
+      "merchantAccountId": "5798257792",
+      "siteOrigin": "https://alumineu.de",
+      "feedLabel": "DE",
+      "currency": "EUR",
+      "homepage": {
+        "name": "accounts/5798257792/homepage",
+        "uri": "https://alumineu.de/",
+        "claimed": true
+      },
+      "sources": [
+        {
+          "id": "10682373936",
+          "displayName": "PRODUCTS SOURCE DE",
+          "feedLabel": "DE",
+          "lang": "de",
+          "countries": [
+            "DE"
+          ],
+          "fileType": "FETCH",
+          "fetchUri": "drive://1-a8S1X6JHgxvPYYiYu3tGocBLKgS-HzZrR5HXMpVbDs",
+          "enabled": true,
+          "frequency": "FREQUENCY_DAILY"
+        }
+      ],
+      "productCount": 137,
+      "approvedDestRows": 0,
+      "disapprovedDestRows": 1,
+      "topIssues": [
+        {
+          "issue": "pending_initial_policy_review_free_listings|DISAPPROVED",
+          "count": 137
+        },
+        {
+          "issue": "landing_page_crawling_not_allowed|DISAPPROVED",
+          "count": 1
+        }
+      ],
+      "shipping": [
+        {
+          "name": "Versand DE",
+          "countries": [
+            "DE"
+          ],
+          "currency": "EUR",
+          "flatMicros": "9990000"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "code": "RO",
+      "merchantAccountId": "5798002953",
+      "siteOrigin": "https://alumineu.ro",
+      "feedLabel": "RO",
+      "currency": "RON",
+      "homepage": {
+        "name": "accounts/5798002953/homepage",
+        "uri": "https://alumineu.ro/",
+        "claimed": true
+      },
+      "sources": [
+        {
+          "id": "10683104125",
+          "displayName": "PRODUCTS SOURCE RO",
+          "feedLabel": "RO",
+          "lang": "ro",
+          "countries": [
+            "RO"
+          ],
+          "fileType": "FETCH",
+          "fetchUri": "drive://1ARpPpYbjeBbdFOFnfIpLU4GVcToZRR5Hm_EtQ3cMhAo",
+          "enabled": true,
+          "frequency": "FREQUENCY_DAILY"
+        }
+      ],
+      "productCount": 137,
+      "approvedDestRows": 0,
+      "disapprovedDestRows": 0,
+      "topIssues": [
+        {
+          "issue": "pending_initial_policy_review_free_listings|DISAPPROVED",
+          "count": 137
+        }
+      ],
+      "shipping": [
+        {
+          "name": "Livrare RO",
+          "countries": [
+            "RO"
+          ],
+          "currency": "RON",
+          "flatMicros": "49000000"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "code": "EU",
+      "merchantAccountId": "5798434120",
+      "siteOrigin": "https://alumineu.com",
+      "feedLabel": "EU",
+      "currency": "EUR",
+      "homepage": {
+        "name": "accounts/5798434120/homepage",
+        "uri": "https://alumineu.com/",
+        "claimed": true
+      },
+      "sources": [
+        {
+          "id": "10677731885",
+          "displayName": "PRODUCTS SOURCE 1",
+          "feedLabel": "EU",
+          "lang": "en",
+          "countries": [
+            "AT",
+            "BE",
+            "CH",
+            "CZ",
+            "DK",
+            "ES",
+            "FI",
+            "FR",
+            "GB",
+            "GR",
+            "HU",
+            "IE",
+            "IT",
+            "NL",
+            "NO",
+            "PT",
+            "SE",
+            "SK",
+            "CY"
+          ],
+          "fileType": "GOOGLE_SHEETS",
+          "fetchUri": "drive://1k4TRMh1nok24hKqK-4bDVmptHT5ZF7TrUL6JNoRRhr8",
+          "enabled": true,
+          "frequency": "FREQUENCY_DAILY"
+        }
+      ],
+      "productCount": 137,
+      "approvedDestRows": 0,
+      "disapprovedDestRows": 4,
+      "topIssues": [
+        {
+          "issue": "pending_initial_policy_review_free_listings|DISAPPROVED",
+          "count": 137
+        },
+        {
+          "issue": "landing_page_error|DISAPPROVED",
+          "count": 4
+        },
+        {
+          "issue": "missing_potentially_required_attribute|NOT_IMPACTED",
+          "count": 1
+        }
+      ],
+      "shipping": [
+        {
+          "name": "Shipping EU",
+          "countries": [
+            "AT",
+            "BE",
+            "BG",
+            "CH",
+            "CY",
+            "CZ",
+            "DK",
+            "EE",
+            "ES",
+            "FI",
+            "FR",
+            "GB",
+            "GR",
+            "HR",
+            "HU",
+            "IE",
+            "IT",
+            "LT",
+            "LU",
+            "LV",
+            "MT",
+            "NL",
+            "NO",
+            "PT",
+            "SE",
+            "SI",
+            "SK"
+          ],
+          "currency": "EUR",
+          "flatMicros": "14990000"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "code": "NL",
+      "merchantAccountId": "5849784515",
+      "siteOrigin": "https://alumineu.nl",
+      "feedLabel": "NL",
+      "currency": "EUR",
+      "homepage": {
+        "name": "accounts/5849784515/homepage",
+        "uri": "https://alumineu.nl/",
+        "claimed": true
+      },
+      "sources": [
+        {
+          "id": "10722508632",
+          "displayName": "alumineu-nl",
+          "feedLabel": "NL",
+          "lang": "nl",
+          "countries": [
+            "NL"
+          ],
+          "fileType": "FETCH",
+          "fetchUri": "https://alumineu.nl/feeds/google-merchant-nl.xml",
+          "enabled": true,
+          "frequency": "FREQUENCY_DAILY"
+        }
+      ],
+      "productCount": 107,
+      "approvedDestRows": 0,
+      "disapprovedDestRows": 0,
+      "topIssues": [
+        {
+          "issue": "pending_initial_policy_review_free_listings|DISAPPROVED",
+          "count": 107
+        },
+        {
+          "issue": "missing_potentially_required_attribute|NOT_IMPACTED",
+          "count": 31
+        }
+      ],
+      "shipping": [
+        {
+          "name": "Verzending NL",
+          "countries": [
+            "NL"
+          ],
+          "currency": "EUR",
+          "flatMicros": "9990000"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "code": "FR",
+      "merchantAccountId": "5849001558",
+      "siteOrigin": "https://alumineu.fr",
+      "feedLabel": "FR",
+      "currency": "EUR",
+      "homepage": {
+        "name": "accounts/5849001558/homepage",
+        "uri": "https://alumineu.fr/",
+        "claimed": true
+      },
+      "sources": [
+        {
+          "id": "10722508674",
+          "displayName": "alumineu-fr",
+          "feedLabel": "FR",
+          "lang": "fr",
+          "countries": [
+            "FR"
+          ],
+          "fileType": "FETCH",
+          "fetchUri": "https://alumineu.fr/feeds/google-merchant-fr.xml",
+          "enabled": true,
+          "frequency": "FREQUENCY_DAILY"
+        }
+      ],
+      "productCount": 107,
+      "approvedDestRows": 0,
+      "disapprovedDestRows": 0,
+      "topIssues": [
+        {
+          "issue": "pending_initial_policy_review_free_listings|DISAPPROVED",
+          "count": 107
+        },
+        {
+          "issue": "missing_potentially_required_attribute|NOT_IMPACTED",
+          "count": 43
+        },
+        {
+          "issue": "missing_item_attribute_for_product_type|DEMOTED",
+          "count": 9
+        }
+      ],
+      "shipping": [
+        {
+          "name": "Livraison FR",
+          "countries": [
+            "FR"
+          ],
+          "currency": "EUR",
+          "flatMicros": "14990000"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "code": "ES",
+      "merchantAccountId": "5849001567",
+      "siteOrigin": "https://alumineu.es",
+      "feedLabel": "ES",
+      "currency": "EUR",
+      "homepage": {
+        "name": "accounts/5849001567/homepage",
+        "uri": "https://alumineu.es/",
+        "claimed": true
+      },
+      "sources": [
+        {
+          "id": "10723519534",
+          "displayName": "alumineu-es",
+          "feedLabel": "ES",
+          "lang": "es",
+          "countries": [
+            "ES"
+          ],
+          "fileType": "FETCH",
+          "fetchUri": "https://alumineu.es/feeds/google-merchant-es.xml",
+          "enabled": true,
+          "frequency": "FREQUENCY_DAILY"
+        }
+      ],
+      "productCount": 107,
+      "approvedDestRows": 0,
+      "disapprovedDestRows": 0,
+      "topIssues": [
+        {
+          "issue": "pending_initial_policy_review_free_listings|DISAPPROVED",
+          "count": 107
+        },
+        {
+          "issue": "missing_potentially_required_attribute|NOT_IMPACTED",
+          "count": 51
+        }
+      ],
+      "shipping": [
+        {
+          "name": "Envío ES",
+          "countries": [
+            "ES"
+          ],
+          "currency": "EUR",
+          "flatMicros": "14990000"
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

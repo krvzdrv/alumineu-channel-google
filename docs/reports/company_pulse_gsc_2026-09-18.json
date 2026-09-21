@@ -1,0 +1,1152 @@
+{
+  "fetched_at": "2026-09-21T07:02:55.874Z",
+  "note": "GSC dataState=final; end date ~today-3",
+  "r28": {
+    "start": "2026-08-22",
+    "end": "2026-09-18"
+  },
+  "r7": {
+    "start": "2026-09-12",
+    "end": "2026-09-18"
+  },
+  "properties": [
+    {
+      "siteUrl": "sc-domain:alumineu.pl",
+      "permissionLevel": "siteOwner",
+      "sitemaps": [
+        {
+          "path": "https://alumineu.pl/sitemap.xml",
+          "pending": false,
+          "submitted": "2025-09-01T13:01:16.209Z",
+          "downloaded": "2026-09-20T17:36:22.534Z",
+          "errors": "0",
+          "warnings": "8"
+        }
+      ],
+      "perf28": {
+        "clicks": 112,
+        "impressions": 1392,
+        "ctr": 0.08045977011494253,
+        "position": 15.548132183908047
+      },
+      "perf7": {
+        "clicks": 34,
+        "impressions": 310,
+        "ctr": 0.10967741935483871,
+        "position": 13.509677419354839
+      },
+      "topQueries28": [
+        {
+          "key": "alumineu",
+          "clicks": 41,
+          "impressions": 64,
+          "ctr": 0.640625,
+          "position": 1.5
+        },
+        {
+          "key": "alumineo",
+          "clicks": 14,
+          "impressions": 16,
+          "ctr": 0.875,
+          "position": 1.375
+        },
+        {
+          "key": "profile cieniowe",
+          "clicks": 1,
+          "impressions": 14,
+          "ctr": 0.07142857142857142,
+          "position": 10.071428571428571
+        },
+        {
+          "key": "karnisz do sufitu napinanego",
+          "clicks": 1,
+          "impressions": 12,
+          "ctr": 0.08333333333333333,
+          "position": 9.25
+        },
+        {
+          "key": "profile do sufitu napinanego",
+          "clicks": 1,
+          "impressions": 10,
+          "ctr": 0.1,
+          "position": 12.9
+        },
+        {
+          "key": "profil do sufitu napinanego",
+          "clicks": 1,
+          "impressions": 9,
+          "ctr": 0.1111111111111111,
+          "position": 13.777777777777779
+        },
+        {
+          "key": "up club",
+          "clicks": 1,
+          "impressions": 8,
+          "ctr": 0.125,
+          "position": 3.375
+        },
+        {
+          "key": "do sufitu pl",
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "position": 6
+        },
+        {
+          "key": "gdzie kupić",
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "position": 7
+        },
+        {
+          "key": "aluminiumpaletten",
+          "clicks": 0,
+          "impressions": 30,
+          "ctr": 0,
+          "position": 35.86666666666667
+        },
+        {
+          "key": "akcesoria do sufitów napinanych",
+          "clicks": 0,
+          "impressions": 28,
+          "ctr": 0,
+          "position": 15.535714285714286
+        },
+        {
+          "key": "alu",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 7
+        }
+      ],
+      "topPages28": [
+        {
+          "key": "https://alumineu.pl/",
+          "clicks": 74,
+          "impressions": 432,
+          "ctr": 0.1712962962962963,
+          "position": 19.430555555555557
+        },
+        {
+          "key": "https://alumineu.pl/katalog",
+          "clicks": 5,
+          "impressions": 44,
+          "ctr": 0.11363636363636363,
+          "position": 1.9545454545454546
+        },
+        {
+          "key": "https://alumineu.pl/szkolenie",
+          "clicks": 3,
+          "impressions": 194,
+          "ctr": 0.015463917525773196,
+          "position": 12.608247422680412
+        },
+        {
+          "key": "https://alumineu.pl/produkty/profile-harpunowe/karniszowe",
+          "clicks": 2,
+          "impressions": 85,
+          "ctr": 0.023529411764705882,
+          "position": 6.811764705882353
+        },
+        {
+          "key": "https://alumineu.pl/blog/invisia-x201-x202-przejscie-na-profil-cieniowy",
+          "clicks": 2,
+          "impressions": 84,
+          "ctr": 0.023809523809523808,
+          "position": 7.833333333333333
+        },
+        {
+          "key": "https://alumineu.pl/produkty/aranzacje/przepierzenia/decorra",
+          "clicks": 2,
+          "impressions": 51,
+          "ctr": 0.0392156862745098,
+          "position": 9.490196078431373
+        },
+        {
+          "key": "https://alumineu.pl/produkty",
+          "clicks": 2,
+          "impressions": 47,
+          "ctr": 0.0425531914893617,
+          "position": 2.1063829787234045
+        },
+        {
+          "key": "https://alumineu.pl/produkty/akcesoria/narzedzia/praseka-y805",
+          "clicks": 2,
+          "impressions": 3,
+          "ctr": 0.6666666666666666,
+          "position": 1
+        }
+      ],
+      "errors": []
+    },
+    {
+      "siteUrl": "https://alumineu.pl/",
+      "permissionLevel": "siteOwner",
+      "sitemaps": [
+        {
+          "path": "https://alumineu.pl/sitemap.xml",
+          "pending": false,
+          "submitted": "2025-09-01T13:01:16.209Z",
+          "downloaded": "2026-09-20T17:36:22.534Z",
+          "errors": "0",
+          "warnings": "8"
+        }
+      ],
+      "perf28": {
+        "clicks": 112,
+        "impressions": 1392,
+        "ctr": 0.08045977011494253,
+        "position": 15.548132183908047
+      },
+      "perf7": {
+        "clicks": 34,
+        "impressions": 310,
+        "ctr": 0.10967741935483871,
+        "position": 13.509677419354839
+      },
+      "topQueries28": [
+        {
+          "key": "alumineu",
+          "clicks": 41,
+          "impressions": 64,
+          "ctr": 0.640625,
+          "position": 1.5
+        },
+        {
+          "key": "alumineo",
+          "clicks": 14,
+          "impressions": 16,
+          "ctr": 0.875,
+          "position": 1.375
+        },
+        {
+          "key": "profile cieniowe",
+          "clicks": 1,
+          "impressions": 14,
+          "ctr": 0.07142857142857142,
+          "position": 10.071428571428571
+        },
+        {
+          "key": "karnisz do sufitu napinanego",
+          "clicks": 1,
+          "impressions": 12,
+          "ctr": 0.08333333333333333,
+          "position": 9.25
+        },
+        {
+          "key": "profile do sufitu napinanego",
+          "clicks": 1,
+          "impressions": 10,
+          "ctr": 0.1,
+          "position": 12.9
+        },
+        {
+          "key": "profil do sufitu napinanego",
+          "clicks": 1,
+          "impressions": 9,
+          "ctr": 0.1111111111111111,
+          "position": 13.777777777777779
+        },
+        {
+          "key": "up club",
+          "clicks": 1,
+          "impressions": 8,
+          "ctr": 0.125,
+          "position": 3.375
+        },
+        {
+          "key": "do sufitu pl",
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "position": 6
+        },
+        {
+          "key": "gdzie kupić",
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "position": 7
+        },
+        {
+          "key": "aluminiumpaletten",
+          "clicks": 0,
+          "impressions": 30,
+          "ctr": 0,
+          "position": 35.86666666666667
+        },
+        {
+          "key": "akcesoria do sufitów napinanych",
+          "clicks": 0,
+          "impressions": 28,
+          "ctr": 0,
+          "position": 15.535714285714286
+        },
+        {
+          "key": "alu",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 7
+        }
+      ],
+      "topPages28": [
+        {
+          "key": "https://alumineu.pl/",
+          "clicks": 74,
+          "impressions": 432,
+          "ctr": 0.1712962962962963,
+          "position": 19.430555555555557
+        },
+        {
+          "key": "https://alumineu.pl/katalog",
+          "clicks": 5,
+          "impressions": 44,
+          "ctr": 0.11363636363636363,
+          "position": 1.9545454545454546
+        },
+        {
+          "key": "https://alumineu.pl/szkolenie",
+          "clicks": 3,
+          "impressions": 194,
+          "ctr": 0.015463917525773196,
+          "position": 12.608247422680412
+        },
+        {
+          "key": "https://alumineu.pl/produkty/profile-harpunowe/karniszowe",
+          "clicks": 2,
+          "impressions": 85,
+          "ctr": 0.023529411764705882,
+          "position": 6.811764705882353
+        },
+        {
+          "key": "https://alumineu.pl/blog/invisia-x201-x202-przejscie-na-profil-cieniowy",
+          "clicks": 2,
+          "impressions": 84,
+          "ctr": 0.023809523809523808,
+          "position": 7.833333333333333
+        },
+        {
+          "key": "https://alumineu.pl/produkty/aranzacje/przepierzenia/decorra",
+          "clicks": 2,
+          "impressions": 51,
+          "ctr": 0.0392156862745098,
+          "position": 9.490196078431373
+        },
+        {
+          "key": "https://alumineu.pl/produkty",
+          "clicks": 2,
+          "impressions": 47,
+          "ctr": 0.0425531914893617,
+          "position": 2.1063829787234045
+        },
+        {
+          "key": "https://alumineu.pl/produkty/akcesoria/narzedzia/praseka-y805",
+          "clicks": 2,
+          "impressions": 3,
+          "ctr": 0.6666666666666666,
+          "position": 1
+        }
+      ],
+      "errors": []
+    },
+    {
+      "siteUrl": "sc-domain:alumineu.ro",
+      "permissionLevel": "siteOwner",
+      "sitemaps": [
+        {
+          "path": "https://alumineu.ro/sitemap.xml",
+          "pending": false,
+          "submitted": "2026-02-09T06:52:28.313Z",
+          "downloaded": "2026-09-17T01:39:16.398Z",
+          "errors": "0",
+          "warnings": "0"
+        }
+      ],
+      "perf28": {
+        "clicks": 49,
+        "impressions": 543,
+        "ctr": 0.09023941068139964,
+        "position": 15.060773480662984
+      },
+      "perf7": {
+        "clicks": 15,
+        "impressions": 141,
+        "ctr": 0.10638297872340426,
+        "position": 12.794326241134751
+      },
+      "topQueries28": [
+        {
+          "key": "alumineu",
+          "clicks": 3,
+          "impressions": 3,
+          "ctr": 1,
+          "position": 1
+        },
+        {
+          "key": "profil tavan extensibil",
+          "clicks": 2,
+          "impressions": 33,
+          "ctr": 0.06060606060606061,
+          "position": 5.696969696969697
+        },
+        {
+          "key": "accesorii profil",
+          "clicks": 0,
+          "impressions": 60,
+          "ctr": 0,
+          "position": 39
+        },
+        {
+          "key": "elemente de colt capace elemente de etansare si fixare pentru profile",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 14.5
+        },
+        {
+          "key": "profil tavan",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 46.5
+        },
+        {
+          "key": "profile din aluminiu și accesorii",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 32
+        },
+        {
+          "key": "de unde pot cumpara",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 7
+        },
+        {
+          "key": "de unde pot să cumpar",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "key": "extensibile",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 3
+        },
+        {
+          "key": "membrana tavan extensibil",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 55
+        },
+        {
+          "key": "pereti din aluminiu",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 66
+        },
+        {
+          "key": "profile tavan",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 31
+        }
+      ],
+      "topPages28": [
+        {
+          "key": "https://alumineu.ro/",
+          "clicks": 34,
+          "impressions": 330,
+          "ctr": 0.10303030303030303,
+          "position": 12.436363636363636
+        },
+        {
+          "key": "https://alumineu.ro/produse/profile-cu-harpon/luminosi",
+          "clicks": 6,
+          "impressions": 38,
+          "ctr": 0.15789473684210525,
+          "position": 3.1842105263157894
+        },
+        {
+          "key": "https://alumineu.ro/produse/accesorii",
+          "clicks": 3,
+          "impressions": 73,
+          "ctr": 0.0410958904109589,
+          "position": 35.56164383561644
+        },
+        {
+          "key": "https://alumineu.ro/produse/profile-cu-harpon",
+          "clicks": 2,
+          "impressions": 42,
+          "ctr": 0.047619047619047616,
+          "position": 5.333333333333333
+        },
+        {
+          "key": "https://alumineu.ro/produse",
+          "clicks": 2,
+          "impressions": 12,
+          "ctr": 0.16666666666666666,
+          "position": 2.5
+        },
+        {
+          "key": "https://alumineu.ro/produse/profile-cu-clema",
+          "clicks": 1,
+          "impressions": 23,
+          "ctr": 0.043478260869565216,
+          "position": 8.695652173913043
+        },
+        {
+          "key": "https://alumineu.ro/catalog",
+          "clicks": 1,
+          "impressions": 10,
+          "ctr": 0.1,
+          "position": 2.5
+        },
+        {
+          "key": "https://alumineu.ro/produse/profile-cu-harpon/conturati",
+          "clicks": 1,
+          "impressions": 10,
+          "ctr": 0.1,
+          "position": 5.5
+        }
+      ],
+      "errors": []
+    },
+    {
+      "siteUrl": "sc-domain:alumineu.com",
+      "permissionLevel": "siteOwner",
+      "sitemaps": [
+        {
+          "path": "https://alumineu.com/sitemap.xml",
+          "pending": false,
+          "submitted": "2026-02-09T07:06:47.054Z",
+          "downloaded": "2026-02-09T07:06:48.513Z",
+          "errors": "0",
+          "warnings": "0"
+        }
+      ],
+      "perf28": {
+        "clicks": 5,
+        "impressions": 124,
+        "ctr": 0.04032258064516129,
+        "position": 5.532258064516129
+      },
+      "perf7": {
+        "clicks": 2,
+        "impressions": 34,
+        "ctr": 0.058823529411764705,
+        "position": 5.382352941176471
+      },
+      "topQueries28": [
+        {
+          "key": "alumineu",
+          "clicks": 0,
+          "impressions": 46,
+          "ctr": 0,
+          "position": 3.847826086956522
+        },
+        {
+          "key": "aluminuu",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 56
+        },
+        {
+          "key": "lightra",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 7.5
+        },
+        {
+          "key": "alumine",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 32
+        },
+        {
+          "key": "aluminiu",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 8
+        },
+        {
+          "key": "slidene",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 5
+        }
+      ],
+      "topPages28": [
+        {
+          "key": "https://alumineu.com/",
+          "clicks": 3,
+          "impressions": 86,
+          "ctr": 0.03488372093023256,
+          "position": 5.465116279069767
+        },
+        {
+          "key": "https://alumineu.com/products/ventilation/slot-diffusers/aerooom",
+          "clicks": 1,
+          "impressions": 3,
+          "ctr": 0.3333333333333333,
+          "position": 2
+        },
+        {
+          "key": "https://alumineu.com/products/accessories/end-caps/endcapp-y201",
+          "clicks": 1,
+          "impressions": 2,
+          "ctr": 0.5,
+          "position": 5
+        },
+        {
+          "key": "https://alumineu.com/products",
+          "clicks": 0,
+          "impressions": 17,
+          "ctr": 0,
+          "position": 4.9411764705882355
+        },
+        {
+          "key": "https://alumineu.com/contacts",
+          "clicks": 0,
+          "impressions": 12,
+          "ctr": 0,
+          "position": 6
+        },
+        {
+          "key": "https://alumineu.com/products/accessories/connectors/jointek-y604",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 9
+        },
+        {
+          "key": "https://alumineu.com/products/accessories/clips",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
+        },
+        {
+          "key": "https://alumineu.com/products/accessories/devices/stuslon-y903",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 8
+        }
+      ],
+      "errors": []
+    },
+    {
+      "siteUrl": "https://alumineu.nl/",
+      "permissionLevel": "siteOwner",
+      "sitemaps": [
+        {
+          "path": "https://alumineu.nl/sitemap.xml",
+          "pending": false,
+          "submitted": "2026-08-28T12:55:47.725Z",
+          "downloaded": "2026-09-19T23:27:28.218Z",
+          "errors": "0",
+          "warnings": "0"
+        }
+      ],
+      "perf28": {
+        "clicks": 1,
+        "impressions": 81,
+        "ctr": 0.012345679012345678,
+        "position": 24.493827160493826
+      },
+      "perf7": {
+        "clicks": 0,
+        "impressions": 39,
+        "ctr": 0,
+        "position": 21.871794871794872
+      },
+      "topQueries28": [
+        {
+          "key": "gordijnprofiel",
+          "clicks": 0,
+          "impressions": 29,
+          "ctr": 0,
+          "position": 35.241379310344826
+        },
+        {
+          "key": "gordijnprofielen",
+          "clicks": 0,
+          "impressions": 20,
+          "ctr": 0,
+          "position": 14.9
+        },
+        {
+          "key": "accessoires voor galva profielen",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 62
+        },
+        {
+          "key": "alu plafondprofielen",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 79
+        },
+        {
+          "key": "alumineu",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "key": "klemstrip",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 71
+        },
+        {
+          "key": "koppelstuk voor verticale profielen",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 87
+        },
+        {
+          "key": "spanntuchprofil",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 31
+        }
+      ],
+      "topPages28": [
+        {
+          "key": "https://alumineu.nl/",
+          "clicks": 1,
+          "impressions": 7,
+          "ctr": 0.14285714285714285,
+          "position": 1.1428571428571428
+        },
+        {
+          "key": "https://alumineu.nl/over-ons",
+          "clicks": 0,
+          "impressions": 5,
+          "ctr": 0,
+          "position": 6
+        },
+        {
+          "key": "https://alumineu.nl/producten/accessoires",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 54.25
+        },
+        {
+          "key": "https://alumineu.nl/contact",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 6.333333333333333
+        },
+        {
+          "key": "https://alumineu.nl/privacyverklaring",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 6
+        },
+        {
+          "key": "https://alumineu.nl/kennis/aluminium-en-aw-6063-t5",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 6.5
+        },
+        {
+          "key": "https://alumineu.nl/kennis",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 5
+        },
+        {
+          "key": "https://alumineu.nl/levering",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
+        }
+      ],
+      "errors": []
+    },
+    {
+      "siteUrl": "https://alumineu.fr/",
+      "permissionLevel": "siteOwner",
+      "sitemaps": [
+        {
+          "path": "https://alumineu.fr/sitemap.xml",
+          "pending": false,
+          "submitted": "2026-09-02T12:07:12.933Z",
+          "downloaded": "2026-09-18T08:14:12.907Z",
+          "errors": "0",
+          "warnings": "0"
+        }
+      ],
+      "perf28": {
+        "clicks": 2,
+        "impressions": 29,
+        "ctr": 0.06896551724137931,
+        "position": 55.206896551724135
+      },
+      "perf7": {
+        "clicks": 0,
+        "impressions": 12,
+        "ctr": 0,
+        "position": 36.833333333333336
+      },
+      "topQueries28": [
+        {
+          "key": "alumineu",
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "position": 1
+        },
+        {
+          "key": "diffuseurs linéaires à fentes",
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "position": 61.9
+        },
+        {
+          "key": "diffuseur à fente",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 65.66666666666667
+        },
+        {
+          "key": "diffuseurs linéaires silencieux de transit",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 91.66666666666667
+        },
+        {
+          "key": "joint creux",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 97
+        },
+        {
+          "key": "plénum technique",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 97
+        }
+      ],
+      "topPages28": [
+        {
+          "key": "https://alumineu.fr/",
+          "clicks": 1,
+          "impressions": 3,
+          "ctr": 0.3333333333333333,
+          "position": 1
+        },
+        {
+          "key": "https://alumineu.fr/produits/profiles-a-harpon/niches-a-rideaux/curtina-x412",
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "position": 1
+        },
+        {
+          "key": "https://alumineu.fr/contact",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 6.333333333333333
+        },
+        {
+          "key": "https://alumineu.fr/kennis",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 35.666666666666664
+        },
+        {
+          "key": "https://alumineu.fr/produits",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 7.666666666666667
+        },
+        {
+          "key": "https://alumineu.fr/privacyverklaring",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 3.5
+        },
+        {
+          "key": "https://alumineu.fr/catalogus",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 5
+        },
+        {
+          "key": "https://alumineu.fr/levering",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 3
+        }
+      ],
+      "errors": []
+    },
+    {
+      "siteUrl": "https://alumineu.es/",
+      "permissionLevel": "siteOwner",
+      "sitemaps": [
+        {
+          "path": "https://alumineu.es/sitemap.xml",
+          "pending": false,
+          "submitted": "2026-09-02T12:10:45.123Z",
+          "downloaded": "2026-09-17T14:29:53.682Z",
+          "errors": "0",
+          "warnings": "0"
+        }
+      ],
+      "perf28": {
+        "clicks": 0,
+        "impressions": 19,
+        "ctr": 0,
+        "position": 58.526315789473685
+      },
+      "perf7": {
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 42.25
+      },
+      "topQueries28": [
+        {
+          "key": "revestimiento guías deslizamiento acetálicas",
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "position": 80.625
+        },
+        {
+          "key": "perfil clip",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 68
+        },
+        {
+          "key": "aillaments pirineu",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 74
+        },
+        {
+          "key": "aluminio nube",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 86
+        },
+        {
+          "key": "higroconvectores knapen",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 71
+        },
+        {
+          "key": "y804",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10
+        }
+      ],
+      "topPages28": [
+        {
+          "key": "https://alumineu.es/productos/perfiles-de-arpon/junta-de-sombra/invisia-x202",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 9.333333333333334
+        },
+        {
+          "key": "https://alumineu.es/",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 37.5
+        },
+        {
+          "key": "https://alumineu.es/levering",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 2
+        },
+        {
+          "key": "https://alumineu.es/privacyverklaring",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 4
+        },
+        {
+          "key": "https://alumineu.es/productos/accesorios/difusores-de-luz",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 7
+        },
+        {
+          "key": "https://alumineu.es/productos/accesorios/herramientas-de-montaje/spatula-y804",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10
+        },
+        {
+          "key": "https://alumineu.es/productos/angulos/lightra/lightra-nx050-cross",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 8
+        },
+        {
+          "key": "https://alumineu.es/productos/perfiles-de-arpon/cortineros-empotrados/curtina-x410",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 9
+        }
+      ],
+      "errors": []
+    },
+    {
+      "siteUrl": "https://alumineu.eu/",
+      "permissionLevel": "siteOwner",
+      "sitemaps": [
+        {
+          "path": "https://alumineu.eu/sitemap.xml",
+          "pending": true,
+          "submitted": "2026-09-14T10:13:06.525Z",
+          "errors": "0",
+          "warnings": "0"
+        }
+      ],
+      "perf28": {
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0,
+        "position": 6.230769230769231
+      },
+      "perf7": {
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0,
+        "position": 6.230769230769231
+      },
+      "topQueries28": [
+        {
+          "key": "slidene",
+          "clicks": 0,
+          "impressions": 5,
+          "ctr": 0,
+          "position": 6
+        },
+        {
+          "key": "alumineu",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 3.6666666666666665
+        }
+      ],
+      "topPages28": [
+        {
+          "key": "https://alumineu.eu/products/accessories/hooks/slidene-y702",
+          "clicks": 0,
+          "impressions": 5,
+          "ctr": 0,
+          "position": 6
+        },
+        {
+          "key": "https://alumineu.eu/products/ventilation/slot-diffusers/aerooom",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 9
+        },
+        {
+          "key": "https://alumineu.eu/",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 4.5
+        },
+        {
+          "key": "https://alumineu.eu/products/accessories/tools/spatula-y802",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 4
+        },
+        {
+          "key": "https://alumineu.eu/products/accessories/tools",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 4
+        }
+      ],
+      "errors": []
+    },
+    {
+      "siteUrl": "sc-domain:alumineu.de",
+      "permissionLevel": "siteUnverifiedUser",
+      "sitemaps": [],
+      "perf28": null,
+      "perf7": null,
+      "topQueries28": [],
+      "topPages28": [],
+      "errors": [
+        "sitemaps: User does not have sufficient permission for site 'sc-domain:alumineu.de'. See also: https://support.google.com/webmasters/answer/2451999.",
+        "perf28: User does not have sufficient permission for site 'sc-domain:alumineu.de'. See also: https://support.google.com/webmasters/answer/2451999.",
+        "perf7: User does not have sufficient permission for site 'sc-domain:alumineu.de'. See also: https://support.google.com/webmasters/answer/2451999.",
+        "queries: User does not have sufficient permission for site 'sc-domain:alumineu.de'. See also: https://support.google.com/webmasters/answer/2451999.",
+        "pages: User does not have sufficient permission for site 'sc-domain:alumineu.de'. See also: https://support.google.com/webmasters/answer/2451999."
+      ]
+    }
+  ]
+}
