@@ -47,7 +47,7 @@ JSON: `company_pulse_gsc_2026-09-18.json`, `company_pulse_merchant_2026-09-21.js
 
 | MC | Site | Products | Feed | Shipping | Homepage | Главный статус FL |
 |----|------|--------:|------|----------|----------|-------------------|
-| PL `5785188396` | alumineu.pl | 137 | Sheets primary | 2 services | claimed | FL не в топе issues*; шум `local_stores_lack_inventory` ×137 |
+| PL `5785188396` | alumineu.pl | 137 | Sheets primary | 2 services | claimed | **FREE_LISTINGS approved=PL** (137). Шум только Local inventory ×137 |
 | DE `5798257792` | alumineu.de | 137 | Sheets FETCH | 1 | claimed | **pending_initial_policy_review** ×137 |
 | RO `5798002953` | alumineu.ro | 137 | Sheets FETCH | 1 | claimed | **pending review** ×137 |
 | EU `5798434120` | alumineu.com | 137 | Sheets | 1 | claimed | **pending review** ×137 + landing_page_error ×4 |
