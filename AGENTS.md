@@ -108,6 +108,7 @@
 
 | Видишь | Иди к |
 |--------|-------|
+| Алюминиевые окна | WIN · Frame (`project-win`) |
 | Telegram Mini App каталог / заявка менеджеру | TGM · Mini (`alumineu-channel-telegram`) |
 | SKU / контент | CAT · Forge (`alumineu-product-catalog`) |
 | Сайт Next.js / SEO страницы | WEB · Signal (`alumineu-channel-web`) |
