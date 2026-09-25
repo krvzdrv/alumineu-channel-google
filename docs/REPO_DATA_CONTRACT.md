@@ -6,12 +6,12 @@ updated_at: 2026-09-07
 inbound:
   - source: alumineu-product-catalog (CAT · Forge)
     what: product feed source
-    interface: Postgres view / CSV / repo read
-    auth: уточнить при первом подключении
-    env: []
+    interface: "пока нет: live XML NL/FR/ES отдаёт WEB из CAT; при подключении — CAT contract_* (consumer_contract.yaml → ggl)"
+    auth: CAT anon key (read-only)
+    env: [CAT_SUPABASE_URL, CAT_SUPABASE_ANON_KEY]
     token_file: null
     access: read
-    status: active
+    status: planned
     contract_date: 2026-09-03
     contract_note: Auto-feed Merchant NL/FR/ES — маппинг полей согласован
   - source: Tilda

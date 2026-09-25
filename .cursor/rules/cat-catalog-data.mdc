@@ -1,0 +1,13 @@
+---
+description: Товары для Merchant из базы каталога CAT — сейчас нет прямой связи; при подключении только anon + contract_*
+alwaysApply: true
+---
+
+# База каталога CAT
+
+Канон: hub `alumineu-os/docs/CATALOG_DATA_CONSUMER_CANON.md`. Статус GGL: CAT `alumineu-product-catalog/docs/contracts/consumer_contract.yaml` → `consumers.ggl` (`planned`).
+
+- Сейчас GGL базу каталога **не читает**. Live XML Merchant NL/FR/ES отдаёт WEB из CAT (`/merchant/*.xml`); офлайн — CSV → XML в `feeds/`.
+- Подключаешь напрямую → только anon (`CAT_SUPABASE_URL` / `CAT_SUPABASE_ANON_KEY`), только `contract_*`: картинки `contract_product_media.owned_url`, цены `contract_site_product_prices` (валюта уже сайта, FX не считать).
+- До первого запроса → промпт CAT: «добавь в `consumer_contract.yaml` → ggl: {объект}: [колонки]».
+- Пишет в базу каталога только CAT. Ошибка в товаре/цене фида → промпт CAT (или WEB, если ошибка в генераторе XML).

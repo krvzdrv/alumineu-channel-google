@@ -28,7 +28,8 @@
 
 Полный контракт подключений: **`docs/REPO_DATA_CONTRACT.md`** (SSOT; обновлять в той же сессии при изменении подключений).
 
-- **Inbound:** CAT (product feed source), Tilda legacy CSV paths
+- **Inbound:** CAT (product feed source — прямой связи пока нет, live XML отдаёт WEB), Tilda legacy CSV paths
+- **База каталога CAT:** при подключении только anon + `contract_*`; правила — `.cursor/rules/cat-catalog-data.mdc` + hub `CATALOG_DATA_CONSUMER_CANON`
 - **Outbound:** Google Merchant/Ads/GSC, handoff specs → WEB, GOV
 - **Internal SSOT:** `feeds/`, `cloudflare/alumineu-robots/`, runbooks in `docs/`
 - **Граница данных:** GGL хранит feeds/robots tooling, не product master
