@@ -2,18 +2,18 @@
 repo: alumineu-channel-google
 agent: GGL-Merchant
 purpose: Google channel — Merchant Center feeds, Ads, GSC, GBP, Manufacturer Center + Cloudflare robots
-updated_at: 2026-09-07
+updated_at: 2026-09-26
 inbound:
   - source: alumineu-product-catalog (CAT · Forge)
-    what: product feed source
-    interface: "пока нет: live XML NL/FR/ES отдаёт WEB из CAT; при подключении — CAT contract_* (consumer_contract.yaml → ggl)"
-    auth: CAT anon key (read-only)
+    what: product feed source (SKU, titles, prices, URLs, media, markets)
+    interface: "live XML NL/FR/ES: WEB API-route из CAT; прямой доступ — CAT contract_* (consumer_contract.yaml → ggl). Не копировать факты в git."
+    auth: CAT anon key (read-only) — только публичный ключ
     env: [CAT_SUPABASE_URL, CAT_SUPABASE_ANON_KEY]
     token_file: null
     access: read
-    status: planned
+    status: active-via-WEB
     contract_date: 2026-09-03
-    contract_note: Auto-feed Merchant NL/FR/ES — маппинг полей согласован
+    contract_note: Auto-feed Merchant NL/FR/ES — маппинг полей согласован; инвентаризация копий 2026-09-26 (D-011)
   - source: Tilda
     what: legacy CSV paths (exports)
     interface: CSV
@@ -117,6 +117,52 @@ CAT (product feed)  Tilda (legacy CSV)
 - Meta pixel (MTA)
 - Product master edits (CAT)
 - Next.js site code (WEB)
+
+## Факты (один факт — одно место)
+
+Канон Owner 2026-09-26 / CAT D-011. У факта один владелец; GGL хранит только свои данные и подачу в Google.
+
+### Чьи храним (GGL)
+
+| Факт | Где | Примечание |
+|------|-----|------------|
+| Merchant sub-account IDs, dataSource IDs | `scripts/lib/merchant-markets.js`, этот контракт | Google MC wiring |
+| Shipping flat rates / transit для MC | `merchant-markets.js`, `add-merchant-shipping-*.js` | подача Google, не цена SKU |
+| OAuth / SA / GSC-GBP-Ads токены | `token-*.json`, SA key (gitignored) | доступы канала |
+| GSC/GBP snapshots, Ads audits | `docs/reports/`, `data/` | наблюдения Google API |
+| Cloudflare robots bodies | `cloudflare/alumineu-robots/` | crawl policy доменов |
+
+### Чьи читаем (CAT) — откуда
+
+| Факт CAT | Как читаем сейчас | Целевой источник |
+|----------|-------------------|------------------|
+| SKU, title, description, brand, media, PDP URL, price | Live: WEB `https://alumineu.{nl,fr,es}/feeds/google-merchant-*.xml` (из CAT) | `contract_*` / `product_card()`; карта — CAT `docs/contracts/knowledge_map.yaml` |
+| Поля фида (маппинг) | Документировано ниже § CAT · Forge | consumer_contract → ggl |
+
+Прямой доступ к БД каталога — только `CAT_SUPABASE_URL` + anon key + `contract_*`. Чужой `.env` / токены CAT не читать.
+
+### Копии (долг) — не заводить новые
+
+| Файл / место | Факт CAT (копия) | Кто читает у нас | Чем заменить |
+|--------------|------------------|------------------|--------------|
+| `feeds/google_merchant_from_meta_{pl,de,ro,eu}.csv` | SKU, title, description, price, link, image | `sync-merchant-sheet-from-meta.js`, sheet apply PL/DE/RO/EU | Live CAT/WEB feed или `contract_*` export; CSV не SSOT |
+| `feeds/tilda-store-export*.csv`, `feeds/catalog-meta-pl.csv` | SKU, названия, фото, URL Tilda | sheet sync / legacy | То же; legacy до миграции PL |
+| `feeds/manufacturer_pilot_pl.tsv` | SKU, title, description, link | Manufacturer Center pilot | `contract_*` / тот же product master |
+| `scripts/lib/merchant-markets.js` → `siteOrigin`, `currency`, `contentLanguage`, path URI support/returns | рынок / сайт / локаль / валюта / адреса страниц | все `merchant:*` multi-country | CAT contract рынков/сайтов (нужна view или колонки) |
+| `scripts/lib/merchant-markets.js` → `plnToLocalRate` 0.23 / 1.15; `.env` `MERCHANT_PLN_TO_EUR` / `MERCHANT_PLN_TO_RON` | курсы PLN→EUR / PLN→RON (не канон 4.24 / 0.83 / 3.60) | `convertPriceCell`, fallback rewrite PL→DE/RO/EU | CAT SSOT курсов; не хранить fallback в GGL |
+| `scripts/generate-merchant-feed.js` → `MARKETS.*.baseUrl/currency/locale` + channel title/description | сайт / валюта / локаль; подписи канала фида | локальная генерация XML (legacy path) | Live WEB feed; channel copy — GGL-подача или CAT SEO если это перевод сайта |
+| `docs/REPO_DATA_CONTRACT.md` § дыры (список SKU без main) | перечень SKU | люди / диагностика | ссылка на CAT issue/view, не дублировать список SKU как SSOT |
+| `docs/MERCHANT_MULTI_COUNTRY_RUNBOOK.md` | документированные курсы 0.23 / 1.15 | операторы | указать «курс только из CAT» |
+
+**Не найдено в GGL:** канонические курсы `EUR 4.24` / `RON 0.83` / `USD 3.60`, наценки `R01` / `R02` — копий нет.
+
+**Не считаем копией CAT:** ID аккаунтов Google, shipping MC, GSC/Ads performance reports (URL страниц там — наблюдение Google, не master).
+
+### Запрос к CAT (чтобы закрыть долг)
+
+1. **View / колонки рынков:** market code → `base_url`, `locale`/`content_language`, `currency_display`, path support & returns (или полный URL).
+2. **SSOT курсов валют** в `contract_*` (канон 4.24 / 0.83 / 3.60 или явные PLN↔*) — чтобы убрать `MERCHANT_PLN_TO_*` и `plnToLocalRate`.
+3. Подтвердить: live XML на WEB уже достаточный consumer path для NL/FR/ES; для PL/DE/RO — когда будет тот же path, удалим CSV-снимки из git (или в `scratch/` / archive).
 
 ## CAT · Forge — Merchant auto-feed contract (2026-09-03)
 
