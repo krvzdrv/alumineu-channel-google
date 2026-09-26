@@ -41,9 +41,8 @@
 
 2. **OAuth client** (тот же Desktop app, что для Ads/GSC):
    - Credentials → ваш OAuth 2.0 Client ID
-   - **Authorized redirect URIs** — добавить:
-     - `http://localhost:3001/oauth2callback` (GBP)
-     - `http://localhost:3000/oauth2callback` (GSC/Ads — если ещё нет)
+   - **Authorized redirect URIs** — нужен:
+     - `http://localhost:3000/oauth2callback` (GBP / GSC / Ads — один URI)
 
 3. **OAuth consent screen:** test user `alumineu.pl@gmail.com` (если External).
 
@@ -59,6 +58,13 @@ npm run gbp:auth
 # браузер → alumineu.pl@gmail.com → Allow
 npm run gbp:verify
 npm run gbp:insights
+```
+
+Если после Allow браузер показывает `ERR_CONNECTION_REFUSED` на localhost — **не Reload**.  
+Скопируй **весь URL** из адресной строки (`...?code=...`) и обменяй вручную:
+
+```bash
+node scripts/auth-google-business-profile.js --callback 'http://localhost:3000/oauth2callback?code=...'
 ```
 
 Токен: `token-gbp.json` (в `.gitignore`).
@@ -91,7 +97,7 @@ npm run gbp:history
 
 | Ошибка | Решение |
 |--------|---------|
-| `redirect_uri_mismatch` | Добавить `localhost:3001/oauth2callback` в OAuth client |
+| `redirect_uri_mismatch` | Добавить `localhost:3000/oauth2callback` в OAuth client |
 | API not enabled | Включить 3 API выше в GCP |
 | 403 / permission | Войти как владелец карточки GBP |
 | Несколько locations | Задать `GBP_LOCATION_NAME=locations/XXXX` в `.env` |

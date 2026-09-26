@@ -45,7 +45,7 @@ main().catch((e) => {
     console.error('[GGL] Включите в GCP: My Business Account Management, Business Information, Business Profile Performance API');
   }
   if (/redirect_uri_mismatch/.test(e.message)) {
-    console.error('[GGL] Добавьте http://localhost:3001/oauth2callback в OAuth client redirect URIs');
+    console.error('[GGL] Добавьте http://localhost:3000/oauth2callback в OAuth client redirect URIs');
   }
   process.exit(1);
 });
