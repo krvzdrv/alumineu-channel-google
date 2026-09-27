@@ -160,6 +160,7 @@
 
 | Дата | Изменение |
 |------|-----------|
+| 2026-09-27 | D-011: CAT назвал view (`contract_sites`, `contract_site_product_prices` и др.); долг GGL-027 ждёт XML PL/DE/RO от WEB |
 | 2026-09-26 | D-011: § Факты в REPO_DATA_CONTRACT — инвентаризация копий CAT (SKU/цены/курсы/рынки) |
 | 2026-09-14 | GSC `https://alumineu.eu/` (FILE) + sitemap; срез NL/FR/ES/EU в `docs/reports/` |
 | 2026-09-04 | Merchant Center: заведены 3 фида NL/FR/ES (dataSources 10721134772/78/81, daily fetch) + shipping services (NL 9.99€, FR/ES 14.99€). Скрипты: create-merchant-feed-sources.js, add-merchant-shipping-nl-fr-es.js |

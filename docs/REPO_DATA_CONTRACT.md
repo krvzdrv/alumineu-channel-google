@@ -134,12 +134,22 @@ CAT (product feed)  Tilda (legacy CSV)
 
 ### Чьи читаем (CAT) — откуда
 
-| Факт CAT | Как читаем сейчас | Целевой источник |
+| Факт CAT | Как читаем сейчас | Целевой источник (CAT 7c07deb, 2026-09-27) |
 |----------|-------------------|------------------|
-| SKU, title, description, brand, media, PDP URL, price | Live: WEB `https://alumineu.{nl,fr,es}/feeds/google-merchant-*.xml` (из CAT) | `contract_*` / `product_card()`; карта — CAT `docs/contracts/knowledge_map.yaml` |
-| Поля фида (маппинг) | Документировано ниже § CAT · Forge | consumer_contract → ggl |
+| SKU, title, description, brand, media, PDP URL, price | Live: WEB `https://alumineu.{nl,fr,es}/feeds/google-merchant-*.xml` (из CAT) | Живой XML у WEB; PL / DE / RO — тот же маршрут (запрос WEB) |
+| Рынки / сайты / локаль / валюта | `merchant-markets.js` (копия) | `contract_sites` (`site_code`, `base_url`, `locale_code`, `status`, `currency`), фильтр `status = 'live'` |
+| Курсы валют | `plnToLocalRate`, `.env` (копия) | `contract_currency_rates` (`currency`, `pln_per_unit`, `valid_from`) — **только справочно** |
+| Цена на сайте | CSV (копия) | `contract_site_product_prices` (`variant_id`, `site_code`, `amount_display`, `currency_display`, `price_type = 'list'`) — наценка и курс уже внутри, **не пересчитывать** |
+| Цена PL | CSV (копия) | `contract_product_prices`: `price_type = 'list'`, `currency = 'PLN'`, `site_id IS NULL`, `variant_id IS NOT NULL`, `effective_to IS NULL` |
+| Адрес страницы | CSV (копия) | `contract_sites.base_url` + `contract_product_seo_pages.url_path` (`entity_type = 'product'`, `is_active`) |
+| Название | CSV (копия) | `contract_product_localizations.title` (локаль сайта) |
+| Фото | CSV (копия) | `contract_product_media` (`role = 'main'`, `owned_url`, `link_sort`) |
+| id / gtin | CSV (копия) | `contract_product_master_flat` (`variant_sku`, `kod_eu`, `gtin`); связка вариант → товар — `contract_catalog_variants` |
+| Страницы support / returns | `merchant-markets.js` (хардкод) | **Не CAT** — страницы WEB, брать из контракта WEB |
 
-Прямой доступ к БД каталога — только `CAT_SUPABASE_URL` + anon key + `contract_*`. Чужой `.env` / токены CAT не читать.
+Прямой доступ к БД каталога — только `CAT_SUPABASE_URL` + anon key + `contract_*`. Новый select — сначала строка в CAT `consumer_contract.yaml → consumers.ggl`. Чужой `.env` / токены CAT не читать.
+
+**Почему не свои курсы:** `0.23` / `1.15` без наценки R02 дают цену примерно на 11 % ниже сайта (MAGTRAK X508 DE: сайт 28,02 EUR, по 0.23 — 24,84 EUR). Цену только из `contract_site_product_prices`.
 
 ### Копии (долг) — не заводить новые
 
@@ -148,8 +158,8 @@ CAT (product feed)  Tilda (legacy CSV)
 | `feeds/google_merchant_from_meta_{pl,de,ro,eu}.csv` | SKU, title, description, price, link, image | `sync-merchant-sheet-from-meta.js`, sheet apply PL/DE/RO/EU | Live CAT/WEB feed или `contract_*` export; CSV не SSOT |
 | `feeds/tilda-store-export*.csv`, `feeds/catalog-meta-pl.csv` | SKU, названия, фото, URL Tilda | sheet sync / legacy | То же; legacy до миграции PL |
 | `feeds/manufacturer_pilot_pl.tsv` | SKU, title, description, link | Manufacturer Center pilot | `contract_*` / тот же product master |
-| `scripts/lib/merchant-markets.js` → `siteOrigin`, `currency`, `contentLanguage`, path URI support/returns | рынок / сайт / локаль / валюта / адреса страниц | все `merchant:*` multi-country | CAT contract рынков/сайтов (нужна view или колонки) |
-| `scripts/lib/merchant-markets.js` → `plnToLocalRate` 0.23 / 1.15; `.env` `MERCHANT_PLN_TO_EUR` / `MERCHANT_PLN_TO_RON` | курсы PLN→EUR / PLN→RON (не канон 4.24 / 0.83 / 3.60) | `convertPriceCell`, fallback rewrite PL→DE/RO/EU | CAT SSOT курсов; не хранить fallback в GGL |
+| `scripts/lib/merchant-markets.js` → `siteOrigin`, `currency`, `contentLanguage`, path URI support/returns | рынок / сайт / локаль / валюта / адреса страниц | все `merchant:*` multi-country | `contract_sites`; support / returns — контракт WEB |
+| `scripts/lib/merchant-markets.js` → `plnToLocalRate` 0.23 / 1.15; `.env` `MERCHANT_PLN_TO_EUR` / `MERCHANT_PLN_TO_RON` | курсы PLN→EUR / PLN→RON (не канон 4.24 / 0.83 / 3.60) | `convertPriceCell`, fallback rewrite PL→DE/RO/EU | `contract_site_product_prices` (цена готовая); удалить после GGL-027 |
 | `scripts/generate-merchant-feed.js` → `MARKETS.*.baseUrl/currency/locale` + channel title/description | сайт / валюта / локаль; подписи канала фида | локальная генерация XML (legacy path) | Live WEB feed; channel copy — GGL-подача или CAT SEO если это перевод сайта |
 | `docs/REPO_DATA_CONTRACT.md` § дыры (список SKU без main) | перечень SKU | люди / диагностика | ссылка на CAT issue/view, не дублировать список SKU как SSOT |
 | `docs/MERCHANT_MULTI_COUNTRY_RUNBOOK.md` | документированные курсы 0.23 / 1.15 | операторы | указать «курс только из CAT» |
@@ -158,11 +168,14 @@ CAT (product feed)  Tilda (legacy CSV)
 
 **Не считаем копией CAT:** ID аккаунтов Google, shipping MC, GSC/Ads performance reports (URL страниц там — наблюдение Google, не master).
 
-### Запрос к CAT (чтобы закрыть долг)
+### Как закрыть долг
 
-1. **View / колонки рынков:** market code → `base_url`, `locale`/`content_language`, `currency_display`, path support & returns (или полный URL).
-2. **SSOT курсов валют** в `contract_*` (канон 4.24 / 0.83 / 3.60 или явные PLN↔*) — чтобы убрать `MERCHANT_PLN_TO_*` и `plnToLocalRate`.
-3. Подтвердить: live XML на WEB уже достаточный consumer path для NL/FR/ES; для PL/DE/RO — когда будет тот же path, удалим CSV-снимки из git (или в `scratch/` / archive).
+CAT ответил 2026-09-27 (коммит CAT `7c07deb`): view есть, копии GGL записаны в CAT `knowledge_map` со статусом «долг GGL». Данные CAT для PL / DE / RO готовы (адрес и название — 0 пропусков; цена — нет у ENDCAPP Y213 / Y214; фото main — нет у 9 SKU).
+
+1. **WEB:** живой XML для PL / DE / RO, как у NL / FR / ES (RO в RON — после деплоя WEB `366a102`). Сроки — WEB и Owner.
+2. **GGL:** перевести MC PL / DE / RO с Google Sheets на scheduled fetch живого XML (GGL-027).
+3. **GGL:** после переключения убрать из git `feeds/*.csv`, `tilda-store-export*`, `plnToLocalRate`, `MERCHANT_PLN_TO_*`; хэш коммита — CAT, чтобы снял copies.
+4. **Расхождение EU:** MC EU (`5798434120`) смотрит на `alumineu.com`, а в `contract_sites` живой сайт `eu` = `alumineu.eu`. Решить при переключении (GGL-028).
 
 ## CAT · Forge — Merchant auto-feed contract (2026-09-03)
 
