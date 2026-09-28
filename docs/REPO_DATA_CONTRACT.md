@@ -293,6 +293,8 @@ CAT ответил 2026-09-27 (коммит CAT `7c07deb`): view есть, ко�
 - **Refresh when expired:** OAuth refresh token flow → regenerate `token-*.json`. См. `docs/MERCHANT_MULTI_COUNTRY_RUNBOOK.md` и `docs/GOOGLE_GBP_ACCESS.md`.
 - **GCP APIs (проект `oceanic-craft-452806-c0` / `820829065208`):** Site Verification + Analytics Admin включены 2026-08-28. GA4 NL: property `551815498` (account `355263165`). Measurement ID и токен site-verification — не в git (Vercel / Owner).
 - **GSC NL (2026-08-28):** URL-prefix `https://alumineu.nl/` подтверждён HTML-тегом (`siteOwner`). Sitemap `https://alumineu.nl/sitemap.xml` сдан. Domain-property `sc-domain:alumineu.nl` нет (DNS TXT на hoster.by не клали).
+- **GSC API — кто ещё пользуется (2026-09-28):** WEB · Signal (`scripts/gsc_api.py`, `webmasters.readonly`) — тот же GCP-проект, свой OAuth-токен вне git. Рекомендация GGL: отдельный Desktop OAuth client в `oceanic-craft-452806-c0`, не копировать `GOOGLE_*_CLIENT_SECRET` из этого repo. Service account `merchant-api-alumineu@…` в GSC не добавлен (0 ресурсов) — только Merchant API.
+- **Срок жизни токенов (2026-09-28):** `token-gsc.json` (выпущен 2026-09-14) и ранее `token-gbp.json` умерли с `invalid_grant`. Вероятно, экран согласия OAuth в режиме Testing (refresh token живёт 7 дней). Лечится переводом в «In production» (Owner, GCP → OAuth consent screen).
 - **GSC NL/FR/ES/EU (2026-09-14):** срез `docs/reports/gsc_nl_fr_es_eu_2026-09-11.md`. URL-prefix `siteOwner` у `.nl`/`.fr`/`.es`/`.eu`. EU подтверждён FILE (`google5c6bd815fb268f07.html`), sitemap сдан. Domain-property нет.
 
 ### Service Account (Merchant API)
