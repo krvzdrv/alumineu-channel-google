@@ -34,23 +34,27 @@ function parseArgs(argv) {
 function buildReturnPolicyBody(market) {
   const uri = text(market.returnsPolicyUri);
   if (!uri) throw new Error(`returnsPolicyUri missing for ${market.code}`);
+  // Terms mirror the WEB delivery page: 14 days, by mail, return shipping paid by the customer.
   return {
     label: `Returns ${market.code}`,
     countries: [...market.targetCountries],
     returnPolicyUri: uri,
+    policy: { type: 'NUMBER_OF_DAYS_AFTER_DELIVERY', days: '14' },
     returnMethods: ['BY_MAIL'],
     itemConditions: ['NEW'],
-    returnShippingFee: {
-      type: 'FIXED',
-      fixedFee: {
-        amountMicros: '0',
-        currencyCode: market.currency
-      }
-    },
-    acceptExchange: true,
-    returnLabelSource: 'IN_THE_PACKAGE',
+    returnShippingFee: { type: 'CUSTOMER_PAYING_ACTUAL_FEE' },
+    returnLabelSource: 'CUSTOMER_RESPONSIBILITY',
     processRefundDays: 14
   };
+}
+
+function policyMatches(p, body) {
+  return (
+    text(p.returnPolicyUri) === body.returnPolicyUri &&
+    text(p.returnShippingFee?.type) === body.returnShippingFee.type &&
+    text(p.policy?.type) === body.policy.type &&
+    text(p.policy?.days) === body.policy.days
+  );
 }
 
 function policyCoversCountries(existing, countries) {
@@ -71,11 +75,14 @@ async function listPolicies(merchantFetch, merchantId) {
 async function applyMarket(merchantFetch, merchantId, market, apply) {
   const all = await listPolicies(merchantFetch, merchantId);
   const uri = text(market.returnsPolicyUri);
-  const stale = all.filter((p) => text(p.returnPolicyUri) !== uri);
-  const existing = all.filter((p) => text(p.returnPolicyUri) === uri);
+  const desired = buildReturnPolicyBody(market);
+  const stale = all.filter((p) => !policyMatches(p, desired));
+  const existing = all.filter((p) => policyMatches(p, desired));
 
   for (const p of stale) {
-    console.log(`  stale policy ${p.returnPolicyId} → ${p.returnPolicyUri}`);
+    console.log(
+      `  stale policy ${p.returnPolicyId} → ${p.returnPolicyUri} fee=${p.returnShippingFee?.type} days=${p.policy?.days || '-'}`
+    );
     if (apply) {
       await merchantFetch(`/accounts/v1/accounts/${merchantId}/onlineReturnPolicies/${p.returnPolicyId}`, {
         method: 'DELETE'
@@ -104,7 +111,7 @@ async function applyMarket(merchantFetch, merchantId, market, apply) {
     return { created: false, skipped: true };
   }
 
-  const body = buildReturnPolicyBody(market);
+  const body = desired;
   console.log('[GGL] Would create return policy for:', body.countries.join(','));
 
   if (!apply) {

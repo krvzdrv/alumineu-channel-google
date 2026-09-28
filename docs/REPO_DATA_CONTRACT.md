@@ -242,16 +242,19 @@ CAT ответил 2026-09-27 (коммит CAT `7c07deb`): view есть, ко�
 
 ### Политики возврата (2026-09-28)
 
-Страница доставки WEB — одна на сайт, в ней сроки доставки и возврат (14 дней). Источник у WEB: `lib/seo/chrome-paths.ts`, ключ `delivery`. Для Merchant — URL без якоря.
+Страница доставки WEB — одна на сайт, в ней сроки доставки и возврат. Источник у WEB: `lib/seo/chrome-paths.ts`, ключ `delivery`. Для Merchant — URL без якоря.
+
+Условия (как на сайте и в разметке Offer / Organization у WEB): 14 дней после доставки, почтой, обратную доставку оплачивает клиент (`CUSTOMER_PAYING_ACTUAL_FEE`, `CUSTOMER_RESPONSIBILITY`). До 2026-09-28 политики в MC ошибочно обещали бесплатный возврат и не указывали срок.
 
 | Sub-account | Policy ID | URL |
 |-------------|-----------|-----|
-| 5798257792 (DE) | 9336249713 | `https://alumineu.de/lieferung` |
-| 5798002953 (RO) | 9336840994 | `https://alumineu.ro/livrare` |
-| 5849784515 (NL) | 9336841000 | `https://alumineu.nl/levering` |
-| 5849001558 (FR) | 9336841006 | `https://alumineu.fr/livraison` |
-| 5849001567 (ES) | 9336249734 | `https://alumineu.es/envio` |
-| 5798434120 (EU) | 9019528374 | `https://alumineu.com/shipping-and-returns` (не трогали, GGL-028) |
+| 5798257792 (DE) | 9337993149 | `https://alumineu.de/lieferung` |
+| 5798002953 (RO) | 9336900313 | `https://alumineu.ro/livrare` |
+| 5849784515 (NL) | 9336900340 | `https://alumineu.nl/levering` |
+| 5849001558 (FR) | 9336899818 | `https://alumineu.fr/livraison` |
+| 5849001567 (ES) | 9337993224 | `https://alumineu.es/envio` |
+| 5798434120 (EU) | 9019528374 | `https://alumineu.com/shipping-and-returns` — старые условия (бесплатный возврат), не трогали, GGL-028 |
+| 5785188396 (PL) | 8925363183 | `https://alumineu.pl/wysylka-i-zwrot` (Tilda) — старые условия, сверить после DNS |
 
 Прежние DE / RO вели на страницы Tilda, которые на новом сайте отдают 404. Тело страницы доставки DE / RO пока на английском (у WEB не приняты переводы).
 
@@ -264,6 +267,13 @@ CAT ответил 2026-09-27 (коммит CAT `7c07deb`): view есть, ко�
 | **5849784515 (NL)** | **Verzending NL** | **NL** | **9.99 EUR** | **2-5 дней** |
 | **5849001558 (FR)** | **Livraison FR** | **FR** | **14.99 EUR** | **3-7 дней** |
 | **5849001567 (ES)** | **Envío ES** | **ES** | **14.99 EUR** | **3-7 дней** |
+| 5798257792 (DE) | Versand DE | DE | 9.99 EUR | 2-5 дней |
+| 5798002953 (RO) | Livrare RO | RO | 49 RON | 2-5 дней |
+| 5798434120 (EU) | Shipping EU | 27 стран, в т.ч. BE / LU / PT / AT / NL / FR / ES | 14.99 EUR | 3-7 дней |
+
+Сверено 2026-09-28. Домашние страницы всех аккаунтов подтверждены (claimed), поэтому для nl / fr / es / de / ro Google может брать доставку из MC вместо `shippingDetails` в разметке (WEB убрал пустую заглушку 2026-09-28). `alumineu.eu` не привязан ни к одному аккаунту (EU = `alumineu.com`) — GGL-028.
+
+Тарифы 9.99 / 14.99 EUR, 49 RON, 50 PLN — не подтверждены Owner как публичная цена доставки (на сайте стоимость «в оферте»). Расширение стран (NL+BE, FR+BE+LU, ES+PT, DE+AT) — решение Owner, GGL-030.
 
 ### Налоги (Tax Settings)
 
