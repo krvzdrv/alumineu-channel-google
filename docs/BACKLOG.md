@@ -14,7 +14,7 @@ Dispatch — **чат** + `AGENTS.md`. Память работ — здесь.
 | GGL-019 | 9 SKU без main image — запросить у CAT или ручное назначение | pending |
 | GGL-023 | Диагностика фидов NL/FR/ES после первого fetch (ожидание) | pending |
 | GGL-027 | D-011: MC PL/DE/RO — с Sheets на живой XML WEB; потом удалить CSV / `plnToLocalRate` / `MERCHANT_PLN_TO_*`, хэш → CAT. DE/RO переключены 2026-09-28; проверить, что ушли старые товары из таблицы (было 137 + 117). PL — после DNS alumineu.pl | in progress |
-| GGL-030 | Доставка MC: Owner подтверждает тарифы (сейчас 9.99 / 14.99 EUR, 49 RON, 50 PLN) и страны продаж (NL+BE, FR+BE+LU, ES+PT, DE+AT); затем MC + число для WEB `shippingDetails` | waiting Owner |
+| GGL-030 | Доставка MC. Решение Owner 2026-09-28: тарифы — правда на сайте (WEB), MC только повторяет; сейчас суммы в MC (9.99 / 14.99 EUR, 49 RON, 50 PLN) — копия GGL. Страны: BE → фиды NL+FR, LU → FR+DE, AT → DE, убрать их из EU; PT — только со своим сайтом pt; отдельный аккаунт = отдельный сайт | waiting WEB (тарифы) |
 | GGL-029 | ENDCAPP Y205 / Y206 в DE: Google требует color / age group / gender — нужна `g:google_product_category` в фиде (генератор WEB) | pending |
 | GGL-028 | MC EU `5798434120`: `alumineu.com` vs `contract_sites` eu = `alumineu.eu` — решить при переключении | pending |
 
