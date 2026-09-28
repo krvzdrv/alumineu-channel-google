@@ -69,9 +69,21 @@ async function listPolicies(merchantFetch, merchantId) {
 }
 
 async function applyMarket(merchantFetch, merchantId, market, apply) {
-  const existing = await listPolicies(merchantFetch, merchantId);
+  const all = await listPolicies(merchantFetch, merchantId);
   const uri = text(market.returnsPolicyUri);
-  const matching = existing.filter((p) => text(p.returnPolicyUri) === uri);
+  const stale = all.filter((p) => text(p.returnPolicyUri) !== uri);
+  const existing = all.filter((p) => text(p.returnPolicyUri) === uri);
+
+  for (const p of stale) {
+    console.log(`  stale policy ${p.returnPolicyId} → ${p.returnPolicyUri}`);
+    if (apply) {
+      await merchantFetch(`/accounts/v1/accounts/${merchantId}/onlineReturnPolicies/${p.returnPolicyId}`, {
+        method: 'DELETE'
+      });
+      console.log(`  deleted ${p.returnPolicyId}`);
+    }
+  }
+
   const covered = policyCoversCountries(existing, market.targetCountries);
 
   console.log(`\n[GGL] ${market.code} (${merchantId})`);

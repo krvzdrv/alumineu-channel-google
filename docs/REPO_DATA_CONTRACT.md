@@ -101,10 +101,15 @@ CAT (product feed)  Tilda (legacy CSV)
 | NL | `https://alumineu.nl/feeds/google-merchant-nl.xml` | ✅ Live | 117 |
 | FR | `https://alumineu.fr/feeds/google-merchant-fr.xml` | ✅ Live | 117 |
 | ES | `https://alumineu.es/feeds/google-merchant-es.xml` | ✅ Live | 117 |
+| DE | `https://alumineu.de/feeds/google-merchant-de.xml` | ✅ Live (WEB 6db0c68, 2026-09-27) | 117 |
+| RO | `https://alumineu.ro/feeds/google-merchant-ro.xml` | ✅ Live, RON | 117 |
+| PL | `https://alumineu.pl/feeds/google-merchant-pl.xml` | ⏳ 404 до переключения DNS alumineu.pl на Vercel (Owner) | 117 (локально у WEB) |
+
+С WEB 6db0c68 цена в фиде — по рынку домена (раньше все фиды отдавали цену NL). У 6 SKU с несколькими углами `g:id` = SKU + тип угла (`FLOATIA NX302-inside-corner`); остальные `g:id` = SKU. Товары без цены (ENDCAPP Y213 / Y214) и без фото main в фид не попадают.
 
 **Схема фида (legacy):**
 - CSV → Google Sheets → Merchant Center (вручную, через `merchant:sheet:apply`)
-- Используется для PL/DE/RO пока нет CAT-контракта
+- Остались только PL (до DNS) и EU (`alumineu.com`, GGL-028). DE / RO переведены на живой XML 2026-09-28.
 
 ## Boundaries
 
@@ -145,7 +150,7 @@ CAT (product feed)  Tilda (legacy CSV)
 | Название | CSV (копия) | `contract_product_localizations.title` (локаль сайта) |
 | Фото | CSV (копия) | `contract_product_media` (`role = 'main'`, `owned_url`, `link_sort`) |
 | id / gtin | CSV (копия) | `contract_product_master_flat` (`variant_sku`, `kod_eu`, `gtin`); связка вариант → товар — `contract_catalog_variants` |
-| Страницы support / returns | `merchant-markets.js` (хардкод) | **Не CAT** — страницы WEB, брать из контракта WEB |
+| Страницы support / returns | `merchant-markets.js` (хардкод; returns обновлены 2026-09-28 по ответу WEB) | **Не CAT** — WEB `lib/seo/chrome-paths.ts` (ключ `delivery`); страницы контактов WEB ещё не назвал |
 
 Прямой доступ к БД каталога — только `CAT_SUPABASE_URL` + anon key + `contract_*`. Новый select — сначала строка в CAT `consumer_contract.yaml → consumers.ggl`. Чужой `.env` / токены CAT не читать.
 
@@ -172,8 +177,8 @@ CAT (product feed)  Tilda (legacy CSV)
 
 CAT ответил 2026-09-27 (коммит CAT `7c07deb`): view есть, копии GGL записаны в CAT `knowledge_map` со статусом «долг GGL». Данные CAT для PL / DE / RO готовы (адрес и название — 0 пропусков; цена — нет у ENDCAPP Y213 / Y214; фото main — нет у 9 SKU).
 
-1. **WEB:** живой XML для PL / DE / RO, как у NL / FR / ES (RO в RON — после деплоя WEB `366a102`). Сроки — WEB и Owner.
-2. **GGL:** перевести MC PL / DE / RO с Google Sheets на scheduled fetch живого XML (GGL-027).
+1. **WEB:** живой XML — DE / RO готово (6db0c68); PL — после переключения DNS alumineu.pl (Owner).
+2. **GGL:** MC DE / RO переведены с Google Sheets на живой XML 2026-09-28 (тот же источник, заменён `fetchUri`). PL — после DNS (GGL-027).
 3. **GGL:** после переключения убрать из git `feeds/*.csv`, `tilda-store-export*`, `plnToLocalRate`, `MERCHANT_PLN_TO_*`; хэш коммита — CAT, чтобы снял copies.
 4. **Расхождение EU:** MC EU (`5798434120`) смотрит на `alumineu.com`, а в `contract_sites` живой сайт `eu` = `alumineu.eu`. Решить при переключении (GGL-028).
 
@@ -230,6 +235,25 @@ CAT ответил 2026-09-27 (коммит CAT `7c07deb`): view есть, ко�
 | 5849784515 (NL) | 10722508632 | alumineu-nl | `https://alumineu.nl/feeds/google-merchant-nl.xml` | Daily |
 | 5849001558 (FR) | 10722508674 | alumineu-fr | `https://alumineu.fr/feeds/google-merchant-fr.xml` | Daily |
 | 5849001567 (ES) | 10723519534 | alumineu-es | `https://alumineu.es/feeds/google-merchant-es.xml` | Daily |
+| 5798257792 (DE) | 10682373936 | PRODUCTS SOURCE DE | `https://alumineu.de/feeds/google-merchant-de.xml` (с 2026-09-28; было `drive://1-a8S1X6JHgxvPYYiYu3tGocBLKgS-HzZrR5HXMpVbDs`) | Daily |
+| 5798002953 (RO) | 10683104125 | PRODUCTS SOURCE RO | `https://alumineu.ro/feeds/google-merchant-ro.xml` (с 2026-09-28; было `drive://1ARpPpYbjeBbdFOFnfIpLU4GVcToZRR5Hm_EtQ3cMhAo`) | Daily |
+
+Переключение и откат: `node scripts/create-merchant-feed-sources.js --market=de|ro --apply --fetch-now` (меняет `fetchUri` у существующего основного источника, второй не создаёт).
+
+### Политики возврата (2026-09-28)
+
+Страница доставки WEB — одна на сайт, в ней сроки доставки и возврат (14 дней). Источник у WEB: `lib/seo/chrome-paths.ts`, ключ `delivery`. Для Merchant — URL без якоря.
+
+| Sub-account | Policy ID | URL |
+|-------------|-----------|-----|
+| 5798257792 (DE) | 9336249713 | `https://alumineu.de/lieferung` |
+| 5798002953 (RO) | 9336840994 | `https://alumineu.ro/livrare` |
+| 5849784515 (NL) | 9336841000 | `https://alumineu.nl/levering` |
+| 5849001558 (FR) | 9336841006 | `https://alumineu.fr/livraison` |
+| 5849001567 (ES) | 9336249734 | `https://alumineu.es/envio` |
+| 5798434120 (EU) | 9019528374 | `https://alumineu.com/shipping-and-returns` (не трогали, GGL-028) |
+
+Прежние DE / RO вели на страницы Tilda, которые на новом сайте отдают 404. Тело страницы доставки DE / RO пока на английском (у WEB не приняты переводы).
 
 ### Shipping Services
 

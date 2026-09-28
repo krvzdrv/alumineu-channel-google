@@ -70,6 +70,8 @@
 
 ## Состояние repo
 
+**Active WIP** — D-011 (2026-09-28): MC NL/FR/ES/DE/RO читают живой XML WEB из CAT. PL остаётся на Sheets до переключения DNS alumineu.pl; EU (`alumineu.com`) — GGL-028. CSV и курсы в repo удалить после PL.
+
 **Active WIP** — Фиды NL/FR/ES заведены в отдельные sub-accounts Merchant Center (dataSources + shipping services). Ждём первого scheduled fetch для диагностики. Налоги (VAT) — не настроены, требуют ручной конфигурации в MC UI или отдельной задачи.
 
 **Active WIP** — Full tooling landing in repo; tokens never committed.
@@ -160,6 +162,7 @@
 
 | Дата | Изменение |
 |------|-----------|
+| 2026-09-28 | D-011: MC DE / RO — с Google Sheets на живой XML WEB (тот же источник, новый `fetchUri`); политики возврата DE/RO/NL/FR/ES → страницы доставки WEB |
 | 2026-09-27 | D-011: CAT назвал view (`contract_sites`, `contract_site_product_prices` и др.); долг GGL-027 ждёт XML PL/DE/RO от WEB |
 | 2026-09-26 | D-011: § Факты в REPO_DATA_CONTRACT — инвентаризация копий CAT (SKU/цены/курсы/рынки) |
 | 2026-09-14 | GSC `https://alumineu.eu/` (FILE) + sitemap; срез NL/FR/ES/EU в `docs/reports/` |

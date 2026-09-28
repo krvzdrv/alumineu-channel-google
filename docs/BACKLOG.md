@@ -13,7 +13,8 @@ Dispatch — **чат** + `AGENTS.md`. Память работ — здесь.
 | GGL-018 | VAT: сверить excl. VAT со спекой Merchant Center для consumer EU | pending |
 | GGL-019 | 9 SKU без main image — запросить у CAT или ручное назначение | pending |
 | GGL-023 | Диагностика фидов NL/FR/ES после первого fetch (ожидание) | pending |
-| GGL-027 | D-011: MC PL/DE/RO — с Sheets на живой XML WEB; потом удалить CSV / `plnToLocalRate` / `MERCHANT_PLN_TO_*`, хэш → CAT | blocked (WEB: XML PL/DE/RO) |
+| GGL-027 | D-011: MC PL/DE/RO — с Sheets на живой XML WEB; потом удалить CSV / `plnToLocalRate` / `MERCHANT_PLN_TO_*`, хэш → CAT. DE/RO переключены 2026-09-28; проверить, что ушли старые товары из таблицы (было 137 + 117). PL — после DNS alumineu.pl | in progress |
+| GGL-029 | ENDCAPP Y205 / Y206 в DE: Google требует color / age group / gender — нужна `g:google_product_category` в фиде (генератор WEB) | pending |
 | GGL-028 | MC EU `5798434120`: `alumineu.com` vs `contract_sites` eu = `alumineu.eu` — решить при переключении | pending |
 
 ## Next
