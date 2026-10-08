@@ -113,6 +113,7 @@
 |--------|-------|
 | Алюминиевые окна | WIN · Frame (`project-win`) |
 | Telegram Mini App каталог / заявка менеджеру | TGM · Mini (`alumineu-channel-telegram`) |
+| Цифровой склад Alumineu / ячейки / «что где» | **WH · Bay** (`alumineu-warehouse-ops`) |
 | SKU / контент | CAT · Forge (`alumineu-product-catalog`) |
 | Сайт Next.js / SEO страницы | WEB · Signal (`alumineu-channel-web`) |
 | Meta Pixel | MTA · Radar (`alumineu-channel-meta`) |
