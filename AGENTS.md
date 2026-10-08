@@ -162,6 +162,7 @@
 
 | Дата | Изменение |
 |------|-----------|
+| 2026-10-08 | WEB принял схему GSC API (свой client «Alumineu WEB», a9c3c96); ждём Owner In production (GGL-031) |
 | 2026-10-08 | Free Listings: роль WEB = живой XML + `amount_display`; GGL = MC wiring; курс `plnToLocalRate` не для цены живых рынков (ответ CAT; GGL-032) |
 | 2026-09-28 | Возврат MC DE/RO/NL/FR/ES: 14 дней, обратную доставку оплачивает клиент (как на сайте WEB); доставка сверена, тарифы и страны — ждём Owner (GGL-030) |
 | 2026-09-28 | D-011: MC DE / RO — с Google Sheets на живой XML WEB (тот же источник, новый `fetchUri`); политики возврата DE/RO/NL/FR/ES → страницы доставки WEB |
