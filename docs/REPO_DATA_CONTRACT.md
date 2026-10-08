@@ -173,14 +173,24 @@ CAT (product feed)  Tilda (legacy CSV)
 
 **Не считаем копией CAT:** ID аккаунтов Google, shipping MC, GSC/Ads performance reports (URL страниц там — наблюдение Google, не master).
 
-### Как закрыть долг
+### Разделение ролей: Free Listings / фид (Owner 2026-10-08)
 
-CAT ответил 2026-09-27 (коммит CAT `7c07deb`): view есть, копии GGL записаны в CAT `knowledge_map` со статусом «долг GGL». Данные CAT для PL / DE / RO готовы (адрес и название — 0 пропусков; цена — нет у ENDCAPP Y213 / Y214; фото main — нет у 9 SKU).
+| Кто | Делает | Не делает |
+|-----|--------|-----------|
+| **CAT · Forge** | SSOT товара и цены сайта: `contract_site_product_prices.amount_display` (+ list PLN), курсы справочно в `contract_currency_rates` | Не пишет в Merchant Center; не генерирует XML |
+| **WEB · Signal** | Живой XML Merchant из CAT при запросе; `g:price` = `amount_display` (без своего FX); хостинг `/feeds/google-merchant-*.xml` | Не настраивает dataSources / shipping / return policies в MC |
+| **GGL · Merchant** | Sub-accounts, `fetchUri`, shipping, return policies, диагностика MC/GSC/Ads/GBP; после PL DNS — переключить PL с Sheets на XML | Не считает цену фида своим курсом; не читает `contract_*` для цены, пока живой путь — WEB |
 
-1. **WEB:** живой XML — DE / RO готово (6db0c68); PL — после переключения DNS alumineu.pl (Owner).
-2. **GGL:** MC DE / RO переведены с Google Sheets на живой XML 2026-09-28 (тот же источник, заменён `fetchUri`). PL — после DNS (GGL-027).
-3. **GGL:** после переключения убрать из git `feeds/*.csv`, `tilda-store-export*`, `plnToLocalRate`, `MERCHANT_PLN_TO_*`; хэш коммита — CAT, чтобы снял copies.
-4. **Расхождение EU:** MC EU (`5798434120`) смотрит на `alumineu.com`, а в `contract_sites` живой сайт `eu` = `alumineu.eu`. Решить при переключении (GGL-028).
+Сверка 2026-10-08: NL / FR / ES / DE / RO / EU (`alumineu.eu`) — `fetchUri` на WEB XML. Только **PL** ещё Sheets (`drive://…`). MAGTRAK X508 в DE XML: **28.02 EUR** (= сайт / `amount_display`), не 24.84 по курсу GGL 0.23.
+
+### Как закрыть долг (курс / CSV)
+
+CAT 2026-09-27 (`7c07deb`) + вопрос 2026-10-08: цену фида брать из `amount_display`, свой курс убрать.
+
+1. **Живые рынки:** цена уже из CAT через WEB XML — GGL курс **не применяет**. Переключать `merchant-markets.js` на `contract_*` для цены **не нужно** (роль WEB).
+2. **PL:** после DNS alumineu.pl → тот же XML; GGL меняет только `fetchUri` (GGL-027). До DNS Sheets не трогаем своим FX для новых рынков.
+3. **GGL:** после PL — удалить `feeds/*.csv`, `tilda-store-export*`, `plnToLocalRate`, `MERCHANT_PLN_TO_*`, legacy `convertPriceCell` в sheet-sync; хэш → CAT, чтобы снял copies.
+4. **EU:** MC `5798434120` уже на `https://alumineu.eu/feeds/google-merchant-eu.xml` (2026-10-08). Homepage claim / return URI на `alumineu.com` — отдельно (GGL-028).
 
 ## CAT · Forge — Merchant auto-feed contract (2026-09-03)
 
@@ -253,7 +263,7 @@ CAT ответил 2026-09-27 (коммит CAT `7c07deb`): view есть, ко�
 | 5849784515 (NL) | 9336900340 | `https://alumineu.nl/levering` |
 | 5849001558 (FR) | 9336899818 | `https://alumineu.fr/livraison` |
 | 5849001567 (ES) | 9337993224 | `https://alumineu.es/envio` |
-| 5798434120 (EU) | 9019528374 | `https://alumineu.com/shipping-and-returns` — старые условия (бесплатный возврат), не трогали, GGL-028 |
+| 5798434120 (EU) | 9019528374 | `https://alumineu.com/shipping-and-returns` — старые условия; фид уже `alumineu.eu` XML, claim/return URI — GGL-028 |
 | 5785188396 (PL) | 8925363183 | `https://alumineu.pl/wysylka-i-zwrot` (Tilda) — старые условия, сверить после DNS |
 
 Прежние DE / RO вели на страницы Tilda, которые на новом сайте отдают 404. Тело страницы доставки DE / RO пока на английском (у WEB не приняты переводы).
