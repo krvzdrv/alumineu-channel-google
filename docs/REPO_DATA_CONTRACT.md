@@ -104,12 +104,13 @@ CAT (product feed)  Tilda (legacy CSV)
 | DE | `https://alumineu.de/feeds/google-merchant-de.xml` | ✅ Live (WEB 6db0c68, 2026-09-27) | 117 |
 | RO | `https://alumineu.ro/feeds/google-merchant-ro.xml` | ✅ Live, RON | 117 |
 | PL | `https://alumineu.pl/feeds/google-merchant-pl.xml` | ⏳ 404 до переключения DNS alumineu.pl на Vercel (Owner) | 117 (локально у WEB) |
+| EU | `https://alumineu.eu/feeds/google-merchant-eu.xml` | ✅ Live (MC `5798434120` fetchUri, 2026-10-08) | — |
 
 С WEB 6db0c68 цена в фиде — по рынку домена (раньше все фиды отдавали цену NL). У 6 SKU с несколькими углами `g:id` = SKU + тип угла (`FLOATIA NX302-inside-corner`); остальные `g:id` = SKU. Товары без цены (ENDCAPP Y213 / Y214) и без фото main в фид не попадают.
 
 **Схема фида (legacy):**
 - CSV → Google Sheets → Merchant Center (вручную, через `merchant:sheet:apply`)
-- Остались только PL (до DNS) и EU (`alumineu.com`, GGL-028). DE / RO переведены на живой XML 2026-09-28.
+- Остался только PL (Sheets до DNS). DE / RO / EU XML — с 2026-09-28 / 2026-10-08.
 
 ## Boundaries
 
