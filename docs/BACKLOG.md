@@ -14,7 +14,6 @@ Dispatch — **чат** + `AGENTS.md`. Память работ — здесь.
 | GGL-019 | 9 SKU без main image — запросить у CAT или ручное назначение | pending |
 | GGL-023 | Диагностика фидов NL/FR/ES после первого fetch (ожидание) | pending |
 | GGL-027 | D-011: MC на живой XML WEB. NL/FR/ES/DE/RO/EU уже XML; PL — Sheets до DNS. После PL: удалить CSV / `plnToLocalRate` / `MERCHANT_PLN_TO_*` / convertPrice в sheet-sync, хэш → CAT. Цена фида — роль WEB (`amount_display`), не GGL | in progress |
-| GGL-032 | Граница Free Listings: WEB = XML+цена из CAT; GGL = MC wiring. Зафиксировано в REPO_DATA_CONTRACT 2026-10-08; ждём подтверждение WEB | waiting WEB |
 | GGL-031 | `token-gsc.json` умер (`invalid_grant`). WEB тоже на Testing/7д (контракт a9c3c96). Owner: OAuth consent → In production → GGL новый токен + confirm `sc-domain:alumineu.de` | waiting Owner |
 | GGL-030 | Доставка MC. Решение Owner 2026-09-28: тарифы — правда на сайте (WEB), MC только повторяет; сейчас суммы в MC (9.99 / 14.99 EUR, 49 RON, 50 PLN) — копия GGL. Страны: BE → фиды NL+FR, LU → FR+DE, AT → DE, убрать их из EU; PT — только со своим сайтом pt; отдельный аккаунт = отдельный сайт | waiting WEB (тарифы) |
 | GGL-029 | ENDCAPP Y205 / Y206 в DE: Google требует color / age group / gender — нужна `g:google_product_category` в фиде (генератор WEB) | pending |
@@ -38,6 +37,7 @@ Dispatch — **чат** + `AGENTS.md`. Память работ — здесь.
 
 | ID | Title | Closed |
 |----|-------|--------|
+| GGL-032 | Граница Free Listings: WEB = XML + `amount_display`; GGL = MC wiring. CAT DONE `cf5be77` / PR #38 | 2026-10-08 |
 | GGL-025 | FIX: фиды и shipping NL/FR/ES перенесены из PL-аккаунта в отдельные sub-accounts | 2026-09-07 |
 | GGL-021 | Merchant Center: заведены 3 фида NL/FR/ES (dataSources, daily fetch) | 2026-09-04 |
 | GGL-022 | Merchant Center: настроены shipping services NL/FR/ES | 2026-09-04 |

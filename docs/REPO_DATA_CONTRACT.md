@@ -182,16 +182,16 @@ CAT (product feed)  Tilda (legacy CSV)
 | **WEB · Signal** | Живой XML Merchant из CAT при запросе; `g:price` = `amount_display` (без своего FX); хостинг `/feeds/google-merchant-*.xml` | Не настраивает dataSources / shipping / return policies в MC |
 | **GGL · Merchant** | Sub-accounts, `fetchUri`, shipping, return policies, диагностика MC/GSC/Ads/GBP; после PL DNS — переключить PL с Sheets на XML | Не считает цену фида своим курсом; не читает `contract_*` для цены, пока живой путь — WEB |
 
-Сверка 2026-10-08: NL / FR / ES / DE / RO / EU (`alumineu.eu`) — `fetchUri` на WEB XML. Только **PL** ещё Sheets (`drive://…`). MAGTRAK X508 в DE XML: **28.02 EUR** (= сайт / `amount_display`), не 24.84 по курсу GGL 0.23.
+**CAT DONE 2026-10-08** (`cf5be77`, ветка `cat/cat-263-contract-sync`, PR #38): живая цена NL/FR/ES/DE/RO/EU = WEB XML / `amount_display`; GGL каталог для цены не читает; колонки цен CAT не менял. Copies (Sheets/CSV, курсы 0.23 / 1.15) снимут по **хэшу GGL** после DNS PL и удаления CSV / `plnToLocalRate` / `MERCHANT_PLN_TO_*` / `convertPrice`.
+
+Сверка MC: NL / FR / ES / DE / RO / EU (`alumineu.eu`) — `fetchUri` на WEB XML. Только **PL** ещё Sheets (`drive://…`). MAGTRAK X508 в DE XML: **28.02 EUR** (= сайт / `amount_display`), не 24.84 по курсу GGL 0.23.
 
 ### Как закрыть долг (курс / CSV)
 
-CAT 2026-09-27 (`7c07deb`) + вопрос 2026-10-08: цену фида брать из `amount_display`, свой курс убрать.
-
-1. **Живые рынки:** цена уже из CAT через WEB XML — GGL курс **не применяет**. Переключать `merchant-markets.js` на `contract_*` для цены **не нужно** (роль WEB).
-2. **PL:** после DNS alumineu.pl → тот же XML; GGL меняет только `fetchUri` (GGL-027). До DNS Sheets не трогаем своим FX для новых рынков.
-3. **GGL:** после PL — удалить `feeds/*.csv`, `tilda-store-export*`, `plnToLocalRate`, `MERCHANT_PLN_TO_*`, legacy `convertPriceCell` в sheet-sync; хэш → CAT, чтобы снял copies.
-4. **EU:** MC `5798434120` уже на `https://alumineu.eu/feeds/google-merchant-eu.xml` (2026-10-08). Homepage claim / return URI на `alumineu.com` — отдельно (GGL-028).
+1. **Живые рынки:** цена из CAT через WEB — GGL FX не применяется. DONE.
+2. **PL:** после DNS alumineu.pl → XML; GGL только `fetchUri` (GGL-027).
+3. **GGL:** после п.2 удалить `feeds/*.csv`, `tilda-store-export*`, `plnToLocalRate`, `MERCHANT_PLN_TO_*`, `convertPriceCell` в sheet-sync → **хэш коммита в чат CAT**.
+4. **EU:** фид уже `alumineu.eu` XML; claim/return URI на `alumineu.com` — GGL-028.
 
 ## CAT · Forge — Merchant auto-feed contract (2026-09-03)
 
