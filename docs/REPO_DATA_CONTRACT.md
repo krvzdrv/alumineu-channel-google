@@ -186,6 +186,8 @@ CAT (product feed)  Tilda (legacy CSV)
 
 **WEB подтвердил 2026-10-09:** граница совпадает. WEB = живой XML без `g:shipping`; Product JSON-LD на PDP — зона WEB (GSC merchant listing), не замена shipping/returns в MC. GGL = кабинет MC, Free listings, account-level shipping/returns, File URL, Diagnostics, Ads.
 
+**Business info MC (2026-10-09, все sub-accounts):** юр. адрес `ul. Grzybowska 87, 00-844 Warszawa` (Alumineu Sp. z o.o., NIP 527-315-17-23); склад/отгрузка Piastów Witosa 34 — не в Business info; телефон `+48 789 612 919` (UNVERIFIED — подтвердить в UI при необходимости). Тикет FL: `4-3033000041565`.
+
 Сверка MC: NL / FR / ES / DE / RO / EU (`alumineu.eu`) — `fetchUri` на WEB XML. Только **PL** ещё Sheets (`drive://…`); публичный `…/feeds/google-merchant-pl.xml` → 404 до DNS .pl→Vercel. MAGTRAK X508 в DE XML: **28.02 EUR** (= сайт / `amount_display`), не 24.84 по курсу GGL 0.23.
 
 ### Как закрыть долг (курс / CSV)

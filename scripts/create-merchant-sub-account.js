@@ -105,7 +105,7 @@ async function applyBusinessBaseline(merchantFetch, accountId, market) {
       customerService: {
         uri: market.supportUri,
         email: text(process.env.MERCHANT_SUPPORT_EMAIL) || 'biuro@alumineu.pl',
-        phone: { e164Number: text(process.env.MERCHANT_SUPPORT_PHONE) || '+48532263193' }
+        phone: { e164Number: text(process.env.MERCHANT_SUPPORT_PHONE) || '+48789612919' }
       }
     })
   });
