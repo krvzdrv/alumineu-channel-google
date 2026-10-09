@@ -37,7 +37,7 @@ Dispatch — **чат** + `AGENTS.md`. Память работ — здесь.
 
 | ID | Title | Closed |
 |----|-------|--------|
-| GGL-032 | Граница Free Listings: WEB = XML + `amount_display`; GGL = MC wiring. CAT DONE `cf5be77` / PR #38 | 2026-10-08 |
+| GGL-032 | Граница Free Listings: WEB = XML + `amount_display` (без g:shipping); GGL = MC wiring. CAT `cf5be77`; WEB confirm 2026-10-09 | 2026-10-09 |
 | GGL-025 | FIX: фиды и shipping NL/FR/ES перенесены из PL-аккаунта в отдельные sub-accounts | 2026-09-07 |
 | GGL-021 | Merchant Center: заведены 3 фида NL/FR/ES (dataSources, daily fetch) | 2026-09-04 |
 | GGL-022 | Merchant Center: настроены shipping services NL/FR/ES | 2026-09-04 |

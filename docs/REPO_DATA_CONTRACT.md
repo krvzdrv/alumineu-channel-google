@@ -184,7 +184,9 @@ CAT (product feed)  Tilda (legacy CSV)
 
 **CAT DONE 2026-10-08** (`cf5be77`, ветка `cat/cat-263-contract-sync`, PR #38): живая цена NL/FR/ES/DE/RO/EU = WEB XML / `amount_display`; GGL каталог для цены не читает; колонки цен CAT не менял. Copies (Sheets/CSV, курсы 0.23 / 1.15) снимут по **хэшу GGL** после DNS PL и удаления CSV / `plnToLocalRate` / `MERCHANT_PLN_TO_*` / `convertPrice`.
 
-Сверка MC: NL / FR / ES / DE / RO / EU (`alumineu.eu`) — `fetchUri` на WEB XML. Только **PL** ещё Sheets (`drive://…`). MAGTRAK X508 в DE XML: **28.02 EUR** (= сайт / `amount_display`), не 24.84 по курсу GGL 0.23.
+**WEB подтвердил 2026-10-09:** граница совпадает. WEB = живой XML без `g:shipping`; Product JSON-LD на PDP — зона WEB (GSC merchant listing), не замена shipping/returns в MC. GGL = кабинет MC, Free listings, account-level shipping/returns, File URL, Diagnostics, Ads.
+
+Сверка MC: NL / FR / ES / DE / RO / EU (`alumineu.eu`) — `fetchUri` на WEB XML. Только **PL** ещё Sheets (`drive://…`); публичный `…/feeds/google-merchant-pl.xml` → 404 до DNS .pl→Vercel. MAGTRAK X508 в DE XML: **28.02 EUR** (= сайт / `amount_display`), не 24.84 по курсу GGL 0.23.
 
 ### Как закрыть долг (курс / CSV)
 
