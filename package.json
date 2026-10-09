@@ -52,6 +52,8 @@
     "merchant:api:compare-sheet": "node scripts/compare-merchant-sheet-catalog.js",
     "merchant:api:migrate-feed-lang": "node scripts/migrate-merchant-feed-language.js",
     "merchant:api:return-policy": "node scripts/apply-merchant-return-policies.js",
+    "merchant:sheet:pl:images-from-cat": "node scripts/patch-pl-sheet-images-from-cat.js",
+    "merchant:sheet:pl:images-from-cat:apply": "node scripts/patch-pl-sheet-images-from-cat.js --apply",
     "merchant:cac-ltv": "node scripts/calc-merchant-cac-ltv.js",
     "ads:auth": "node scripts/auth-google-ads.js",
     "ads:verify": "node scripts/verify-google-ads-access.js",

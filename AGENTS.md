@@ -163,6 +163,10 @@
 
 | Дата | Изменение |
 |------|-----------|
+| 2026-10-09 | Тикет FL: Google ускорил review (NL, до 72 ч). Approved: DE 11→92, RO 7→109, NL 111, ES 100; FR всё ещё 0/114 |
+| 2026-10-09 | GGL-019 CAT PARTIAL `4f6a723`: Y001 main ✅; DECORRA ×4 не витрина (исключены); ждать BLD Main: Y213/Y214/Y002/NX030 S straight |
+| 2026-10-09 | PL Merchant Sheet: 137 `image link` → CAT `product-media-opt` ~1080 WebP (`merchant:sheet:pl:images-from-cat:apply`); закрывает warning &lt;500×500 до DNS PL |
+| 2026-10-09 | Free Listings: ответ по тикету 4-3033000041565 отправлен через Gmail web (TB SMTP timeout); FR адрес = Grzybowska 87 |
 | 2026-10-09 | Free Listings: тикет 4-3033000041565 разобран; FR business address = Piastów; EU FL 114/114 approved |
 | 2026-10-09 | WEB подтвердил границу Free listings / Merchant (XML без g:shipping; JSON-LD PDP ≠ MC shipping) |
 | 2026-10-08 | CAT DONE цена фида через WEB (`cf5be77` / PR #38); copies ждут хэш GGL после PL DNS (GGL-027) |

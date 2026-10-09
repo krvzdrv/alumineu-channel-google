@@ -106,7 +106,7 @@ CAT (product feed)  Tilda (legacy CSV)
 | PL | `https://alumineu.pl/feeds/google-merchant-pl.xml` | ⏳ 404 до переключения DNS alumineu.pl на Vercel (Owner) | 117 (локально у WEB) |
 | EU | `https://alumineu.eu/feeds/google-merchant-eu.xml` | ✅ Live (MC `5798434120` fetchUri, 2026-10-08) | — |
 
-С WEB 6db0c68 цена в фиде — по рынку домена (раньше все фиды отдавали цену NL). У 6 SKU с несколькими углами `g:id` = SKU + тип угла (`FLOATIA NX302-inside-corner`); остальные `g:id` = SKU. Товары без цены (ENDCAPP Y213 / Y214) и без фото main в фид не попадают.
+С WEB 6db0c68 цена в фиде — по рынку домена (раньше все фиды отдавали цену NL). У 6 SKU с несколькими углами `g:id` = SKU + тип угла (`FLOATIA NX302-inside-corner`); остальные `g:id` = SKU. Без цены / без main в фид не попадают (см. GGL-019: Y213/Y214/Y002 + NX030 S straight ждут BLD; DECORRA не витрина).
 
 **Схема фида (legacy):**
 - CSV → Google Sheets → Merchant Center (вручную, через `merchant:sheet:apply`)
@@ -208,7 +208,7 @@ CAT (product feed)  Tilda (legacy CSV)
 | `g:title` | `product_localizations.title` | locale сайта, 126/126 заполнено |
 | `g:description` | `product_seo_pages.meta_description` | активной PDP сайта, 126/126 (nl/fr/es) |
 | `g:link` | `sites.base_url` + `product_seo_pages.url_path` | |
-| `g:image_link` | `contract_product_media.owned_url` where `role='main'` | дыра: 9 SKU без main — DECORRA L005/W005/W010/W015, ENDCAPP Y213/Y214, INSERTA Y001/Y002, LIGHTRA NX030 S |
+| `g:image_link` | `contract_product_media.owned_url` where `role='main'` | см. § дыры GGL-019 ниже |
 | `g:additional_image_link` | `owned_url` where `role` in (`close_up`, `interior`, `dimensions`), sort `link_sort` | |
 | `g:price` | `contract_site_product_prices.amount_display` + `currency_display` | EUR preview (indicative, PLN→EUR), excl. VAT. Все 3 рынка, parity с PDP |
 | `g:brand` | `products.brand` | |
@@ -216,10 +216,27 @@ CAT (product feed)  Tilda (legacy CSV)
 | `g:gtin` | отсутствует | `identifier_exists=false` |
 | `g:availability` | `in_stock` (витринный дефолт) | DAT per-variant в резерве (v2) |
 
+### Требования Google к фото (Merchant `image_link` / `additional_image_link`)
+
+Источник: [image_link](https://support.google.com/merchants/answer/6324350), [500×500 update](https://support.google.com/merchants/answer/16989427).
+
+| Правило | Сейчас | С 31.01.2027 |
+|---------|--------|----------------|
+| Минимум (не одежда) | 100×100 | **500×500** (оба края) |
+| Рекомендация Google | — | **~1500×1500** или больше |
+| Максимум | 64 Mpx, файл ≤ 16 MB | то же |
+| Форматы | JPEG, PNG, WebP, GIF (не аним.), BMP, TIFF | то же |
+| Нельзя | апскейл миниатюр, watermark, promo-текст, placeholder, drive.google share | то же |
+
+**Alumineu факт (2026-10-09):** живые WEB XML (NL/DE/…) уже отдают CAT `product-media-opt` WebP **≥1023×1024** (часто 1080×1080) — warning’ов MC нет. PL Sheets держал Tilda ~640×390 (короткая сторона &lt; 500) → `image_too_small_for_high_resolution`; 2026-10-09 GGL проставил CAT URL в PL Sheet (`npm run merchant:sheet:pl:images-from-cat:apply`). Permanent: DNS `.pl` → Vercel XML.
+
 ### Дыры и блокеры (актуальные)
 
 1. **VAT:** цена excl. VAT — сверить со спекой Merchant для consumer EU (сторона GGL/Owner).
-2. **Изображения:** 9 SKU без `main` — нужно решение от CAT или ручное назначение.
+2. **Изображения (GGL-019, CAT PARTIAL `4f6a723` / 2026-10-09):**
+   - **Закрыто:** `INSERTA Y001` — main есть; в NL XML с `image_link`.
+   - **Не витрина — не ждём в фиде:** `DECORRA L005` / `W005` / `W010` / `W015` (исключены из ожидания GGL).
+   - **Ждём Main PNG от BLD → CAT:** `ENDCAPP Y213`, `ENDCAPP Y214`, `INSERTA Y002`, `LIGHTRA NX030 S` straight (сейчас 300×300; 3 угла NX030 S уже в фиде).
 3. **Availability:** сейчас `in_stock` для всех. Точный сток per-variant из DAT — в резерве (v2), по запросу.
 
 ### Снятые блокеры (2026-09-04)
