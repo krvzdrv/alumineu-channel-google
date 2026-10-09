@@ -163,6 +163,7 @@
 
 | Дата | Изменение |
 |------|-----------|
+| 2026-10-09 | Free Listings: тикет 4-3033000041565 разобран; FR business address = Piastów; EU FL 114/114 approved |
 | 2026-10-09 | WEB подтвердил границу Free listings / Merchant (XML без g:shipping; JSON-LD PDP ≠ MC shipping) |
 | 2026-10-08 | CAT DONE цена фида через WEB (`cf5be77` / PR #38); copies ждут хэш GGL после PL DNS (GGL-027) |
 | 2026-10-08 | WEB принял схему GSC API (свой client «Alumineu WEB», a9c3c96); ждём Owner In production (GGL-031) |

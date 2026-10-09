@@ -15,6 +15,7 @@ Dispatch — **чат** + `AGENTS.md`. Память работ — здесь.
 | GGL-023 | Диагностика фидов NL/FR/ES после первого fetch (ожидание) | pending |
 | GGL-027 | D-011: MC на живой XML WEB. NL/FR/ES/DE/RO/EU уже XML; PL — Sheets до DNS. После PL: удалить CSV / `plnToLocalRate` / `MERCHANT_PLN_TO_*` / convertPrice в sheet-sync, хэш → CAT. Цена фида — роль WEB (`amount_display`), не GGL | in progress |
 | GGL-031 | `token-gsc.json` умер (`invalid_grant`). WEB тоже на Testing/7д (контракт a9c3c96). Owner: OAuth consent → In production → GGL новый токен + confirm `sc-domain:alumineu.de` | waiting Owner |
+| GGL-033 | Free Listings approve: тикет 4-3033000041565 (ответ 2026-10-08). FR адрес Piastów закрыт 2026-10-09. Монитор FR/DE/RO pending; NL/ES/EU уже частично/полностью approved | in progress |
 | GGL-030 | Доставка MC. Решение Owner 2026-09-28: тарифы — правда на сайте (WEB), MC только повторяет; сейчас суммы в MC (9.99 / 14.99 EUR, 49 RON, 50 PLN) — копия GGL. Страны: BE → фиды NL+FR, LU → FR+DE, AT → DE, убрать их из EU; PT — только со своим сайтом pt; отдельный аккаунт = отдельный сайт | waiting WEB (тарифы) |
 | GGL-029 | ENDCAPP Y205 / Y206 в DE: Google требует color / age group / gender — нужна `g:google_product_category` в фиде (генератор WEB) | pending |
 | GGL-028 | MC EU `5798434120`: `alumineu.com` vs `contract_sites` eu = `alumineu.eu` — решить при переключении | pending |
